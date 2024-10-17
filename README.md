@@ -1,0 +1,1 @@
+从github上拉下来的文件需要更改配置文件SZTU_PTimeRun/project.config.json的appid为自己的appid
