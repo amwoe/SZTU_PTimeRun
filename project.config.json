@@ -1,6 +1,6 @@
 {
   "compileType": "miniprogram",
-  "libVersion": "trial",
+  "libVersion": "3.6.3",
   "packOptions": {
     "ignore": [],
     "include": []
@@ -17,12 +17,13 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "condition": false
   },
   "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "appid": "wx04f33b355230d55e"
+  "appid": "wx34307cfb17b38e1f"
 }
