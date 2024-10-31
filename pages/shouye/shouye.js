@@ -7,6 +7,51 @@ Page({
   data: {
 
   },
+  /**
+   * 跳转
+   */
+  onImageClick1:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/kuaididaiqu/kuaidi',
+    });
+  },
+  onImageClick2:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/shitangdaifan/shitang',
+    });
+  },
+  onImageClick3:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/waimaishanglou/waimai',
+    });
+  },
+  onImageClick4:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/xuexizhidao/xuexizhidao',
+    });
+  },
+  onImageClick5:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/xianwuchushou/xianwuchushou',
+    });
+  },
+  onImageClick6:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/zujie/zujie',
+    });
+  },
+  onImageClick7:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages',
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载
