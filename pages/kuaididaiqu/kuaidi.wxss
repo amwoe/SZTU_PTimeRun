@@ -210,6 +210,7 @@
 .text_10 {
   margin-left: 10.47rpx;
   line-height: 25.85rpx;
+  color: #ff8d1a;
 }
 .text_11 {
   margin-left: 62.79rpx;
@@ -304,7 +305,7 @@
 .pos_9 {
   position: absolute;
   left: 50%;
-  top: 1050.92rpx;
+  top: 1100.92rpx;
   transform: translateX(-50%);
 }
 .text_19 {

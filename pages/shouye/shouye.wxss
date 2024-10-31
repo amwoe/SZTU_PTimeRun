@@ -284,6 +284,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 60px; /* 导航栏高度 */
   background-color: white; /* 根据需要设置背景颜色 */
   z-index: 1000; /* 确保在其他元素之上 */
   display: flex;

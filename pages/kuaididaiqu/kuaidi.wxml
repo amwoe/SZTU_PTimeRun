@@ -39,9 +39,9 @@
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c1e4895c2ba09734c4bafcade308236a.png"
         />
         <text class="font_4 text_9">送货地址：</text>
-        <text class="font_5 text_10">xx省xx市xx区</text>
+        <text class="font_5 text_10">限所在地级市</text>
       </view>
-      <text class="self-start font_5 text_11 mt-19">xxxxxx学校宿舍5栋203</text>
+      <input class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址"></input>
     </view>
     <view class="flex-row items-center self-stretch group_7">
       <image
@@ -49,7 +49,15 @@
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d77fa014a2276151db09ec354bf3abeb.png"
       />
       <text class="font_4 ml-9">送达时间：</text>
-      <text class="font_5 text_12 ml-9">2024-10-20</text>
+      <picker mode="selector" range="{{years}}" bindchange="onYearChange">
+        <view class="font_5 text_12 ml-9">{{selectedYear}}年</view>
+      </picker>
+      <picker mode="selector" range="{{months}}" bindchange="onMonthChange">
+        <view class="font_5 text_12 ml-9">{{selectedMonth}}月</view>
+      </picker>
+      <picker mode="selector" range="{{days}}" bindchange="onDayChange">
+        <view class="font_5 text_12 ml-9">{{selectedDay}}日</view>
+      </picker>
     </view>
     <view class="flex-row justify-between items-center self-stretch group_8">
       <view class="flex-row items-center">
