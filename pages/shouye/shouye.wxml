@@ -1,28 +1,4 @@
 <view class="flex-col page">
-  <view class="flex-row justify-between items-center self-stretch group">
-    <view class="group_2">
-      <text class="font text">9:4</text>
-      <text class="font text text_2">1</text>
-    </view>
-    <view class="flex-row">
-      <image
-        class="image"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=32ef444ddbb6b9a1418a03645fadf729.png"
-      />
-      <image
-        class="image_2 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-      />
-      <image
-        class="image_3 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-      />
-    </view>
-  </view>
-  <image
-    class="self-end image_4"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-  />
   <view class="flex-col self-stretch group_3">
     <image
       class="image_5"
