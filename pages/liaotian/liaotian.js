@@ -5,14 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTime:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.updateTime();
+    setInterval(()=>{
+      this.updateTime();
+    },60000);//每一分钟变化
+  },
+  updateTime(){
+    const now=new Date();
+    const options={
+      weekday:'long',
+      hour:'numeric',
+      minute:'numeric'
+    };
+    this.setData({
+      currentTime:now.toLocaleDateString('zh-CN',options),
+    });
   },
 
   /**

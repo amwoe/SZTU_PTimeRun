@@ -1,41 +1,6 @@
 <view class="flex-col justify-start page">
   <view class="flex-col section">
-    <view class="flex-row justify-between items-center self-stretch group">
-      <view class="group_2">
-        <text class="font text text_2">9:4</text>
-        <text class="font text text_3">1</text>
-      </view>
-      <view class="flex-row">
-        <image
-          class="image"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-        />
-        <image
-          class="image_2 ml-5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-        />
-        <image
-          class="image_3 ml-5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-        />
-      </view>
-    </view>
-    <view class="flex-row justify-center items-center self-stretch relative group_3">
-      <view class="flex-row justify-start items-center image-wrapper pos_2">
-        <image
-          class="image_5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-        />
-      </view>
-      <view class="flex-row justify-start items-center image-wrapper"><text class="font_2 text_4">林夕韩</text></view>
-      <view class="flex-row justify-start items-center image-wrapper pos">
-        <image
-          class="image_4"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-        />
-      </view>
-    </view>
-    <text class="self-center text_5">星期四 上午 8:48</text>
+    <text class="self-center text_5">{{currentTime}}</text>
     <view class="flex-col self-stretch group_4">
       <view class="flex-row justify-end">
         <view class="flex-col justify-start text-wrapper"><text class="font_3 text_6">这周末一起出去玩吗？</text></view>
@@ -81,8 +46,8 @@
         </view>
       </view>
     </view>
-    <view class="flex-row items-center self-stretch section_4">
-      <view class="flex-1 section_5"></view>
+    <view class="flex-row items-center self-stretch section_4 fixed-bottom">
+      <input class="flex-1 section_5" placeholder="请输入"></input>
       <image
         class="shrink-0 image_8 ml-5"
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=68a1098776c3610ec0afdf100fb11507.png"

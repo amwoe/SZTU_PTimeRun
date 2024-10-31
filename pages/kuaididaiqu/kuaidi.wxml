@@ -10,7 +10,7 @@
         <text class="font_2 text_4 ml-13">沈海辛</text>
       </view>
       <view class="flex-row items-center group_3">
-        <text class="font_3 text_5">联系Ta</text>
+        <text class="font_3 text_5" bindtap="navigateToContact">联系Ta</text>
         <image
           class="ml-6 shrink-0 image_7"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=58f5f9222245a497f013e9a875914906.png"

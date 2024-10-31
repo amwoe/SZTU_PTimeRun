@@ -7,6 +7,11 @@ Page({
   data: {
 
   },
+  navigateToContact() {
+    wx.navigateTo({
+      url: '/pages/liaotian/liaotian' 
+    });
+  },  
 
   /**
    * 生命周期函数--监听页面加载
