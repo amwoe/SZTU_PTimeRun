@@ -398,3 +398,15 @@
 .text_24 {
   line-height: 25.87rpx;
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* 根据需要设置背景颜色 */
+  z-index: 1000; /* 确保在其他元素之上 */
+  display: flex;
+  justify-content: space-around; /* 使子元素均匀分布 */
+  padding: 10px 0; /* 根据需要调整内边距 */
+}

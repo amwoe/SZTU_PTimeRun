@@ -192,22 +192,22 @@
               <text class="font_7 text_21">已完成</text>
             </view>
           </view>
-          <view class="flex-row equal-division_2 section_8">
-            <view class="flex-col items-center group_16 equal-division-item">
+          <view class="flex-row equal-division_2 section_8 fixed-bottom">
+            <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage1">
               <image
                 class="image_13"
                 src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d7f6aff96e215bc396ee1f01467c554d.png"
               />
               <text class="font_10 text_22 mt-3">首页</text>
             </view>
-            <view class="flex-col items-center group_16 equal-division-item">
+            <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage2">
               <image
                 class="image_13"
                 src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a599f14b5c0581aca76429b84e068af5.png"
               />
               <text class="font_5 text_23 mt-1">订单</text>
             </view>
-            <view class="flex-col items-center group_16 equal-division-item">
+            <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage3">
               <image
                 class="image_13"
                 src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f1cb4c38cec5a6bbc53721afa0f29704.png"
