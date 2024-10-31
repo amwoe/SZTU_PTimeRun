@@ -312,3 +312,9 @@
   color: #ed9b18;
   line-height: 29.9rpx;
 }
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* 选项之间的间距 */
+}

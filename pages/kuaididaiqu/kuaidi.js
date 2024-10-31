@@ -11,12 +11,18 @@ Page({
     selectedYear:'',
     selectedMonth:'1',
     selectedDay:'1',
+    selected:'不限',
   },
   navigateToContact() {
     wx.navigateTo({
       url: '/pages/liaotian/liaotian' 
     });
   },  
+  onOptionChange(e){
+    this.setData({
+      selected:e.detial.value
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载
