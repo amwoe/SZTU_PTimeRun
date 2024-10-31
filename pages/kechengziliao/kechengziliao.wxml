@@ -1,30 +1,5 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <view class="group pos_4">
-    <text class="font text text_2">9:4</text>
-    <text class="font text text_3">1</text>
-  </view>
-  <image
-    class="image pos"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-  />
-  <image
-    class="image_2 pos_2"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-  />
-  <image
-    class="image_3 pos_3"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-  />
-  <image
-    class="image_5 pos_6"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-  />
-  <text class="text_4 pos_7">课程资料</text>
-  <image
-    class="image_4 pos_5"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-  />
   <view class="flex-col pos_8">
     <view class="flex-row list-item mt-11" wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index">
       <image

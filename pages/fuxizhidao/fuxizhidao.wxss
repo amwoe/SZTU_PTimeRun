@@ -116,20 +116,15 @@
 .pos_8 {
   position: absolute;
   left: 49.85rpx;
-  top: 203.65rpx;
+  top: 20.65rpx;
 }
 .pos_9 {
   position: absolute;
   left: 173.49rpx;
-  top: 203.62rpx;
+  top: 20.62rpx;
 }
 .text_5 {
   line-height: 29.04rpx;
-}
-.pos_10 {
-  position: absolute;
-  left: 297.99rpx;
-  top: 203.62rpx;
 }
 .section_2 {
   background-color: #383838;
@@ -139,7 +134,7 @@
 .pos_11 {
   position: absolute;
   left: 50.58rpx;
-  top: 240.7rpx;
+  top: 55.7rpx;
 }
 .grid {
   height: 1090.12rpx;
@@ -153,7 +148,7 @@
   position: absolute;
   left: 33.14rpx;
   right: 31.4rpx;
-  top: 273.84rpx;
+  top: 77.84rpx;
 }
 .grid-item {
   padding-bottom: 27.91rpx;

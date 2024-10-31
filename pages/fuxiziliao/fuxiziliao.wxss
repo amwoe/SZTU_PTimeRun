@@ -115,7 +115,7 @@
   position: absolute;
   left: 29.65rpx;
   right: 29.67rpx;
-  top: 191.86rpx;
+  top: 50.86rpx;
 }
 .image_6 {
   border-radius: 17.44rpx;
@@ -186,7 +186,7 @@
   position: absolute;
   left: 27.91rpx;
   right: 31.4rpx;
-  top: 551.16rpx;
+  top: 400.16rpx;
 }
 .text_9 {
   line-height: 29.74rpx;
