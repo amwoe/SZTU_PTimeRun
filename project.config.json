@@ -1,18 +1,16 @@
 {
-  "compileType": "miniprogram",
-  "libVersion": "3.6.3",
+  "description": "",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "coverView": true,
+    "urlCheck": false,
     "es6": true,
     "postcss": true,
-    "minified": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
-    "packNpmRelationList": [],
+    "minified": false,
+    "newFeature": true,
+    "nodeModules": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -20,10 +18,13 @@
     },
     "condition": false
   },
+  "compileType": "miniprogram",
+  "libVersion": "2.26.0",
+  "appid": "wx34307cfb17b38e1f",
+  "projectname": "校园兼职-即使设计",
   "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
-  },
-  "appid": "wx273e655f748a8559"
+  }
 }
