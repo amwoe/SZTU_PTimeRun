@@ -3,5 +3,18 @@
   "projectname": "SZTU_%E6%A0%A1%E5%9B%AD%E8%B7%91%E8%B7%91",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "1",
+          "pathName": "pages/fuxizhidao/fuxizhidao",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

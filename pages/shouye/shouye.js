@@ -52,6 +52,12 @@ Page({
       url: '/pages',
     });
   },
+  onImageClick8:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/faxiantuijianxiangqing/faxiantuijianxiangqing',
+    });
+  },
 
   redirectToPage1:function(){
     wx.redirectTo({

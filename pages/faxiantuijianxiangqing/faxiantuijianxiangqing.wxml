@@ -1,58 +1,29 @@
 <view class="flex-col page">
   <view class="flex-col section">
-    <view class="flex-row justify-between items-center">
-      <view class="group">
-        <text class="font text">9:4</text>
-        <text class="font text text_2">1</text>
-      </view>
-      <view class="flex-row">
-        <image
-          class="image"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-        />
-        <image
-          class="image_2 ml-5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-        />
-        <image
-          class="image_3 ml-5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-        />
-      </view>
-    </view>
-    <view class="mt-28 flex-row justify-between items-center">
-      <image
-        class="image_5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-      />
-      <image
-        class="image_4"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-      />
-    </view>
+    <view class="mt-28 flex-row justify-between items-center"></view>
   </view>
   <view class="flex-col group_2">
     <view class="flex-col">
       <text class="self-start text_3">小哥取件很快，推荐</text>
       <view class="mt-16 flex-col self-stretch relative">
-        <text class="self-start font_2"></text>
-        <text class="self-start font_2">备战双十一·双十二！！</text>
-        <text class="self-start font_2 text_4">寄件有优惠，取件也方便⬇️</text>
         <text class="self-stretch font_2">
-          🙌🏻寄件： 1⃣️可以直接使用校园兼职APP上门取件，价格相对比较高！ 2⃣️三堂后
-          中通快递，可以加入群聊享优惠，到快递点寄件可以打折！ 3⃣️三堂后
-          申通百世快递，可以上门取件！加入群聊也可享折扣～ 🙌🏻取件： 1⃣️可以有偿代拿快递。
-          2⃣️东门左手边第一家水果店，找老板买水果可以免费代拿，十元起送～很方便！
+          🙌🏻寄件： 
+          1、可以直接使用校园兼职APP上门取件，价格相对比较高！
+          2、中通快递，可以加入群聊享优惠，到快递点寄件可以打折！
+          3、申通百世快递，可以上门取件！加入群聊也可享折扣～ 
+          🙌🏻取件：
+          1、可以有偿代拿快递。
+          2、东门左手边第一家水果店，找老板买水果可以免费代拿，十元起送～很方便！
         </text>
         <text class="font_2 pos">在学校所有的快递都集中到三堂后及东门啦</text>
       </view>
     </view>
     <text class="font_2 mt-232">
-      -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- 还有什么方便快捷又便宜的快递攻略吗！分享一下吧！！！
+      -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n还有什么方便快捷又便宜的快递攻略吗！分享一下吧！！！
     </text>
   </view>
   <view class="flex-row items-center section_2">
-    <view class="flex-1 section_3"></view>
+    <input class="flex-1 section_3" placeholder="请输入"></input>
     <image
       class="shrink-0 image_6 ml-5"
       src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=68a1098776c3610ec0afdf100fb11507.png"

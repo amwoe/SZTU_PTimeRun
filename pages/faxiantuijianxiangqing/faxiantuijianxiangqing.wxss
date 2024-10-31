@@ -66,6 +66,7 @@
   line-height: 34.47rpx;
 }
 .font_2 {
+  padding: 25rpx;
   font-size: 24.42rpx;
   font-family: SourceHanSansCN;
   line-height: 48.84rpx;
@@ -89,6 +90,7 @@
   background-color: #f0f0f0;
   border-radius: 69.77rpx;
   height: 73.26rpx;
+  text-align: center; /* 水平居中文本 */
 }
 .image_6 {
   border-radius: 340.64rpx;

@@ -74,7 +74,7 @@
         <text class="font_4 text_12">查看全部</text>
       </view>
       <view class="flex-row mt-9">
-        <view class="flex-col items-start section_2 equal-division-item_2">
+        <view class="flex-col items-start section_2 equal-division-item_2"bindtap="onImageClick8">
           <image
             class="image_11"
             src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3f750e1c8479c6c2ea50fdbb780e1d10.png"
