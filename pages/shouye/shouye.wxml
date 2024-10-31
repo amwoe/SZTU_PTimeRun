@@ -97,6 +97,7 @@
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=53efdb5e55d4c8e4037684960237573b.png"
+          bindtap="redirectToPage1"
         />
         <text class="mt-6 font_4 text_14">首页</text>
       </view>
@@ -104,6 +105,7 @@
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=afc5d8bb3c64172464a03a70bdfdc16a.png"
+          bindtap="redirectToPage2"
         />
         <text class="mt-6 font_4 text_15">订单</text>
       </view>
@@ -111,6 +113,7 @@
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f1cb4c38cec5a6bbc53721afa0f29704.png"
+          bindtap="redirectToPage3"
         />
         <text class="mt-6 font_4">我的</text>
       </view>
