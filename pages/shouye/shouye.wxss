@@ -5,7 +5,7 @@
   margin-left: 61.05rpx;
 }
 .ml-51 {
-  margin-left: 88.95rpx;
+  margin-left: 98.95rpx;
 }
 .mt-9 {
   margin-top: 15.7rpx;
@@ -64,7 +64,7 @@
   height: 55.81rpx;
 }
 .group_3 {
-  margin-top: 38.37rpx;
+  margin-top: 5.37rpx;
   padding: 0 34.88rpx;
 }
 .image_5 {
@@ -195,7 +195,7 @@
   line-height: 22.45rpx;
 }
 .text_10 {
-  margin-right: 10.47rpx;
+  margin-right: 18.47rpx;
   line-height: 22.4rpx;
 }
 .group_7 {
