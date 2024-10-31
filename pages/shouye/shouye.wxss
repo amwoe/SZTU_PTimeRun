@@ -23,6 +23,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  height: calc(100vh - 60px);
 }
 .group {
   padding-left: 59.3rpx;
@@ -290,4 +291,5 @@
   display: flex;
   justify-content: space-around; /* 使子元素均匀分布 */
   padding: 10px 0; /* 根据需要调整内边距 */
+  position: absolute;
 }
