@@ -5,34 +5,32 @@
       src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=011e176d796bae83c11b675e002de0d6.png"
     />
     <view class="flex-row justify-between equal-division">
-      <view class="flex-col justify-start group_4 equal-division-item">
+      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick1">
         <view class="flex-col justify-start items-center text-wrapper">
           <text class="font_2 text_3 text_5">代取快递</text>
         </view>
         <image
           class="image_6 pos"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=879a9f7a865814e74f0249a512e09de9.png"
-          bindtap="onImageClick1"
+          
         />
       </view>
-      <view class="flex-col justify-start group_4 equal-division-item">
+      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick2">
         <view class="flex-col justify-start items-center text-wrapper_2">
           <text class="font_2 text_3 text_4">食堂带饭</text>
         </view>
         <image
           class="image_6 pos_2"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=8cf9bb1b6206989b978260f463d69ce9.png"
-          bindtap="onImageClick2"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=8cf9bb1b6206989b978260f463d69ce9.png" 
         />
       </view>
-      <view class="flex-col justify-start group_4 equal-division-item">
+      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick3">
         <view class="flex-col justify-start items-center text-wrapper_3">
           <text class="font_2 text_3 text_6">外卖上楼</text>
         </view>
         <image
           class="image_6 pos_3"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=041c9f7c5f7c7b1878b3cac213957211.png"
-          bindtap="onImageClick3"
         />
       </view>
     </view>
@@ -92,28 +90,25 @@
         </view>
       </view>
     </view>
-    <view class="flex-row justify-center group_4 section_3 mt-7">
-      <view class="flex-col items-center group_9 equal-division-item_3">
+    <view class="flex-row justify-center group_4 section_3 mt-7 fixed-bottom">
+      <view class="flex-col items-center group_9 equal-division-item_3" bindtap="redirectToPage1">
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=53efdb5e55d4c8e4037684960237573b.png"
-          bindtap="redirectToPage1"
         />
         <text class="mt-6 font_4 text_14">首页</text>
       </view>
-      <view class="flex-col items-center equal-division-item_3">
+      <view class="flex-col items-center equal-division-item_3" bindtap="redirectToPage2">
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=afc5d8bb3c64172464a03a70bdfdc16a.png"
-          bindtap="redirectToPage2"
         />
         <text class="mt-6 font_4 text_15">订单</text>
       </view>
-      <view class="flex-col items-center group_10 equal-division-item_3">
+      <view class="flex-col items-center group_10 equal-division-item_3" bindtap="redirectToPage3">
         <image
           class="image_12"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f1cb4c38cec5a6bbc53721afa0f29704.png"
-          bindtap="redirectToPage3"
         />
         <text class="mt-6 font_4">我的</text>
       </view>
