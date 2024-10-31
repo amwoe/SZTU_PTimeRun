@@ -1,18 +1,25 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/list/list",
-    "pages/mylist",
-    "pages/mylist/mylist"
-  ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
-  },
-  "style": "v2",
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+    "pages/shouye/shouye",
+    "pages/xuexizhidao/xuexizhidao",
+    "pages/kechengziliao/kechengziliao",
+    "pages/fuxiziliao/fuxiziliao",
+    "pages/fuxizhidao/fuxizhidao",
+    "pages/xianwuchushou/xianwuchushou",
+    "pages/zujie/zujie",
+    "pages/wodedizhi/wodedizhi",
+    "pages/faxiantuijianxiangqing/faxiantuijianxiangqing",
+    "pages/yue/yue",
+    "pages/jiedanshezhi/jiedanshezhi",
+    "pages/xiaoxi/xiaoxi",
+    "pages/liaotian/liaotian",
+    "pages/wode/wode",
+    "pages/dingdan/dingdan",
+    "pages/woderenwu/woderenwu",
+    "pages/zujiexiangqing/zujiexiangqing",
+    "pages/xiadanchenggong/xiadanchenggong",
+    "pages/wodedingdan/wodedingdan",
+    "pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan",
+    "pages/jiedan/jiedan"
+  ]
 }
