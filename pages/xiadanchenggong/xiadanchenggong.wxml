@@ -1,2 +1,181 @@
-<!--pages/xiadanchenggong/xiadanchenggong.wxml-->
-<text>pages/xiadanchenggong/xiadanchenggong.wxml</text>
+<view class="flex-col page">
+  <view class="flex-row justify-between items-center group">
+    <view class="group_2">
+      <text class="font text">9:4</text>
+      <text class="font text text_2">1</text>
+    </view>
+    <view class="flex-row">
+      <image
+        class="image"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
+      />
+      <image
+        class="image_2 ml-5"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+      />
+      <image
+        class="image_3 ml-5"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+      />
+    </view>
+  </view>
+  <view class="flex-row justify-between items-center group_3">
+    <view class="flex-row justify-start items-center image-wrapper">
+      <image
+        class="image_5"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+      />
+    </view>
+    <view class="flex-row justify-start items-center image-wrapper"><text class="text_3">下单成功</text></view>
+    <view class="flex-row justify-start items-center image-wrapper view">
+      <image
+        class="image_4"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+      />
+    </view>
+  </view>
+  <view class="flex-col group_4">
+    <view class="flex-col justify-start items-center self-center image-wrapper_2">
+      <image
+        class="image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3282c2d8db6f145e313fae6461d128b2.png"
+      />
+    </view>
+    <view class="flex-col items-center self-stretch mt-25">
+      <text class="font_2">恭喜你</text>
+      <text class="font_2">下单成功</text>
+    </view>
+  </view>
+  <view class="flex-col section">
+    <view class="flex-row group_5">
+      <image
+        class="self-start image_27"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=15fee67051c0153cb45d9474df157883.png"
+      />
+      <view class="flex-row items-start flex-1 self-center relative group_6 ml-7">
+        <image
+          class="image_7"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=42e2a7edfe9ad2ede8064bd55e060edf.png"
+        />
+        <image
+          class="image_10"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=cd37c7f52374725a051268955a5864f8.png"
+        />
+        <image
+          class="image_8"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=54a5d8392b1eb7a3d96b8d206a4bb7f3.png"
+        />
+        <image
+          class="image_12"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=38061785ede298f950fc59a8e8e4c385.png"
+        />
+        <image
+          class="image_11 pos_4"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=ec76a09145f15e4f06b54e6bf58f022b.png"
+        />
+        <view class="section_2 pos_2"></view>
+        <view class="flex-col group_7 pos_3">
+          <text class="self-end text_4">1</text>
+          <view class="mt-14 flex-row self-stretch relative group_8">
+            <image
+              class="image_13 pos_5"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2e72f0f566d193e7f45158e59150d0de.png"
+            />
+            <image
+              class="image_15 pos_7"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f5e6472e281a835cb93185cc4b49348b.png"
+            />
+            <view class="section_5 pos_23"></view>
+            <image
+              class="image_26 pos_24"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=fe66f72a1e7392e3875293e2ff97a730.png"
+            />
+            <image
+              class="image_26 pos_25"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=6695290ae2b41f3bbc2e8de59e49afbf.png"
+            />
+            <image
+              class="image_28 pos_26"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=393f627400cad97edd03c995fdb40408.png"
+            />
+            <image
+              class="image_28 pos_27"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=509779b44c3addb16a2b39d131cb7bae.png"
+            />
+            <image
+              class="image_29 pos_29"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=fced2ddbfae5c47c20c0ccbfb84a49f9.png"
+            />
+            <image
+              class="image_14 pos_6"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f2c8a9fb1f783e1808a22e68f067f5bc.png"
+            />
+            <image
+              class="image_25 pos_22"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=78f20730364d2a0d98cc4ee7f0ab90d1.png"
+            />
+            <image
+              class="image_23 pos_17"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3905b03c597a883266e944a692bd4386.png"
+            />
+            <image
+              class="image_20 pos_12"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=b83047ac2e2261f7afaa3f372f617e25.png"
+            />
+            <image
+              class="image_29 pos_28"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9f5815d62a89edaaac5fe37cef4ce565.png"
+            />
+            <image
+              class="image_16 pos_8"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=36f027e0cd9134e975bf888bdfe23233.png"
+            />
+            <image
+              class="image_19 pos_11"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=54bbee8728103c06afdaaf42a3ec61d7.png"
+            />
+            <image
+              class="image_17 pos_9"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f8519b765be3db70ecb88b7e449de1bb.png"
+            />
+            <image
+              class="image_24 pos_19"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d73b3e2909ed8c8c0d7b8d577ff6ae4c.png"
+            />
+            <image
+              class="image_21 pos_18"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=fea1fe0e549a9b32cd87963cad2aa767.png"
+            />
+            <image
+              class="image_21 pos_20"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d827a62d85a664e5b0b55ae91f8379fe.png"
+            />
+            <view class="section_3 pos_13"></view>
+            <image
+              class="image_18 pos_10"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0ea74c05ea65d27d88a774a482d0de83.png"
+            />
+            <view class="section_4 pos_14"></view>
+            <image
+              class="image_21 pos_21"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d827a62d85a664e5b0b55ae91f8379fe.png"
+            />
+            <image
+              class="image_22 pos_16"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=37236287e7f11f77edb8724e90c082d3.png"
+            />
+            <image
+              class="image_21 pos_15"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=fea1fe0e549a9b32cd87963cad2aa767.png"
+            />
+          </view>
+        </view>
+        <image
+          class="image_9 pos"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=cca6363ecc1f454bef35b50e8e109f29.png"
+        />
+      </view>
+    </view>
+    <view class="flex-col justify-start items-center text-wrapper"><text class="text_5">继续下单</text></view>
+  </view>
+</view>

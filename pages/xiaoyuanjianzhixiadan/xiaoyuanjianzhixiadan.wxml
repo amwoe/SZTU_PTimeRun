@@ -1,2 +1,90 @@
-<!--pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan.wxml-->
-<text>pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan.wxml</text>
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text">9:4</text>
+    <text class="font text text_2">1</text>
+  </view>
+  <image
+    class="image pos"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=32ef444ddbb6b9a1418a03645fadf729.png"
+  />
+  <image
+    class="image_2 pos_2"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+  />
+  <image
+    class="image_3 pos_3"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+  />
+  <image
+    class="image_5 pos_6"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+  />
+  <text class="font_2 text_3 pos_7">校园兼职下单</text>
+  <image
+    class="image_4 pos_5"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+  />
+  <view class="flex-row justify-between items-center section_2 pos_8">
+    <view class="flex-col justify-start items-center text-wrapper"><text class="font_3 text_4">代取快递</text></view>
+    <text class="font_2 text_5">食堂带饭</text>
+    <text class="font_2 text_6">外卖上楼</text>
+    <text class="font_2 text_7">闲物</text>
+    <text class="font_2 text_8">租借</text>
+  </view>
+  <text class="font_2 text_9 pos_9">任务描述</text>
+  <view class="flex-col justify-start items-start text-wrapper_2 pos_10">
+    <text class="font_4 text_10">请描述...</text>
+  </view>
+  <view class="flex-col section_3 pos_11">
+    <view class="flex-row justify-between items-center group_2">
+      <text class="font_4 text_11">填写送货地址</text>
+      <view class="flex-col justify-start items-center text-wrapper_3">
+        <text class="font_5 text_12">选择地址</text>
+      </view>
+    </view>
+    <view class="flex-row justify-between items-center group_3">
+      <text class="font_2 text_13">填写送达时间</text>
+      <view class="flex-col justify-start items-center text-wrapper_3">
+        <text class="font_5 text_14">选择时间</text>
+      </view>
+    </view>
+  </view>
+  <text class="font_2 pos_12">跑腿员要求</text>
+  <view class="flex-row justify-between items-center section_4 pos_13">
+    <text class="font_6 text_15">性别</text>
+    <view class="flex-row items-center">
+      <view class="shrink-0 group_4"></view>
+      <text class="font_6 text_16">不限</text>
+      <view class="shrink-0 group_4 view"></view>
+      <text class="font_6 text_17">男</text>
+      <image
+        class="shrink-0 image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=90fcf2aa7210b26c5fdebc13cbc1628c.png"
+      />
+      <text class="font_6 text_18">女</text>
+    </view>
+  </view>
+  <view class="flex-row justify-between items-center section_5 pos_14">
+    <view class="flex-row items-center">
+      <image
+        class="shrink-0 image_7"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=bf24488445d5931487b19e9213d42b48.png"
+      />
+      <text class="ml-10 font_6 text_19">打赏</text>
+    </view>
+    <view class="flex-row group_5">
+      <text class="font_6 text_20">请输入</text>
+      <text class="ml-12 font_6 text_21">元</text>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-start section_6 pos_15">
+    <view class="group_6">
+      <text class="text_24">￥</text>
+      <text class="text_22">20.00</text>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-center text-wrapper_4 pos_16">
+    <text class="font_3 text_23">去下单</text>
+  </view>
+</view>

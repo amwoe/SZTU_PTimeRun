@@ -1,2 +1,120 @@
-<!--pages/xianwuchushou/xianwuchushou.wxml-->
-<text>pages/xianwuchushou/xianwuchushou.wxml</text>
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text">9:4</text>
+    <text class="font text text_2">1</text>
+  </view>
+  <image
+    class="image pos"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
+  />
+  <image
+    class="image_2 pos_2"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+  />
+  <image
+    class="image_3 pos_3"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+  />
+  <image
+    class="image_5 pos_6"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+  />
+  <text class="text_3 pos_7">闲物出售</text>
+  <image
+    class="image_4 pos_5"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+  />
+  <text class="font_2 text_4 pos_8">最近</text>
+  <text class="font_2 text_5 pos_9">五折</text>
+  <text class="font_2 text_6 pos_10">最热</text>
+  <view class="section_2 pos_11"></view>
+  <view class="grid pos_12">
+    <view class="flex-col grid-item">
+      <image
+        class="self-stretch image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=120508caf554392c30f0b8d3c1d37f4d.png"
+      />
+      <text class="mt-12 self-start font_3 text_7 text_8">低价闲置衣服‼️‼️‼️</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
+        <view class="flex-row items-center">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=36b17815bf276824728f4c32a9b94592.png"
+          />
+          <text class="ml-8 font_4 text_9">尼森</text>
+        </view>
+        <view class="group_3">
+          <text class="font_6">￥</text>
+          <text class="font_5">98</text>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col grid-item">
+      <image
+        class="self-stretch image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0c48ead5d92f3ffce0204c7be9fd7b0c.png"
+      />
+      <text class="mt-12 self-start font_3 text_7">真皮沙发-九成新</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
+        <view class="flex-row items-center">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f5658f3e4a2db1738d87720534ca46d0.png"
+          />
+          <text class="font_4 text_9 ml-9">白日梦想家</text>
+        </view>
+        <view class="group_3">
+          <text class="font_6">￥</text>
+          <text class="font_5">998</text>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col grid-item">
+      <image
+        class="self-stretch image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0c48ead5d92f3ffce0204c7be9fd7b0c.png"
+      />
+      <text class="mt-12 self-start font_3 text_7">海氏m6面包机</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
+        <view class="flex-row items-center">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c500834ff8d55728522a3963d8144476.png"
+          />
+          <text class="font_4 text_9 ml-7">镜明千里</text>
+        </view>
+        <view class="group_3">
+          <text class="font_6">￥</text>
+          <text class="font_5">528</text>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col grid-item">
+      <image
+        class="self-stretch image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=cf4cd60d97122d618012c2c94caf0297.png"
+      />
+      <text class="mt-12 self-start font_3 text_7 text_10">自用的14 pro 521g</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
+        <view class="flex-row items-center">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2b0b8634c083704b65fabff9fe8e273a.png"
+          />
+          <text class="ml-8 font_4 text_9">momo</text>
+        </view>
+        <view class="group_3">
+          <text class="font_6">￥</text>
+          <text class="font_5">9858</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-center image-wrapper pos_13">
+    <image
+      class="image_8"
+      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3ebdd5eec95405c3476318132b2ae403.png"
+    />
+  </view>
+</view>
