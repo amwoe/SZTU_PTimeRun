@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    searchQuery:'',
+    results:[],
   },
 
   onImageClick1:function(){
@@ -29,6 +30,23 @@ Page({
     wx.redirectTo({
       url: '/pages/wode/wode',
     })
+  },
+
+  onSearch(){
+    const{searchQuery}=this.data;
+    //添加搜索逻辑
+    const allItems=[];
+    const results=allItems.filter(item=>item.includes(searchQuery));
+    this.setData({
+      results:results,
+    });
+  },
+
+  onInputChange(e){
+    const value=e.detail.value;
+    this.setData({
+      searchQuery:value,
+    });
   },
   /**
    * 生命周期函数--监听页面加载

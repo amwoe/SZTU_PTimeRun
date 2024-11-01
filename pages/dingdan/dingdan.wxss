@@ -98,7 +98,7 @@
   height: 55.81rpx;
 }
 .group_4 {
-  margin-top: 38.37rpx;
+  margin-top: 15.37rpx;
 }
 .section_2 {
   margin-left: 24.42rpx;
@@ -410,4 +410,14 @@
   display: flex;
   justify-content: space-around; /* 使子元素均匀分布 */
   padding: 10px 0; /* 根据需要调整内边距 */
+}
+
+.search-button {
+  padding: 1px 5px;
+  font-size: 10px;
+  background-color: #a8f773;
+  color: rgba(54, 50, 50, 0.863);
+  border: none;
+  border-radius: 8px;
+  margin-left: 85px; /* 增加按钮左侧间距 */
 }

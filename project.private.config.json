@@ -8,15 +8,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/kechengziliao/kechengziliao",
-          "pathName": "pages/kechengziliao/kechengziliao",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "1",
-          "pathName": "pages/kechengziliao/kechengziliao",
+          "pathName": "pages/dingdan/dingdan",
           "query": "",
           "launchMode": "default",
           "scene": null
