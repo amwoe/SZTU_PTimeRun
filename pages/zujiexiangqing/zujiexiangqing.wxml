@@ -1,0 +1,87 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text text_2">9:4</text>
+    <text class="font text text_3">1</text>
+  </view>
+  <image
+    class="image pos"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
+  />
+  <image
+    class="image_2 pos_2"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+  />
+  <image
+    class="image_3 pos_3"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+  />
+  <image
+    class="image_5 pos_6"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+  />
+  <text class="font_2 text_4 pos_7">租借</text>
+  <image
+    class="image_4 pos_5"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+  />
+  <view class="flex-row items-center section_2 pos_8">
+    <image
+      class="image_6"
+      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
+    />
+    <text class="font_3 text_5 ml-7">输入关键词搜索</text>
+  </view>
+  <text class="font_4 text_6 pos_9">全部</text>
+  <text class="font_3 text_7 pos_10">苹果15</text>
+  <text class="font_5 text_8 pos_11">苹果15 Pro</text>
+  <text class="font_5 text_9 pos_12">苹果15 Plus Max</text>
+  <text class="font_3 text_10 pos_13">苹果16</text>
+  <view class="section_3 pos_14"></view>
+  <view class="flex-col pos_15">
+    <view
+      class="flex-row items-end list-item mt-11"
+      wx:for="{{items}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="index"
+    >
+      <image
+        class="image_7"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2cbe3ccde65270323d782a1184146d8b.png"
+      />
+      <view class="ml-2 flex-col flex-1 group_2">
+        <text class="self-start font_2 text_11">iPhone16 ProMax (现货)</text>
+        <text class="self-start font_5 text_12">30天起租 | 买断￥6993.00起</text>
+        <text class="self-start font_6 text_13 text_14">支持移动、联通、电信</text>
+        <view class="flex-row justify-between self-stretch group_3">
+          <view class="flex-row">
+            <view class="flex-col justify-start items-center text-wrapper">
+              <text class="font_8 text_15">包邮</text>
+            </view>
+            <view class="flex-col justify-start items-center text-wrapper ml-7">
+              <text class="font_8 text_16">质保</text>
+            </view>
+          </view>
+          <view class="self-start group_4">
+            <text class="font_9">￥</text>
+            <text class="font_7">105</text>
+            <text class="font_10">/月</text>
+          </view>
+        </view>
+        <view class="flex-row justify-between items-center self-stretch group_5 view">
+          <view class="flex-row items-center">
+            <image
+              class="shrink-0 image_8"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=bfb5869005ea46f5415786dc71e266cc.png"
+            />
+            <text class="font_11 text_17 ml-7">糯米</text>
+          </view>
+          <view class="flex-col justify-start items-center text-wrapper_2">
+            <text class="font_4 text_18">立即租借</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

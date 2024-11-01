@@ -1,0 +1,141 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text">9:4</text>
+    <text class="font text text_2">1</text>
+  </view>
+  <image
+    class="image pos"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
+  />
+  <image
+    class="image_2 pos_2"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+  />
+  <image
+    class="image_3 pos_3"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+  />
+  <image
+    class="image_5 pos_7"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+  />
+  <text class="text_3 pos_6">我的订单</text>
+  <image
+    class="image_4 pos_5"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+  />
+  <view class="flex-row items-center section_2 pos_8">
+    <image
+      class="image_6"
+      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
+    />
+    <text class="font_2 text_4 ml-7">输入关键词搜索</text>
+  </view>
+  <text class="font_2 text_5 pos_9">正在进行(2)</text>
+  <text class="font_2 text_6 pos_10">未接单(5)</text>
+  <text class="font_2 text_7 pos_11">已完成(89)</text>
+  <view class="section_3 pos_12"></view>
+  <view class="flex-col section_4 pos_13">
+    <view class="flex-col">
+      <view class="flex-row justify-between self-stretch group_2">
+        <view class="flex-row items-center">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=262f279172977e16e7e5d9f9d5fef23e.png"
+          />
+          <view class="flex-col shrink-0 ml-13">
+            <view class="flex-row items-center self-stretch">
+              <text class="font_3 text_8">邓御寒</text>
+              <view class="flex-col justify-start shrink-0 text-wrapper ml-15">
+                <text class="font_4 text_9">外卖上楼</text>
+              </view>
+            </view>
+            <text class="mt-10 self-start font_6 text_11">娃哈哈 x1</text>
+          </view>
+        </view>
+        <view class="flex-row self-start section_5">
+          <image
+            class="shrink-0 image_8"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
+          />
+          <text class="font_5 text_10 ml-3">09:18 截至</text>
+        </view>
+      </view>
+      <view class="flex-row justify-evenly self-start section_6 view">
+        <image
+          class="image_9"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
+        />
+        <text class="font_7">女生</text>
+      </view>
+    </view>
+    <view class="flex-row justify-center items-center group_3">
+      <image
+        class="image_10"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+      />
+      <text class="ml-12 font_8">xx省xx市xx区学校宿舍5栋203</text>
+    </view>
+    <view class="flex-row justify-between items-center group_4">
+      <view class="flex-row items-center">
+        <image
+          class="shrink-0 image_11"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
+        />
+        <text class="ml-10 font_9 text_12">20元</text>
+      </view>
+      <text class="font_10 text_13">配送中</text>
+    </view>
+  </view>
+  <view class="flex-col section_7 pos_14">
+    <view class="flex-row justify-between self-stretch group_5">
+      <view class="flex-row items-center self-center">
+        <image
+          class="shrink-0 image_7"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1fcffe9f6a28dbc4f7bf2008b0942c1e.png"
+        />
+        <view class="ml-14 flex-col shrink-0">
+          <view class="flex-row items-center self-stretch">
+            <text class="font_3 text_14">宁桑娅</text>
+            <view class="ml-14 flex-col justify-start shrink-0 text-wrapper_2">
+              <text class="font_4 text_15">代取快递</text>
+            </view>
+          </view>
+          <text class="self-start font_6 text_16 mt-11">菜鸟驿站 3个小件</text>
+        </view>
+      </view>
+      <view class="flex-row self-start section_5 view_2">
+        <image
+          class="shrink-0 image_8"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
+        />
+        <text class="font_5 text_10 ml-3">09:18 截至</text>
+      </view>
+    </view>
+    <view class="flex-row justify-evenly self-start section_6 view_3">
+      <image
+        class="image_9"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
+      />
+      <text class="font_7">女生</text>
+    </view>
+    <view class="flex-row justify-center items-center self-stretch group_6">
+      <image
+        class="image_10"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+      />
+      <text class="ml-12 font_8">xx省xx市xx区学校宿舍5栋203</text>
+    </view>
+    <view class="flex-row justify-between self-stretch group_7">
+      <view class="flex-row items-center self-center">
+        <image
+          class="shrink-0 image_11"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
+        />
+        <text class="ml-10 font_9 text_17">20元</text>
+      </view>
+      <text class="self-start font_10 text_18">配送中</text>
+    </view>
+  </view>
+</view>

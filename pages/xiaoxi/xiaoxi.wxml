@@ -1,0 +1,58 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text">9:4</text>
+    <text class="font text text_2">1</text>
+  </view>
+  <image
+    class="image pos"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
+  />
+  <image
+    class="image_2 pos_2"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
+  />
+  <image
+    class="image_3 pos_3"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
+  />
+  <image
+    class="image_5 pos_6"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
+  />
+  <text class="font_2 text_3 pos_7">消息</text>
+  <image
+    class="image_4 pos_5"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
+  />
+  <view class="flex-row justify-center items-center section_2 pos_8">
+    <view class="flex-col justify-start items-center text-wrapper pos_9">
+      <text class="font_3 text_4">好友消息</text>
+    </view>
+    <text class="font_3 text_5">客服消息</text>
+    <text class="font_3 text_6 pos_10">系统消息</text>
+  </view>
+  <view class="flex-col justify-start section_3 pos_11">
+    <view class="flex-col list">
+      <view
+        class="flex-row justify-between list-item"
+        wx:for="{{items}}"
+        wx:for-item="item"
+        wx:for-index="index"
+        wx:key="index"
+      >
+        <view class="flex-row items-center self-center">
+          <image
+            class="image_6"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f4bc806fd32351e4d637dfe98f7c1a50.png"
+          />
+          <view class="flex-col items-start ml-21">
+            <text class="font_2 text_7">林夕韩</text>
+            <text class="mt-10 font_5 text_9">那好巧，哈哈！那周末见</text>
+          </view>
+        </view>
+        <text class="self-start font_4 text_8">09:08</text>
+      </view>
+    </view>
+  </view>
+</view>

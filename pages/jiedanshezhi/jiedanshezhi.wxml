@@ -1,0 +1,15 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="flex-col section_2 pos_8">
+    <view class="flex-col group_3">
+      <text class="self-start font_2">个人优势</text>
+      <view class="flex-col justify-start items-start self-stretch text-wrapper mt-19">
+        <input class="font_2 text_6" placeholder="请输入..."></input>
+      </view>
+    </view>
+    <view class="flex-row justify-between items-baseline group_4">
+      <text class="font_2 text_7">信誉积分</text>
+      <text class="font_3 text_8">100分</text>
+    </view>
+  </view>
+</view>

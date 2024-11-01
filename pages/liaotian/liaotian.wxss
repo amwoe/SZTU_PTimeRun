@@ -1,0 +1,226 @@
+.ml-13 {
+  margin-left: 22.67rpx;
+}
+.mt-3 {
+  margin-top: 5.23rpx;
+}
+.ml-93 {
+  margin-left: 162.21rpx;
+}
+.ml-5 {
+  margin-left: 8.72rpx;
+}
+.page {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.section {
+  padding: 5.4rpx 0 43.6rpx;
+  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=79b10275a966a048a2083a86161a6ff7.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.group {
+  padding-left: 59.3rpx;
+  padding-right: 26.16rpx;
+}
+.group_2 {
+  line-height: 17.46rpx;
+  height: 17.46rpx;
+}
+.font {
+  font-size: 26.16rpx;
+  font-family: AlibabaPuHuiTi;
+  line-height: 17.46rpx;
+  font-weight: 700;
+  color: #000000;
+}
+.text {
+  word-break: break-all;
+}
+.text_2 {
+  font-size: 24.42rpx;
+}
+.text_3 {
+  font-size: 24.42rpx;
+  line-height: 16.95rpx;
+}
+.image {
+  width: 29.65rpx;
+  height: 19.19rpx;
+}
+.image_2 {
+  width: 26.16rpx;
+  height: 19.19rpx;
+}
+.image_3 {
+  width: 41.86rpx;
+  height: 19.76rpx;
+}
+.group_3 {
+  margin-top: 48.84rpx;
+  padding: 17.44rpx 0 10.47rpx;
+}
+.image-wrapper {
+  width: 150rpx;
+}
+.pos_2 {
+  position: absolute;
+  left: 1.05rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.image_5 {
+  width: 29.65rpx;
+  height: 29.65rpx;
+}
+.font_2 {
+  font-size: 26.16rpx;
+  font-family: SourceHanSansCN;
+  line-height: 24.78rpx;
+  font-weight: 700;
+}
+.text_4 {
+  color: #383838;
+  font-size: 27.91rpx;
+  line-height: 26.37rpx;
+}
+.pos {
+  position: absolute;
+  right: 27.91rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.image_4 {
+  width: 150rpx;
+  height: 55.81rpx;
+}
+.text_5 {
+  margin-top: 12.33rpx;
+  color: #030303;
+  font-size: 20.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 24.42rpx;
+  text-align: center;
+  opacity: 0.4;
+  width: 141.28rpx;
+}
+.group_4 {
+  margin-top: 45.35rpx;
+  padding: 0 69.77rpx;
+}
+.text-wrapper {
+  padding: 20.93rpx 0;
+  background-image: linear-gradient(102.7deg, #f7c899 0%, #ff8d1a 100%);
+  border-radius: 34.88rpx 3.49rpx 34.88rpx 34.88rpx;
+  height: 69.77rpx;
+}
+.font_3 {
+  font-size: 26.16rpx;
+  font-family: SourceHanSansCN;
+  line-height: 24.78rpx;
+  color: #2a2a2a;
+}
+.text_6 {
+  margin-left: 24.42rpx;
+  margin-right: 20.93rpx;
+  color: #ffffff;
+  line-height: 24.44rpx;
+}
+.image_6 {
+  border-radius: 50%;
+  width: 69.77rpx;
+  height: 69.77rpx;
+}
+.text-wrapper_2 {
+  padding: 20.93rpx 0;
+  background-color: #ffffff;
+  border-radius: 3.49rpx 34.88rpx 34.88rpx 34.88rpx;
+  height: 69.77rpx;
+}
+.text_7 {
+  margin: 0 24.42rpx;
+  line-height: 24.94rpx;
+}
+.group_5 {
+  padding-left: 90.7rpx;
+}
+.section_2 {
+  padding: 17.44rpx 24.42rpx 29.65rpx;
+  background-image: linear-gradient(116.5deg, #f7c899 0%, #ff8d1a 100%);
+  border-radius: 34.88rpx 3.49rpx 34.88rpx 34.88rpx;
+  width: 427.33rpx;
+  height: 212.79rpx;
+}
+.text_8 {
+  color: #ffffff;
+  font-size: 26.16rpx;
+  font-family: SourceHanSansCN;
+  line-height: 45.35rpx;
+}
+.section_3 {
+  padding: 17.44rpx;
+  overflow: hidden;
+  border-radius: 13.95rpx;
+  background-color: #ffffff;
+}
+.text_9 {
+  color: #ff8d1a;
+  font-size: 24.42rpx;
+  line-height: 23.42rpx;
+}
+.image_7 {
+  width: 24.42rpx;
+  height: 33.14rpx;
+}
+.pos_3 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text-wrapper_3 {
+  padding: 24.42rpx 0 27.91rpx;
+  background-color: #ffffff;
+  border-radius: 3.49rpx 34.88rpx 34.88rpx 34.88rpx;
+  width: 427.33rpx;
+}
+.text_10 {
+  margin-left: 24.42rpx;
+}
+.section_4 {
+  margin-top: 605.23rpx;
+  padding: 31.4rpx 10.47rpx 31.4rpx 15.7rpx;
+  background-color: #ffffff;
+  filter: drop-shadow(0rpx -3.49rpx 5.23rpx #0000000f);
+  overflow: hidden;
+}
+.section_5 {
+  background-color: #f0f0f0;
+  border-radius: 69.77rpx;
+  height: 73.26rpx;
+  text-align: center; /* 水平居中文本 */
+}
+
+.image_8 {
+  border-radius: 340.64rpx;
+  width: 51.47rpx;
+  height: 51.47rpx;
+}
+.image_9 {
+  width: 52.33rpx;
+  height: 52.33rpx;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* 可选：设置背景颜色 */
+  padding: 10px; /* 可选：添加内边距 */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* 可选：添加阴影效果 */
+}

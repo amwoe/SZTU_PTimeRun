@@ -1,0 +1,90 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="flex-col section_2 pos_8">
+    <view class="flex-row justify-between items-center self-stretch group_2">
+      <view class="flex-row items-center">
+        <image
+          class="shrink-0 image_6"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3e54c6b98fa88f7c1f87a023a6061916.png"
+        />
+        <text class="font_2 text_4 ml-13">沈海辛</text>
+      </view>
+      <view class="flex-row items-center group_3">
+        <text class="font_3 text_5" bindtap="navigateToContact">联系Ta</text>
+        <image
+          class="ml-6 shrink-0 image_7"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=58f5f9222245a497f013e9a875914906.png"
+        />
+      </view>
+    </view>
+    <view class="flex-row self-stretch group_4">
+      <image
+        class="image_8"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3a0b052889f2b15de94033065ca2b355.png"
+      />
+      <view class="ml-16 flex-col justify-start text-wrapper"><text class="font_3 text_6">快递代取</text></view>
+    </view>
+    <view class="flex-row items-center self-stretch group_5">
+      <image
+        class="shrink-0 image_9"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=05bd55c423d6be4a6505d00288419325.png"
+      />
+      <text class="font_4 text_7">任务描述：</text>
+      <input class="font_5 text_8" placeholder="请输入详情"></input>
+    </view>
+    <view class="flex-col self-stretch group_6">
+      <view class="flex-row items-center self-stretch">
+        <image
+          class="image_10"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c1e4895c2ba09734c4bafcade308236a.png"
+        />
+        <text class="font_4 text_9">送货地址：</text>
+        <text class="font_5 text_10">限所在地级市</text>
+      </view>
+      <input class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址"></input>
+    </view>
+    <view class="flex-row items-center self-stretch group_7">
+      <image
+        class="image_11"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d77fa014a2276151db09ec354bf3abeb.png"
+      />
+      <text class="font_4 ml-9">送达时间：</text>
+      <picker mode="selector" range="{{years}}" bindchange="onYearChange">
+        <view class="font_5 text_12 ml-9">{{selectedYear}}年</view>
+      </picker>
+      <picker mode="selector" range="{{months}}" bindchange="onMonthChange">
+        <view class="font_5 text_12 ml-9">{{selectedMonth}}月</view>
+      </picker>
+      <picker mode="selector" range="{{days}}" bindchange="onDayChange">
+        <view class="font_5 text_12 ml-9">{{selectedDay}}日</view>
+      </picker>
+    </view>
+    <view class="flex-row justify-between items-center self-stretch group_8">
+      <view class="flex-row items-center">
+        <image
+          class="shrink-0 image_13"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2b8801223b82f7da0a159ff65e217283.png"
+        />
+        <text class="ml-6 font_4 text_13">跑腿员要求：</text>
+      </view>
+      <view class="flex-row items-center group_9">
+        <view class="shrink-0 group_10"></view>
+        <text class="font_6 text_14">不限</text>
+        <view class="shrink-0 group_10 view"></view>
+        <text class="font_6 text_15">男</text>
+        <image
+          class="shrink-0 image_12"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=90fcf2aa7210b26c5fdebc13cbc1628c.png"
+        />
+        <text class="font_4 text_16">女</text>
+      </view>
+    </view>
+    <view class="self-end group_11">
+      <text class="text_17">赏金：</text>
+      <text class="font_2 text_18">20.00元</text>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-center text-wrapper_2 pos_9">
+    <text class="font_2 text_19">确定接单</text>
+  </view>
+</view>

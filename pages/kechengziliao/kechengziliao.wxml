@@ -1,0 +1,34 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="flex-col pos_8">
+    <view class="flex-row list-item mt-11" wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <image
+        class="flex-1 self-center image_6"
+        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=486df1ac5cccb17b34c861942db8c604.png"
+      />
+      <view class="flex-col shrink-0 self-start group_2 ml-19">
+        <text class="self-start font_2">交际英语</text>
+        <view class="flex-col justify-start items-center self-start text-wrapper">
+          <text class="font_3 text_5">英语</text>
+        </view>
+        <view class="flex-row items-center self-stretch group_3">
+          <image
+            class="shrink-0 image_7"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de1234f26d71ea3f8cc150d01822df8f.png"
+          />
+          <text class="font_4 text_6">88</text>
+          <image
+            class="shrink-0 image_8 image_9"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=28fea3e71c985462aaa4eb94b8187fc3.png"
+          />
+          <text class="font_4 text_7">12</text>
+          <image
+            class="shrink-0 image_10"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=98ba9c5b3ec54030216bbaef400a3687.png"
+          />
+          <text class="font_4 text_8">152</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
