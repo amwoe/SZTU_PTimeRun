@@ -1,7 +1,7 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
   <view class="flex-col pos_8">
-    <view class="flex-row list-item mt-11" wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <view class="flex-row list-item mt-11">
       <image
         class="flex-1 self-center image_6"
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=486df1ac5cccb17b34c861942db8c604.png"

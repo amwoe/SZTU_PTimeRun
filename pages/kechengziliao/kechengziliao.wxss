@@ -104,9 +104,9 @@
 }
 .pos_8 {
   position: absolute;
-  left: 13.95rpx;
-  right: 45.33rpx;
-  top: 195.35rpx;
+  left: 25.95rpx;
+  right: 30.33rpx;
+  top: 40.35rpx;
 }
 .list-item {
   padding: 55.81rpx 13.95rpx 55.81rpx 20.93rpx;
