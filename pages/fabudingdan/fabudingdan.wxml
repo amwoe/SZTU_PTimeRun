@@ -1,12 +1,23 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
   <view class="flex-col section_2 pos_8">
-    <view class="flex-row self-stretch group_4">
+    <view class="flex-row self-stretch group_4" bindtap="showOption">
       <image
         class="image_8"
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3a0b052889f2b15de94033065ca2b355.png"
       />
-      <view class="ml-16 flex-col justify-start text-wrapper"><text class="font_3 text_6">快递代取</text></view>
+      <view class="ml-16 flex-col justify-start text-wrapper">
+        <text class="font_3 text_6">{{selectedOption}}</text>
+      </view>
+    </view>
+    <view wx:if="{{showModal}}" class="modal">
+      <view class="modal-content">
+        <text class="modal-title text_19">选择服务</text>
+        <view class="option" bindtap="selectOption" data-value="快递代取">快递代取</view>
+        <view class="option" bindtap="selectOption" data-value="外卖上楼">外卖上楼</view>
+        <view class="option" bindtap="selectOption" data-value="食堂带饭">食堂带饭</view>
+        <button bindtap="hideOptions">取消</button>
+      </view>
     </view>
     <view class="flex-row items-center self-stretch group_5">
       <image
@@ -41,6 +52,12 @@
       </picker>
       <picker mode="selector" range="{{days}}" bindchange="onDayChange">
         <view class="font_5 text_12 ml-9">{{selectedDay}}日</view>
+      </picker>
+      <picker mode="selector" range="{{hours}}" bindchange="onHourChange">
+        <view class="font_5 text_12 ml-9">{{selectedHour}}时</view>
+      </picker>
+      <picker mode="selector" range="{{minutes}}" bindchange="onMinuteChange">
+        <view class="font_5 text_12 ml-9">{{selectedMinute}}分</view>
       </picker>
     </view>
     <view class="flex-row justify-between items-center self-stretch group_8">
