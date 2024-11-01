@@ -1,22 +1,6 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
   <view class="flex-col section_2 pos_8">
-    <view class="flex-row justify-between items-center self-stretch group_2">
-      <view class="flex-row items-center">
-        <image
-          class="shrink-0 image_6"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3e54c6b98fa88f7c1f87a023a6061916.png"
-        />
-        <text class="font_2 text_4 ml-13">沈海辛</text>
-      </view>
-      <view class="flex-row items-center group_3">
-        <text class="font_3 text_5" bindtap="navigateToContact">联系Ta</text>
-        <image
-          class="ml-6 shrink-0 image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=58f5f9222245a497f013e9a875914906.png"
-        />
-      </view>
-    </view>
     <view class="flex-row self-stretch group_4">
       <image
         class="image_8"
@@ -68,23 +52,24 @@
         <text class="ml-6 font_4 text_13">跑腿员要求：</text>
       </view>
       <view class="flex-row items-center group_9">
-        <view class="shrink-0 group_10"></view>
-        <text class="font_6 text_14">不限</text>
-        <view class="shrink-0 group_10 view"></view>
-        <text class="font_6 text_15">男</text>
-        <image
-          class="shrink-0 image_12"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=90fcf2aa7210b26c5fdebc13cbc1628c.png"
-        />
-        <text class="font_4 text_16">女</text>
-      </view>
+          <radio-group>
+            <label class="radio-option">
+              <radio value="不限" checked="{{selected === '不限'}}" bindchange="onOptionChange"></radio>
+              <text class="font_6 text_14">不限</text>
+              <radio value="男" checked="{{selected === '男'}}" bindchange="onOptionChange"></radio>
+              <text class="font_6 text_15">男</text>
+              <radio value="女" checked="{{selected === '女'}}" bindchange="onOptionChange"></radio>
+              <text class="font_6 text_16">女</text>
+            </label>
+          </radio-group>
+        </view>
     </view>
-    <view class="self-end group_11">
-      <text class="text_17">赏金：</text>
-      <text class="font_2 text_18">20.00元</text>
+    <view class="self-end group_11" style="display: flex; align-items: center;">
+      <text class="text_17">赏金(元)：</text>
+      <input class="font_2 text_18" placeholder="请输入金额"></input>
     </view>
   </view>
-  <view class="flex-col justify-start items-center text-wrapper_2 pos_9">
-    <text class="font_2 text_19">确定接单</text>
+  <view class="flex-col justify-start items-center text-wrapper_2 pos_9" bindtap="onConfirm">
+    <text class="font_2 text_19">确定发布</text>
   </view>
 </view>

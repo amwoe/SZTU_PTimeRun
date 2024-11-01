@@ -13,19 +13,7 @@ Page({
   onImageClick1:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/kuaididaiqu/kuaidi',
-    });
-  },
-  onImageClick2:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/shitangdaifan/shitang',
-    });
-  },
-  onImageClick3:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/waimaishanglou/waimai',
+      url: '/pages/fabudingdan/fabudingdan',
     });
   },
   onImageClick4:function(){

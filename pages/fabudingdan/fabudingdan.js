@@ -23,6 +23,18 @@ Page({
       selected:e.detial.value
     });
   },
+  onConfirm:function(){
+    wx.showToast({
+      title:'发布成功',
+      icon:'success',
+      duration:2000,
+      complete:()=>{
+        setTimeout(()=>{
+          wx.navigateBack();
+        },1000);
+      }
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载

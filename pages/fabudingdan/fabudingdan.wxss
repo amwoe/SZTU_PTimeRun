@@ -120,7 +120,7 @@
   position: absolute;
   left: 25.29rpx;
   right: 32.27rpx;
-  top: 196.22rpx;
+  top: 50.22rpx;
 }
 .group_2 {
   padding: 0 5.23rpx;
@@ -150,7 +150,7 @@
   height: 17.44rpx;
 }
 .group_4 {
-  margin-top: 55.81rpx;
+  margin-top: 35.81rpx;
 }
 .image_8 {
   width: 47.09rpx;
@@ -210,6 +210,7 @@
 .text_10 {
   margin-left: 10.47rpx;
   line-height: 25.85rpx;
+  color: #ff8d1a;
 }
 .text_11 {
   margin-left: 62.79rpx;
@@ -238,7 +239,7 @@
   line-height: 25.73rpx;
 }
 .group_9 {
-  margin-right: 8.72rpx;
+  margin-right: 3.72rpx;
 }
 .group_10 {
   border-radius: 50%;
@@ -256,7 +257,7 @@
   color: #383838;
 }
 .text_14 {
-  margin-left: 13.95rpx;
+  margin-left: 10.95rpx;
   line-height: 24.61rpx;
 }
 .view {
@@ -273,13 +274,12 @@
   height: 38.37rpx;
 }
 .text_16 {
-  margin-left: 13.95rpx;
-  color: #2a82e4;
+  margin-left: 10.95rpx;
   line-height: 25.92rpx;
 }
 .group_11 {
-  margin-right: 24.42rpx;
-  margin-top: 146.51rpx;
+  margin-right: 80.42rpx;
+  margin-top: 70.51rpx;
   line-height: 29.11rpx;
 }
 .text_17 {
@@ -304,10 +304,16 @@
 .pos_9 {
   position: absolute;
   left: 50%;
-  top: 1261.92rpx;
+  top: 1000.92rpx;
   transform: translateX(-50%);
 }
 .text_19 {
   color: #ed9b18;
   line-height: 29.9rpx;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* 选项之间的间距 */
 }

@@ -76,7 +76,7 @@
       <text class="font_2 text_18">20.00元</text>
     </view>
   </view>
-  <view class="flex-col justify-start items-center text-wrapper_2 pos_9">
+  <view class="flex-col justify-start items-center text-wrapper_2 pos_9" bindtap="onConfirm">
     <text class="font_2 text_19">确定接单</text>
   </view>
 </view>

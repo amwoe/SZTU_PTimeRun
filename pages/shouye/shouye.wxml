@@ -15,7 +15,7 @@
           
         />
       </view>
-      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick2">
+      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick1">
         <view class="flex-col justify-start items-center text-wrapper_2">
           <text class="font_2 text_3 text_4">食堂带饭</text>
         </view>
@@ -24,7 +24,7 @@
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=8cf9bb1b6206989b978260f463d69ce9.png" 
         />
       </view>
-      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick3">
+      <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick1">
         <view class="flex-col justify-start items-center text-wrapper_3">
           <text class="font_2 text_3 text_6">外卖上楼</text>
         </view>
