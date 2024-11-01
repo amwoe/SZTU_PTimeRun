@@ -22,7 +22,7 @@
       -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n还有什么方便快捷又便宜的快递攻略吗！分享一下吧！！！
     </text>
   </view>
-  <view class="flex-row items-center section_2">
+  <view class="flex-row items-center section_2 fixed-bottom">
     <input class="flex-1 section_3" placeholder="请输入"></input>
     <image
       class="shrink-0 image_6 ml-5"
