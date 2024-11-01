@@ -120,7 +120,7 @@
   position: absolute;
   left: 25.29rpx;
   right: 32.27rpx;
-  top: 196.22rpx;
+  top: 30.22rpx;
 }
 .group_2 {
   padding: 0 5.23rpx;
@@ -304,7 +304,7 @@
 .pos_9 {
   position: absolute;
   left: 50%;
-  top: 1261.92rpx;
+  top: 1050.92rpx;
   transform: translateX(-50%);
 }
 .text_19 {

@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "订单详情",
+  "navigationBarTitleText": "快递代取订单发布",
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black"
 }
