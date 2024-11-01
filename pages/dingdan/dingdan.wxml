@@ -46,7 +46,7 @@
                 class="self-start image_7 image_8"
                 src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0daa292948aa22b21b0d4915ca3c8f18.png"
               />
-              <view class="flex-col flex-1 group_6 ml-11">
+              <view class="flex-col flex-1 group_6 ml-11" bindtap="onImageClick1">
                 <view class="flex-row justify-between self-stretch group_7">
                   <view class="flex-row items-center">
                     <text class="font_3 text_5">沈海辛</text>

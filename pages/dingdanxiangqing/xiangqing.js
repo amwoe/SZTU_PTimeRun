@@ -1,4 +1,4 @@
-// pages/dingdan/dingdan.js
+// pages/jiedan/jiedan.js
 Page({
 
   /**
@@ -8,28 +8,6 @@ Page({
 
   },
 
-  onImageClick1:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/dingdanxiangqing/xiangqing',
-    });
-  },
-
-  redirectToPage1:function(){
-    wx.redirectTo({
-      url: '/pages/shouye/shouye',
-    })
-  },
-  redirectToPage2:function(){
-    wx.redirectTo({
-      url: '/pages/dingdan/dingdan',
-    })
-  },
-  redirectToPage3:function(){
-    wx.redirectTo({
-      url: '/pages/wode/wode',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
