@@ -3,26 +3,21 @@
 }
 .mt-19 {
   margin-top: 33.14rpx;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
 }
 .ml-9 {
   margin-left: 15.7rpx;
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=79b10275a966a048a2083a86161a6ff7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-}
-.section {
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=79b10275a966a048a2083a86161a6ff7.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 750rpx;
-  height: 1625.58rpx;
 }
 .group {
   line-height: 17.46rpx;
@@ -198,6 +193,7 @@
 .group_6 {
   margin-top: 76.74rpx;
   padding: 0 8.72rpx;
+  box-sizing: border-box;
 }
 .image_10 {
   width: 33.14rpx;
@@ -215,6 +211,8 @@
 .text_11 {
   margin-left: 62.79rpx;
   line-height: 25.95rpx;
+  overflow: auto;
+  box-sizing: border-box;
 }
 .group_7 {
   margin-top: 94.19rpx;

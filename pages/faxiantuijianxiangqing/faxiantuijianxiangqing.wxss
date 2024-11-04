@@ -10,13 +10,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
-}
-.section {
-  padding: 31.4rpx 26.16rpx 462.21rpx 59.3rpx;
-  border-radius: 17.44rpx 17.44rpx 0rpx 0rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1141e9ced2f7cbfaa9037c6515794c41.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  flex: 1; /* 让内容区域自适应剩余空间 */
 }
 .group {
   line-height: 17.46rpx;
