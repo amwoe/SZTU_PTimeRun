@@ -2,7 +2,7 @@
   <view class="flex-col self-stretch group_3">
     <image
       class="image_5"
-      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=011e176d796bae83c11b675e002de0d6.png"
+      src="/pages/images/1/1.png"
     />
     <view class="flex-row justify-between equal-division">
       <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick1">
@@ -11,7 +11,7 @@
         </view>
         <image
           class="image_6 pos"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=879a9f7a865814e74f0249a512e09de9.png"
+          src="/pages/images/1/2.png"
           
         />
       </view>
@@ -21,7 +21,7 @@
         </view>
         <image
           class="image_6 pos_2"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=8cf9bb1b6206989b978260f463d69ce9.png" 
+          src="/pages/images/1/3.png" 
         />
       </view>
       <view class="flex-col justify-start group_4 equal-division-item" bindtap="onImageClick1">
@@ -30,31 +30,31 @@
         </view>
         <image
           class="image_6 pos_3"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=041c9f7c5f7c7b1878b3cac213957211.png"
+          src="/pages/images/1/4.png"
         />
       </view>
     </view>
     <view class="flex-row justify-center items-center relative group_5">
       <image
         class="image_9 pos_5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0cd84371b262e94cd25b225553ad1103.png"
+        src="/pages/images/1/5.png"
         bindtap="onImageClick4"
       />
       <view class="flex-row items-center">
         <image
           class="image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=54b09ddb6089a2ea3046916aae2d304e.png"
+          src="/pages/images/1/6.png"
           bindtap="onImageClick5"
         />
         <image
           class="image_10 ml-35"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a2de0bd3c9278a3a992592a40b88ed4b.png"
+          src="/pages/images/1/7.png"
           bindtap="onImageClick6"
         />
       </view>
       <image
         class="image_8 pos_4"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=682721de85c011fe4b571a11590e1132.png"
+        src="/pages/images/1/8.png"
         bindtap="onImageClick7"
       />
     </view>
@@ -77,14 +77,14 @@
         <view class="flex-col items-start section_2 equal-division-item_2"bindtap="onImageClick8">
           <image
             class="image_11"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3f750e1c8479c6c2ea50fdbb780e1d10.png"
+            src="/pages/images/1/9.png"
           />
           <text class="mt-6 font_5 text_13">小哥取件很快，推荐</text>
         </view>
         <view class="flex-col items-start section_2 equal-division-item_2 ml-17">
           <image
             class="image_11"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1b2636868e82a4bb96365e4619825d3c.png"
+            src="/pages/images/1/10.png"
           />
           <text class="mt-6 font_5 text_13">寝室也能送上楼真方便</text>
         </view>
@@ -94,21 +94,21 @@
       <view class="flex-col items-center group_9 equal-division-item_3" bindtap="redirectToPage1">
         <image
           class="image_12"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=53efdb5e55d4c8e4037684960237573b.png"
+          src="/pages/images/菜单/首页1.png"
         />
         <text class="mt-6 font_4 text_14">首页</text>
       </view>
       <view class="flex-col items-center equal-division-item_3" bindtap="redirectToPage2">
         <image
           class="image_12"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=afc5d8bb3c64172464a03a70bdfdc16a.png"
+          src="/pages/images/菜单/订单2.png"
         />
         <text class="mt-6 font_4 text_15">订单</text>
       </view>
       <view class="flex-col items-center group_10 equal-division-item_3" bindtap="redirectToPage3">
         <image
           class="image_12"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f1cb4c38cec5a6bbc53721afa0f29704.png"
+          src="/pages/images/菜单/我的2.png"
         />
         <text class="mt-6 font_4">我的</text>
       </view>
