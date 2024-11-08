@@ -1,10 +1,10 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
+  <image src="/pages/images/2，3，4/背景.png" mode="aspectFill" style="width: 100%; height: 100%;"></image>
   <view class="flex-col section_2 pos_8">
     <view class="flex-row self-stretch group_4" bindtap="showOption">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3a0b052889f2b15de94033065ca2b355.png"
+        src="/pages/images/9，10，11/2.png"
       />
       <view class="ml-16 flex-col justify-start text-wrapper">
         <text class="font_3 text_6">{{selectedOption}}</text>
@@ -22,26 +22,26 @@
     <view class="flex-row items-center self-stretch group_5">
       <image
         class="shrink-0 image_9"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=05bd55c423d6be4a6505d00288419325.png"
+        src="/pages/images/9，10，11/3.png"
       />
       <text class="font_4 text_7">任务描述：</text>
-      <input class="font_5 text_8" placeholder="请输入详情"></input>
+      <textarea class="font_5 text_8" placeholder="请输入内容" auto-height="true"></textarea>
     </view>
     <view class="flex-col self-stretch group_6">
       <view class="flex-row items-center self-stretch">
         <image
           class="image_10"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c1e4895c2ba09734c4bafcade308236a.png"
+          src="/pages/images/9，10，11/4.png"
         />
         <text class="font_4 text_9">送货地址：</text>
         <text class="font_5 text_10">限所在地级市</text>
       </view>
-      <input class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址"></input>
+      <textarea class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址" auto-height="true"></textarea>
     </view>
     <view class="flex-row items-center self-stretch group_7">
       <image
         class="image_11"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d77fa014a2276151db09ec354bf3abeb.png"
+        src="/pages/images/9，10，11/5.png"
       />
       <text class="font_4 ml-9">送达时间：</text>
       <picker mode="selector" range="{{years}}" bindchange="onYearChange">
@@ -64,7 +64,7 @@
       <view class="flex-row items-center">
         <image
           class="shrink-0 image_13"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2b8801223b82f7da0a159ff65e217283.png"
+          src="/pages/images/9，10，11/6.png"
         />
         <text class="ml-6 font_4 text_13">跑腿员要求：</text>
       </view>
