@@ -7,6 +7,35 @@ Page({
   data: {
     searchQuery:'',
     results:[],
+    sections: [
+      {
+        name: '沈海辛',
+        service: '食堂带饭',
+        time: '09:18',
+        details: '第二食堂带辣椒炒肉，西红柿鸡蛋',
+        gender: '女生',
+        address: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20'
+      },
+      {
+        name: '宁桑娅',
+        service: '代取快递',
+        time: '09:18',
+        details: '菜鸟驿站 3个小件',
+        gender: '女生',
+        address: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20'
+      },
+      {
+        name: '邓御寒',
+        service: '外卖上楼',
+        time: '09:18',
+        details: '娃哈哈 x1',
+        gender: '女生',
+        address: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20'
+      },
+    ],
   },
 
   onImageClick1:function(){

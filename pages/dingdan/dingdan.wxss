@@ -47,6 +47,7 @@
   background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 .group {
   padding-left: 59.3rpx;
@@ -101,19 +102,19 @@
   margin-top: 15.37rpx;
 }
 .section_2 {
-  margin-left: 24.42rpx;
-  margin-right: 31.4rpx;
+  margin-left: 31.42rpx;
+  margin-right: 30.4rpx;
   padding: 5.93rpx 35.4rpx;
-  background-color: #ffffff;
+  background-color: #eeecec;
   border-radius: 43.76rpx;
-  border-left: solid 1.74rpx #ffffff;
-  border-right: solid 1.74rpx #ffffff;
-  border-top: solid 1.74rpx #ffffff;
-  border-bottom: solid 1.74rpx #ffffff;
+  border-left: solid 1.74rpx #9c9999;
+  border-right: solid 1.74rpx #9c9999;
+  border-top: solid 1.74rpx #9c9999;
+  border-bottom: solid 1.74rpx #9c9999;
 }
 .search-container {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 30rpx;
   z-index: 1000;
   background-color: #fff;
 }
@@ -144,10 +145,16 @@
 }
 .section_3 {
   margin: 0 27.91rpx;
-  padding: 1rpx 17.44rpx 43.6rpx 38.37rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=da10be6b70f3ff824e0a1fb3084c953e.png');
+  padding: 80rpx 17.44rpx 43.6rpx 38.37rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #fdfffb;
+  border-radius: 12.66rpx;
+  box-shadow: 0rpx 10.47rpx 8.72rpx #00000012;
+  border-left: solid 1.74rpx #ffffff;
+  border-right: solid 1.74rpx #ffffff;
+  border-top: solid 1.74rpx #ffffff;
+  border-bottom: solid 1.74rpx #ffffff;
 }
 .image_7 {
   border-radius: 50%;
@@ -280,9 +287,15 @@
 .section_6 {
   margin: 13.95rpx 33.14rpx 0 26.16rpx;
   padding: 0 20.93rpx 47.09rpx 34.88rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=da10be6b70f3ff824e0a1fb3084c953e.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #fdfffb;
+  border-radius: 12.66rpx;
+  box-shadow: 0rpx 10.47rpx 8.72rpx #00000012;
+  border-left: solid 1.74rpx #ffffff;
+  border-right: solid 1.74rpx #ffffff;
+  border-top: solid 1.74rpx #ffffff;
+  border-bottom: solid 1.74rpx #ffffff;
 }
 .group_10 {
   padding: 26.16rpx 0 17.44rpx;
@@ -331,9 +344,15 @@
 .section_7 {
   margin: 13.95rpx 33.14rpx 0 26.16rpx;
   padding: 26.16rpx 24.42rpx 47.09rpx 31.4rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=da10be6b70f3ff824e0a1fb3084c953e.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #fdfffb;
+  border-radius: 12.66rpx;
+  box-shadow: 0rpx 10.47rpx 8.72rpx #00000012;
+  border-left: solid 1.74rpx #ffffff;
+  border-right: solid 1.74rpx #ffffff;
+  border-top: solid 1.74rpx #ffffff;
+  border-bottom: solid 1.74rpx #ffffff;
 }
 .group_13 {
   padding-bottom: 17.44rpx;
