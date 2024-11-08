@@ -1,10 +1,11 @@
 <view class="flex-col justify-start page">
+  <image src="/pages/images/其他/背景-绿.png" mode="cover" style="width: 100%; height: 100%;"></image>
   <view class="flex-col section">
     <view class="flex-col group_4">
-      <view class="flex-row items-center section_2">
+      <view class="flex-row items-center section_2 search-container">
         <image
           class="image_5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
+          src="/pages/images/其他/搜索 .png"
         />
         <input class="font_2 text_4 ml-7" placeholder="输入关键词搜索" bindtap="onInputChange" confirm-type="search" bindconfirm="onSearch"></input>
         <button class="search-button" bindtap="onSearch">搜索</button>
@@ -15,42 +16,12 @@
         </block>
       </view>
       <view class="flex-col group_5">
-        <view class="flex-row equal-division">
-          <view class="flex-row items-center">
-            <text class="font_2">服务</text>
-            <image
-              class="shrink-0 image_6"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2464b69705fac411ff6b13cdcaebd815.png"
-            />
-          </view>
-          <view class="ml-56 flex-row items-center">
-            <text class="font_2">已完成</text>
-            <image
-              class="shrink-0 image_6 ml-1"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2464b69705fac411ff6b13cdcaebd815.png"
-            />
-          </view>
-          <view class="ml-56 flex-row items-center">
-            <text class="font_2">地点</text>
-            <image
-              class="ml-4 shrink-0 image_6"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2464b69705fac411ff6b13cdcaebd815.png"
-            />
-          </view>
-          <view class="ml-56 flex-row items-center">
-            <text class="font_2">性别</text>
-            <image
-              class="ml-6 shrink-0 image_6"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2464b69705fac411ff6b13cdcaebd815.png"
-            />
-          </view>
-        </view>
         <view class="flex-col self-stretch mt-27">
           <view class="flex-col section_3">
             <view class="flex-row">
               <image
                 class="self-start image_7 image_8"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0daa292948aa22b21b0d4915ca3c8f18.png"
+                src="/pages//images/8/1.png"
               />
               <view class="flex-col flex-1 group_6 ml-11" bindtap="onImageClick1">
                 <view class="flex-row justify-between self-stretch group_7">
@@ -63,7 +34,7 @@
                   <view class="flex-row section_4 view">
                     <image
                       class="shrink-0 image_9"
-                      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
+                      src="/pages/images/14.15/6.png"
                     />
                     <text class="font_4 text_7 ml-3">09:18 截至</text>
                   </view>
@@ -72,7 +43,7 @@
                 <view class="flex-row justify-evenly self-start section_5 view_2">
                   <image
                     class="image_10"
-                    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
+                    src="/pages/images/14.15/5.png"
                   />
                   <text class="font_6 text_9">女生</text>
                 </view>
@@ -81,7 +52,7 @@
             <view class="flex-row justify-center items-center group_8">
               <image
                 class="image_11"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+                src="/pages/images/14.15/7.png"
               />
               <text class="font_5 ml-9">xx省xx市xx区学校宿舍5栋203</text>
             </view>
@@ -89,11 +60,11 @@
               <view class="flex-row items-center">
                 <image
                   class="shrink-0 image_12"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
+                  src="/pages/images/8/2.png"
                 />
                 <text class="ml-10 font_8 text_11">20元</text>
               </view>
-              <text class="font_7 text_10">已完成</text>
+              <text class="font_7 text_10">可接单</text>
             </view>
           </view>
           <view class="flex-col section_6">
@@ -101,7 +72,7 @@
               <view class="flex-row items-center self-center">
                 <image
                   class="shrink-0 image_7"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1fcffe9f6a28dbc4f7bf2008b0942c1e.png"
+                  src="/pages/images/8/3.png"
                 />
                 <view class="ml-14 flex-col shrink-0">
                   <view class="flex-row items-center self-stretch">
@@ -113,10 +84,10 @@
                   <text class="self-start font_9 text_14 mt-11">菜鸟驿站 3个小件</text>
                 </view>
               </view>
-              <view class="flex-row self-start section_4">
+              <view class="flex-row section_4 view">
                 <image
                   class="shrink-0 image_9"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
+                  src="/pages/images/14.15/6.png"
                 />
                 <text class="font_4 text_7 ml-3">09:18 截至</text>
               </view>
@@ -124,14 +95,14 @@
             <view class="flex-row justify-evenly self-start section_5 view_3">
               <image
                 class="image_10"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
+                src="/pages/images/14.15/5.png"
               />
               <text class="font_6 text_9">女生</text>
             </view>
             <view class="flex-row justify-center items-center self-stretch group_11">
               <image
                 class="image_11"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+                src="/pages/images/14.15/7.png"
               />
               <text class="ml-12 font_5">xx省xx市xx区学校宿舍5栋203</text>
             </view>
@@ -139,11 +110,11 @@
               <view class="flex-row items-center">
                 <image
                   class="shrink-0 image_12"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
+                  src="/pages/images/8/2.png"
                 />
                 <text class="ml-10 font_8 text_15">20元</text>
               </view>
-              <text class="font_7 text_16">已完成</text>
+              <text class="font_7 text_16">可接单</text>
             </view>
           </view>
           <view class="flex-col section_7">
@@ -152,7 +123,7 @@
                 <view class="flex-row items-center">
                   <image
                     class="shrink-0 image_7"
-                    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=262f279172977e16e7e5d9f9d5fef23e.png"
+                    src="/pages/images/8/4.png"
                   />
                   <view class="flex-col shrink-0 ml-13">
                     <view class="flex-row items-center self-stretch">
@@ -164,10 +135,10 @@
                     <text class="mt-10 self-start font_9 text_19">娃哈哈 x1</text>
                   </view>
                 </view>
-                <view class="flex-row self-start section_4">
+                <view class="flex-row section_4 view">
                   <image
                     class="shrink-0 image_9"
-                    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
+                    src="/pages/images/14.15/6.png"
                   />
                   <text class="font_4 text_7 ml-3">09:18 截至</text>
                 </view>
@@ -175,7 +146,7 @@
               <view class="flex-row justify-evenly self-start section_5 view_4">
                 <image
                   class="image_10"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
+                  src="/pages/images/14.15/5.png"
                 />
                 <text class="font_6 text_9">女生</text>
               </view>
@@ -183,7 +154,7 @@
             <view class="flex-row justify-center items-center group_14">
               <image
                 class="image_11"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+                src="/pages/images/14.15/7.png"
               />
               <text class="ml-12 font_5">xx省xx市xx区学校宿舍5栋203</text>
             </view>
@@ -191,32 +162,32 @@
               <view class="flex-row items-center">
                 <image
                   class="shrink-0 image_12"
-                  src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
+                  src="/pages/images/8/2.png"
                 />
                 <text class="ml-10 font_8 text_20">20元</text>
               </view>
-              <text class="font_7 text_21">已完成</text>
+              <text class="font_7 text_21">可接单</text>
             </view>
           </view>
           <view class="flex-row equal-division_2 section_8 fixed-bottom">
             <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage1">
               <image
                 class="image_13"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d7f6aff96e215bc396ee1f01467c554d.png"
+                src="/pages/images/菜单/首页2.png"
               />
               <text class="font_10 text_22 mt-3">首页</text>
             </view>
             <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage2">
               <image
                 class="image_13"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a599f14b5c0581aca76429b84e068af5.png"
+                src="/pages/images/菜单/订单1.png"
               />
               <text class="font_5 text_23 mt-1">订单</text>
             </view>
             <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage3">
               <image
                 class="image_13"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f1cb4c38cec5a6bbc53721afa0f29704.png"
+                src="/pages/images/菜单/我的2.png"
               />
               <text class="mt-2 font_10 text_24">我的</text>
             </view>
