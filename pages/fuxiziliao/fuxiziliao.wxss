@@ -106,8 +106,7 @@
   top: 101.16rpx;
 }
 .section_2 {
-  padding: 54.07rpx 13.95rpx 54.07rpx 22.67rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=da10be6b70f3ff824e0a1fb3084c953e.png');
+  padding: 24.07rpx 13.95rpx 54.07rpx 22.67rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -115,14 +114,14 @@
   position: absolute;
   left: 29.65rpx;
   right: 29.67rpx;
-  top: 50.86rpx;
+  top: 8.86rpx;
 }
 .image_6 {
   border-radius: 17.44rpx;
   height: 228.49rpx;
 }
 .group_2 {
-  margin-top: 24.42rpx;
+  margin-top: 65.42rpx;
 }
 .font_2 {
   font-size: 31.4rpx;
@@ -186,7 +185,7 @@
   position: absolute;
   left: 27.91rpx;
   right: 31.4rpx;
-  top: 400.16rpx;
+  top: 280.16rpx;
 }
 .text_9 {
   line-height: 29.74rpx;

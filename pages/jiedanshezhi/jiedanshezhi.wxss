@@ -3,20 +3,12 @@
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-}
-.section {
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 750rpx;
-  height: 1625.58rpx;
 }
 .group {
   line-height: 17.46rpx;
@@ -157,4 +149,30 @@
 }
 .text_8 {
   margin-right: 38.37rpx;
+}
+
+.text_9 {
+  margin-left: 31.4rpx;
+  line-height: 25.85rpx;
+}
+
+.pos_9 {
+  position: absolute;
+  left: 50%;
+  top: 850.92rpx;
+  transform: translateX(-50%);
+}
+
+/* 按钮的基本样式 */
+.btn-confirm {
+  background-color: #e9d1aa; /* 按钮背景颜色 */
+  color: rgb(78, 76, 76); /* 文字颜色 */
+  padding: 12px 20px; /* 内边距 */
+  border-radius: 40px; /* 边框圆角 */
+  font-size: 16px; /* 字体大小 */
+}
+
+/* 按钮 hover 状态的样式 */
+.btn-confirm:active {
+  opacity: 0.5; /* 点击时的透明度 */
 }

@@ -8,6 +8,18 @@ Page({
 
   },
 
+
+  onImageTap:function(e){
+    //获取图片索引
+    // const index=e.currentTarget.dataset.index;
+    // const item=this.data.items[index];
+    // wx.navigateTo({
+    //   url: '/pages/fuxixiangqing/fuxixiangqing?item='+encodeURIComponent(JSON.stringify(item)),
+    // });
+    wx.navigateTo({
+      url: '/pages/fuxixiangqing/fuxixiangqing',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

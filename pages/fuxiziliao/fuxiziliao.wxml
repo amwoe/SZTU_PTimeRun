@@ -3,7 +3,8 @@
   <view class="flex-row section_2 pos_8">
     <image
       class="flex-1 self-center image_6"
-      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=db03eb6a0c62344e50fbf5c443176878.png"
+      src="/pages/images/9，10，11/16.png"
+      bindtap="onImageTap"
     />
     <view class="ml-18 flex-col shrink-0 self-start group_2">
       <text class="self-start font_2">晓宁错题总结</text>
@@ -11,29 +12,12 @@
         <view class="flex-col justify-start items-center text-wrapper"><text class="font_3 text_5">易错</text></view>
         <view class="flex-col justify-start items-center text-wrapper ml-3"><text class="font_3">考点</text></view>
       </view>
-      <view class="flex-row items-center self-stretch mt-15">
-        <image
-          class="shrink-0 image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de1234f26d71ea3f8cc150d01822df8f.png"
-        />
-        <text class="font_4 text_6">88</text>
-        <image
-          class="shrink-0 image_8 image_9"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=28fea3e71c985462aaa4eb94b8187fc3.png"
-        />
-        <text class="font_4 text_7">12</text>
-        <image
-          class="shrink-0 image_10 image_11"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=98ba9c5b3ec54030216bbaef400a3687.png"
-        />
-        <text class="font_4 text_8">152</text>
-      </view>
     </view>
   </view>
   <view class="flex-row section_2 pos_9">
     <image
       class="flex-1 self-center image_6"
-      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=60307efa455d849611cdfade3837e12c.png"
+      src="/pages/images/9，10，11/17.png"
     />
     <view class="ml-18 flex-col shrink-0 self-start group_2">
       <text class="self-start font_2 text_9">线性代数</text>
@@ -41,23 +25,7 @@
         <view class="flex-col justify-start items-center text-wrapper"><text class="font_3 text_5">易错</text></view>
         <view class="flex-col justify-start items-center text-wrapper_2 ml-5"><text class="font_3">考点</text></view>
       </view>
-      <view class="flex-row items-center self-stretch mt-15">
-        <image
-          class="shrink-0 image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de1234f26d71ea3f8cc150d01822df8f.png"
-        />
-        <text class="font_4 text_6">88</text>
-        <image
-          class="shrink-0 image_8 image_12"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=28fea3e71c985462aaa4eb94b8187fc3.png"
-        />
-        <text class="font_4 text_7">12</text>
-        <image
-          class="shrink-0 image_10 image_13"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=98ba9c5b3ec54030216bbaef400a3687.png"
-        />
-        <text class="font_4 text_8">152</text>
-      </view>
+      
     </view>
   </view>
 </view>
