@@ -6,14 +6,14 @@
         <view class="flex-col justify-start text-wrapper"><text class="font_3 text_6">这周末一起出去玩吗？</text></view>
         <image
           class="image_6 ml-13"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=bad7cb504baa907541095961a0a964e0.png"
+          src="/pages/images/14.15/1.png"
         />
       </view>
       <view class="mt-24 flex-col">
         <view class="flex-row">
           <image
             class="image_6"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=67e8b4383efdf0d2a9693e54dda2f6ff.png"
+            src="/pages/images/14.15/2.png"
           />
           <view class="ml-12 flex-col justify-start text-wrapper_2">
             <text class="font_3 text_7">哎，我这周要去深圳出差耶~</text>
@@ -26,19 +26,19 @@
               <text class="font_2 text_9">深圳海湾饭店</text>
               <image
                 class="shrink-0 image_7 ml-93"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=262088bf798ed85d2f9ae09a637ea8c6.png"
+                src="/pages/images/14.15/7.png"
               />
             </view>
           </view>
           <image
             class="self-start image_6 ml-13"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=bad7cb504baa907541095961a0a964e0.png"
+            src="/pages/images/14.15/1.png"
           />
         </view>
         <view class="mt-26 flex-row justify-center items-center relative">
           <image
             class="image_6 pos_3"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=67e8b4383efdf0d2a9693e54dda2f6ff.png"
+            src="/pages/images/14.15/2.png"
           />
           <view class="flex-col justify-start items-start text-wrapper_3">
             <text class="font_3 text_10">那好巧啊，哈哈！那周末见。</text>
@@ -50,11 +50,11 @@
       <input class="flex-1 section_5" placeholder="请输入"></input>
       <image
         class="shrink-0 image_8 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=68a1098776c3610ec0afdf100fb11507.png"
+        src="/pages/images/2，3，4/图标1.png"
       />
       <image
         class="shrink-0 image_9 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=75eaf5621b523b0305b09a48c926fa5f.png"
+        src="/pages/images/2，3，4/7.png"
       />
     </view>
   </view>

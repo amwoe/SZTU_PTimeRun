@@ -285,7 +285,7 @@
   line-height: 29.39rpx;
 }
 .section_6 {
-  margin: 13.95rpx 33.14rpx 0 26.16rpx;
+  margin: 20.95rpx 33.14rpx 0 26.16rpx;
   padding: 0 20.93rpx 47.09rpx 34.88rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@
   line-height: 29.39rpx;
 }
 .section_7 {
-  margin: 13.95rpx 33.14rpx 0 26.16rpx;
+  margin: 20.95rpx 33.14rpx 0 26.16rpx;
   padding: 26.16rpx 24.42rpx 47.09rpx 31.4rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
