@@ -111,6 +111,7 @@
 .group_4 {
   margin-top: 45.35rpx;
   padding: 0 69.77rpx;
+  z-index:1;
 }
 .text-wrapper {
   padding: 20.93rpx 0;

@@ -1,4 +1,5 @@
 <view class="flex-col justify-start page">
+  <image src="/pages/images/其他/背景-橙.png" mode="aspectFill" style="width: 100%; height: 100%; position: absolute; z-index: 0;"></image>
   <view class="flex-col section">
     <text class="self-center text_5">{{currentTime}}</text>
     <view class="flex-col self-stretch group_4">
