@@ -21,6 +21,7 @@
     "pages/wodedingdan/wodedingdan",
     "pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan",
     "pages/fabudingdan/fabudingdan",
-    "pages/dingdanxiangqing/xiangqing"
+    "pages/dingdanxiangqing/xiangqing",
+    "pages/fuxixiangqing/fuxixiangqing"
   ]
 }

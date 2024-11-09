@@ -1,0 +1,111 @@
+.mt-232 {
+  margin-top: 404.65rpx;
+}
+.ml-5 {
+  margin-left: 8.72rpx;
+}
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  flex: 1; /* 让内容区域自适应剩余空间 */
+}
+.group {
+  line-height: 17.46rpx;
+  height: 17.46rpx;
+}
+.font {
+  font-size: 24.42rpx;
+  font-family: AlibabaPuHuiTi;
+  line-height: 17.46rpx;
+  font-weight: 700;
+  color: #000000;
+}
+.text {
+  word-break: break-all;
+}
+.text_2 {
+  line-height: 16.95rpx;
+}
+.image {
+  width: 29.65rpx;
+  height: 19.19rpx;
+}
+.image_2 {
+  width: 26.16rpx;
+  height: 19.19rpx;
+}
+.image_3 {
+  width: 41.86rpx;
+  height: 19.76rpx;
+}
+.image_5 {
+  width: 29.65rpx;
+  height: 29.65rpx;
+}
+.image_4 {
+  width: 150rpx;
+  height: 55.81rpx;
+}
+.group_2 {
+  padding: 55.81rpx 0 48.84rpx 52.33rpx;
+}
+.text_3 {
+  color: #383838;
+  font-size: 34.88rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 700;
+  line-height: 34.47rpx;
+}
+.font_2 {
+  padding: 25rpx;
+  font-size: 24.42rpx;
+  font-family: SourceHanSansCN;
+  line-height: 48.84rpx;
+  color: #383838;
+}
+.text_4 {
+  width: 266.48rpx;
+}
+.pos {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section_2 {
+  padding: 31.4rpx 6.98rpx 31.4rpx 17.44rpx;
+  background-color: #ffffff;
+  filter: drop-shadow(0rpx -3.49rpx 5.23rpx #0000000f);
+  overflow: hidden;
+}
+.section_3 {
+  background-color: #f0f0f0;
+  border-radius: 69.77rpx;
+  height: 73.26rpx;
+  text-align: center; /* 水平居中文本 */
+}
+.image_6 {
+  border-radius: 340.64rpx;
+  width: 51.47rpx;
+  height: 51.47rpx;
+}
+.image_7 {
+  width: 52.33rpx;
+  height: 52.33rpx;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* 导航栏高度 */
+  background-color: white; /* 根据需要设置背景颜色 */
+  z-index: 1000; /* 确保在其他元素之上 */
+  display: flex;
+  justify-content: space-around; /* 使子元素均匀分布 */
+  padding: 10px 0; /* 根据需要调整内边距 */
+  position: absolute;
+}
