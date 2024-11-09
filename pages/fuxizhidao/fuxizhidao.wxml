@@ -1,36 +1,10 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
-  <text class="font_3 text_4 pos_8">推荐</text>
-  <text class="font_3 text_5 pos_9">最热</text>
-  <view class="section_2 pos_11"></view>
   <view class="grid pos_12">
-    <view class="flex-col items-center grid-item">
-      <image
-        class="image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2110972651b1d9cf0b00be78ba6b259e.png"
-      />
-      <text class="font_2 mt-13">48天极限过四六级</text>
-    </view>
-    <view class="flex-col items-center grid-item">
-      <image
-        class="image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=6b94568a821ab44817b8ec8e096ce1fb.png"
-      />
-      <text class="font_2 mt-13">概率论与数理统计</text>
-    </view>
-    <view class="flex-col items-center grid-item">
-      <image
-        class="image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=496a0fb7a26eae1f05c5edb0ad56bd79.png"
-      />
-      <text class="mt-14 font_2">48天极限过四六级</text>
-    </view>
-    <view class="flex-col items-center grid-item">
-      <image
-        class="image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=27288f04f38eede891343a069dabd457.png"
-      />
-      <text class="font_2 mt-15">大学语文怎么复习</text>
-    </view>
+    <block wx:for="{{items}}" wx:key="unique">
+      <view class="flex-col items-center grid-item">
+        <image class="image_6" src="{{item.imageSrc}}" bindtap="onImageTap" data-index="{{index}}"/>
+        <text class="font_2 mt-13">{{item.text}}</text>
+      </view>
+    </block>
   </view>
 </view>
