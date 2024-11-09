@@ -19,7 +19,6 @@
 }
 .section {
   padding: 5.4rpx 0 43.6rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=79b10275a966a048a2083a86161a6ff7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
