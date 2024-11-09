@@ -10,11 +10,7 @@
         <input class="font_2 text_4 ml-7" placeholder="输入关键词搜索" bindtap="onInputChange" confirm-type="search" bindconfirm="onSearch"></input>
         <button class="search-button" bindtap="onSearch">搜索</button>
       </view>
-      <view class="results" tyle="margin-top: 60px;">
-        <block wx:for="{{results}}" wx:key="index">
-          <text>{{item}}</text>
-        </block>
-      </view>
+<!-- 在这里开始替换成动态的-->
       <view class="flex-col group_5">
         <view class="flex-col self-stretch mt-27">
           <view class="flex-col section_3">
@@ -197,3 +193,55 @@
     </view>
   </view>
 </view>
+
+
+<!--
+<view class="flex-col justify-start page">
+  <image src="/pages/images/其他/背景-绿.png" mode="cover" style="width: 100%; height: 100%; position: absolute; z-index: 0;"></image>
+  <view class="flex-col section">
+    <view class="flex-col group_4">
+      <view class="flex-row items-center section_2 search-container">
+        <image
+          class="image_5"
+          src="/pages/images/其他/搜索 .png"
+        />
+        <input class="font_2 text_4 ml-7" placeholder="输入关键词搜索" bindtap="onInputChange" confirm-type="search" bindconfirm="onSearch"></input>
+        <button class="search-button" bindtap="onSearch">搜索</button>
+      </view>
+-->
+<!--
+      用户信息部分
+      <view class="results" tyle="margin-top: 60px;">
+        <block wx:for="{{users}}" wx:key="index">
+
+          给每个信息模块加标签
+          
+          <view class="user_card" style="border:2px solid {{item.borderColor}}; border-radius:8px;padding:15px;margin-bottom:10px;background-color:{{item.bgColor}};">
+            <view claa="flex-row">
+              <image class="user-image" src="{{item.image}}" style="width:50px; height:50px;border-radius: 50%;"/>
+              <view class="flex-col ml-10">
+                <text class="font_3 text_5">{{item.name}}</text>
+                <text class="font_2 text_6">{{item.task}}</text>
+              </view>
+            </view>
+            <view class="flex-row justify-between mt-10">
+              <text class="font_5 text_8">{{item.description}}</text>
+              <text class="font_4 text_7">{{item.time}}</text>
+            </view>
+            <view class="flex-row justify-between mt-5">
+              <view class="flex-row items-center">
+                <image class="gender-icon" src="/pages/images/14.15/5.png" style="width: 20px;height: 20px;"/>
+                <text class="font_6 text_9">{{item.gender}}</text>
+              </view>
+              <view class="flex-row items-center">
+                <text class="font_7 text_10">{{item.location}}</text>
+                <text class="font_8 text_11">{{item.price}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+-->

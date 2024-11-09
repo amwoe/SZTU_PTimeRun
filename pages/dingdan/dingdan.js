@@ -7,35 +7,46 @@ Page({
   data: {
     searchQuery:'',
     results:[],
+    /**
     sections: [
       {
         name: '沈海辛',
-        service: '食堂带饭',
+        task: '食堂带饭',
         time: '09:18',
-        details: '第二食堂带辣椒炒肉，西红柿鸡蛋',
+        description: '第二食堂带辣椒炒肉，西红柿鸡蛋',
         gender: '女生',
-        address: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20'
+        location: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20',
+        image:'/pages/images/8/1.png',
+        borderColor:'#FF6347',
+        bgColor:'#FFE4E1'
       },
       {
         name: '宁桑娅',
-        service: '代取快递',
+        task: '代取快递',
         time: '09:18',
-        details: '菜鸟驿站 3个小件',
+        description: '菜鸟驿站 3个小件',
         gender: '女生',
-        address: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20'
+        location: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20',
+        image:'/pages/images/8/2.png',
+        borderColor:'#FF6347',
+        bgColor:'#FFE4E1'
       },
       {
         name: '邓御寒',
-        service: '外卖上楼',
+        task: '外卖上楼',
         time: '09:18',
-        details: '娃哈哈 x1',
+        description: '娃哈哈 x1',
         gender: '女生',
-        address: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20'
+        location: 'xx省xx市xx区学校宿舍5栋203',
+        price: '20',
+        image:'/pages/images/8/4.png',
+        borderColor:'#FF6347',
+        bgColor:'#FFE4E1'
       },
     ],
+    */
   },
 
   onImageClick1:function(){
