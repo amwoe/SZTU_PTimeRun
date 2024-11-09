@@ -1,6 +1,6 @@
 <view class="flex-col justify-start relative page">
   <view class="grid pos_12">
-    <block wx:for="{{items}}" wx:key="unique">
+    <block wx:for="{{items}}" wx:for-index="index" wx:key="unique">
       <view class="flex-col items-center grid-item">
         <image class="image_6" src="{{item.imageSrc}}" bindtap="onImageTap" data-index="{{index}}"/>
         <text class="font_2 mt-13">{{item.text}}</text>

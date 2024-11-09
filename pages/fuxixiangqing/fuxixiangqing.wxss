@@ -12,6 +12,7 @@
   height: 100%;
   flex: 1; /* 让内容区域自适应剩余空间 */
 }
+
 .group {
   line-height: 17.46rpx;
   height: 17.46rpx;

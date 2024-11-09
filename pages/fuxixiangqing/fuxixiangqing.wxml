@@ -1,15 +1,11 @@
 <view class="flex-col page">
-  <image src="/pages/images/12/矩形 14.png" mode="aspectFill" style="width: 100%; height: 45%;"></image>
-  <view class="flex-col group_2">
-    <view class="flex-col">
-      <text class="self-start text_3">剩48天，英语六级如何突破？</text>
+  <block wx:for="{{detailItem}}" wx:key="index">
+    <image src="{{item.imageSrc}}" mode="aspectFill" style="width: 100%; height: 45%;"></image>
+    <view class="flex-col group_2">
+      <text class="self-start text_3">{{item.title}}</text>
       <view class="mt-16 flex-col self-stretch relative">
-        <text class="self-stretch font_2">
-          1）每天2小时进行单词复习。不建议拿出整块的两个小时一直记单词，那样太过枯燥，记忆缓慢忘的更快。小君建议大家利用零散时间记单词，每次半小时，每天多次记忆。
-          eg. 早上快速记忆半小时单词，白天再学30分钟，晚上临睡前用单词软件巩固复习一遍。2）单词最好放入语境记忆。结合例句、文章记忆效果更好，还能培养语感。词汇量的提升不是一蹴而就的，重在坚持。
-          至于背单词无法坚持、背单词没方法、找不到核心词所在的同学，建议跟着昊昊老师把单词搞好，其中包括四六级、考研高频核心词学习，做到单词备考事半功倍。
-        </text>
+        <text class="self-stretch font_2">{{item.content}}</text>
       </view>
-    </view>
-  </view> 
+    </view> 
+  </block>
 </view>
