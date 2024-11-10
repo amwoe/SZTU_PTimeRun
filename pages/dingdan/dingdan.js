@@ -6,7 +6,7 @@ Page({
    */
   data: {
     searchQuery:'',
-    results:[],
+    searchResults:[],
     /**
     sections: [
       {
@@ -73,19 +73,18 @@ Page({
   },
 
   onSearch(){
-    const{searchQuery}=this.data;
-    //添加搜索逻辑
-    const allItems=[];
-    const results=allItems.filter(item=>item.includes(searchQuery));
-    this.setData({
-      results:results,
-    });
+    if(!this.data.searchQuery.trim()){return;}
+    setTimeout(()=>{
+      const searchReaults=['结果1-${this.data.searchQuery','结果2-${this.data.searchQuery'];
+      this.setData({
+        searchResults
+      });
+    },1000);
   },
 
-  onInputChange(e){
-    const value=e.detail.value;
+  onInputChange(e){//更新搜索关键词
     this.setData({
-      searchQuery:value,
+      searchQuery: e.detail.value || '' // 使用 || 确保值为空字符串或实际输入
     });
   },
   /**

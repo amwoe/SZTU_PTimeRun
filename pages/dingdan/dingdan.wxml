@@ -7,8 +7,16 @@
           class="image_5"
           src="/pages/images/其他/搜索 .png"
         />
-        <input class="font_2 text_4 ml-7" placeholder="输入关键词搜索" bindtap="onInputChange" confirm-type="search" bindconfirm="onSearch"></input>
+        <input class="font_2 text_4 ml-7" placeholder="输入关键词搜索" bindtap="onInputChange" confirm-type="search" bindconfirm="onSearch"/>
         <button class="search-button" bindtap="onSearch">搜索</button>
+      </view>
+
+      <view class="search-results" wx:if="{{searchResults.length>0}}">
+        <block wx:for="{{search-result}}" wx:key="index">
+          <view class="search-result">
+            <text>{{item}}</text>
+          </view>
+        </block>
       </view>
 <!-- 在这里开始替换成动态的-->
       <view class="flex-col group_5">
