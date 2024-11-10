@@ -67,7 +67,10 @@
   color: #383838;
 }
 .text_4 {
-  width: 266.48rpx;
+  color: #f1bd12;
+  font-size: 35.91rpx;
+	line-height: 26.37rpx;
+	
 }
 .pos {
   position: absolute;
@@ -83,8 +86,17 @@
 .section_3 {
   background-color: #f0f0f0;
   border-radius: 69.77rpx;
-  height: 73.26rpx;
+  height: 53.26rpx;
   text-align: center; /* 水平居中文本 */
+}
+
+.section_4 {
+  margin-top: 605.23rpx;
+  padding: 31.4rpx 10.47rpx 31.4rpx 15.7rpx;
+  background-color: #ffffff;
+  filter: drop-shadow(0rpx -3.49rpx 5.23rpx #0000000f);
+	overflow: hidden;
+	z-index: 1000;
 }
 .image_6 {
   border-radius: 340.64rpx;
@@ -95,17 +107,65 @@
   width: 52.33rpx;
   height: 52.33rpx;
 }
+.image_9 {
+  width:130.33rpx;
+  height: 80.33rpx;
+}
+
+.input-area {
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 3px; /* 根据需要添加内边距 */
+  background-color: #e7e4e4ee; /* 背景颜色 */
+}
+input {
+  flex-grow: 1; /* 输入框占据剩余空间 */
+  padding: 5px; /* 内边距 */
+  border-radius: 5px; /* 圆角 */
+  border: 1px solid rgb(194, 191, 191); /* 边框 */
+}
+
+button {
+  margin-left: 10px; /* 按钮与输入框之间的间距 */
+  padding: 10px; /* 内边距 */
+}
 
 .fixed-bottom {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px; /* 导航栏高度 */
+  height: 50px; /* 导航栏高度 */
   background-color: white; /* 根据需要设置背景颜色 */
   z-index: 1000; /* 确保在其他元素之上 */
   display: flex;
   justify-content: space-around; /* 使子元素均匀分布 */
   padding: 10px 0; /* 根据需要调整内边距 */
   position: absolute;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* 可选：添加阴影效果 */
+}
+/* 设置输出内容容器的基本样式 */
+.output-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* 内边距 */
+  margin-bottom: 60px; /* 距离底部输入框的距离 */
+}
+
+/* 设置每个输出项的基本样式 */
+.output-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* 每个输出项之间的间距 */
+}
+
+/* 设置索引的样式 */
+.index {
+  margin-right: 10px; /* 索引与内容之间的间距 */
+  font-weight: bold; /* 加粗索引 */
+}
+
+/* 设置内容的样式 */
+.content {
+  word-wrap: break-word; /* 允许内容换行 */
 }

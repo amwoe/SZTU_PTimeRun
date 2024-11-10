@@ -5,7 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputContent:'',
+    outputContents:[],
+  },
+  onInput(e){
+    this.setData({
+      inputContent:e.detail.value
+    })
+  },
+  onSend(){
+    if(this.data.inputContent.trim()){
+      const newOutput={
+        index:this.data.outputContents.length,
+        content:this.data.inputContent
+      }
+      this.setData({
+        outputContents:[...this.data.outputContents,newOutput],
+        inputContent:''
+      });
+    }else{
+      wx.showToast({
+        title: '请输入内容~',
+        icon:'none'
+      })
+    }
   },
 
   /**

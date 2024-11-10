@@ -20,15 +20,16 @@
       -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n还有什么方便快捷又便宜的快递攻略吗！分享一下吧！！！
     </text>
   </view>
-  <view class="flex-row items-center section_2 fixed-bottom">
-    <input class="flex-1 section_3" placeholder="请输入"></input>
-    <image
-      class="shrink-0 image_6 ml-5"
-      src="/pages/images/2，3，4/图标1.png"
-    />
-    <image
-      class="shrink-0 image_7 ml-5"
-      src="/pages/images/2，3，4/7.png"
-    />
+  <view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">
+    <input class="flex-1 section_3" placeholder="请输入" bindinput="onInput"/>
+    <button class="text_4 image_9 ml-5" bindtap="onSend">发送</button>
+  </view>
+  <view class="output-container">
+    <block wx:for="{{outputContents}}" wx:key="index">
+      <view class="output-item">
+        <text class="index">{{index+1}}L:</text>
+        <text class="content">{{item.content}}</text>
+      </view>
+    </block>
   </view>
 </view>
