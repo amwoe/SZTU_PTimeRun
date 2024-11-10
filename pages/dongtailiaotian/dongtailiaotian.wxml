@@ -1,0 +1,19 @@
+<view class="flex-col justify-start page">
+  <image class="image-background" src="/pages/images/其他/背景-橙.png" mode="aspectFill"></image>
+  <view class="flex-col section">
+    <text class="self-center text_5">{{currentTime}}</text>
+    <view class="chat-container">
+			<view class="messages">
+				<block wx:for="{{messages}}" wx:key="index">
+					<view class="message {{item.from==='user' ?'user-message':'bot-message'}}">
+						<text>{{item.content}}</text>
+					</view>
+				</block>
+			</view>
+				<view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">
+					<input type="text" value="{{inputValue}}" bindinput="onInput" placeholder="请输入信息"/>
+					<button class="text_4 image_9 ml-5" bindtap="onSendTap">发送</button>
+				</view>
+		</view>
+  </view>
+</view>

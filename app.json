@@ -23,6 +23,7 @@
     "pages/fabudingdan/fabudingdan",
     "pages/dingdanxiangqing/xiangqing",
     "pages/fuxixiangqing/fuxixiangqing",
-    "pages/kechengxiangqing/kechengxiangqing"
+    "pages/kechengxiangqing/kechengxiangqing",
+    "pages/dongtailiaotian/dongtailiaotian"
   ]
 }

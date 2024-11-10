@@ -11,7 +11,7 @@ Page({
 
   navigateToContact() {
     wx.navigateTo({
-      url: '/pages/liaotian/liaotian' 
+      url: '/pages/dongtailiaotian/dongtailiaotian' 
     });
   },  
   onConfirm:function(){
