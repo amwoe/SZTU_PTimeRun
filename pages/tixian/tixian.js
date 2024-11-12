@@ -1,7 +1,5 @@
 Page({
-  data: {
-    items: [null, null, null],
-  },
+  data: {},
 
   onShareAppMessage() {
     return {};

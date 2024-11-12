@@ -24,6 +24,8 @@
     "pages/dingdanxiangqing/xiangqing",
     "pages/fuxixiangqing/fuxixiangqing",
     "pages/kechengxiangqing/kechengxiangqing",
-    "pages/dongtailiaotian/dongtailiaotian"
+    "pages/dongtailiaotian/dongtailiaotian",
+    "pages/denglu/denglu",
+    "pages/tixian/tixian"
   ]
 }

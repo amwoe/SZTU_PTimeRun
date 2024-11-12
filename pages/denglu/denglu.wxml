@@ -1,0 +1,24 @@
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <text class="text pos">Hello</text>
+  <text class="text_2 pos_2">欢迎来到校园乐跑跑</text>
+  <view class="flex-col section_2 pos_3">
+    <text class="self-center text_3">欢迎登录</text>
+    <view class="mt-30 flex-col self-stretch">
+      <view class="flex-col self-stretch">
+        <view class="flex-col justify-start items-start text-wrapper"><text class="font text_4">请输入学号</text></view>
+        <view class="flex-col justify-start items-start text-wrapper_2 mt-25">
+          <text class="font text_5">请输入密码</text>
+        </view>
+      </view>
+      <text class="self-end font_2 text_6">忘记密码</text>
+      <view class="flex-row items-center self-stretch group">
+        <view class="group_2"></view>
+        <text class="font text_7 ml-7">我已阅读并同意</text>
+      </view>
+      <view class="flex-col justify-start items-center self-stretch text-wrapper_3">
+        <text class="font_2 text_8">登录</text>
+      </view>
+    </view>
+  </view>
+</view>

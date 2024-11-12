@@ -1,0 +1,93 @@
+<view class="flex-col page">
+  <view class="flex-col justify-start items-start relative section">
+    <image
+      class="image"
+      src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=2cf0bd99e4b4edef3d9c42158dfbcfd9.png"
+    />
+    <view class="flex-col justify-start items-center text-wrapper pos"><text class="font text">1/4</text></view>
+  </view>
+  <view class="flex-col section_2">
+    <view class="flex-row justify-between items-center self-stretch group">
+      <view class="flex-row items-center">
+        <image
+          class="image_2"
+          src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=bd217982be28ff5360d6d1b85e6a8527.png"
+        />
+        <view class="flex-col items-start ml-25">
+          <text class="font_2 text_2">尼森</text>
+          <text class="font_3 text_5 mt-11">乐爱生活，乐观开朗</text>
+        </view>
+      </view>
+      <view class="group_2">
+        <text class="font text_4">￥</text>
+        <text class="text_3">98</text>
+      </view>
+    </view>
+    <view class="flex-col self-start group_3">
+      <text class="self-start font_2 text_6">低价闲置衣服‼️‼️‼️</text>
+      <view class="mt-10 flex-col items-start self-stretch">
+        <text class="font_4">家里很多闲置衣服，需要可以私聊，98元3件大甩卖</text>
+        <text class="font_4 mt-3">尺码：M，新旧程度：九成新</text>
+      </view>
+    </view>
+    <view class="flex-col self-stretch group_4">
+      <text class="self-start font_2 text_7">评论(10)</text>
+      <view class="flex-col self-stretch">
+        <view
+          class="flex-row justify-between items-center list-item"
+          wx:for="{{items}}"
+          wx:for-item="item"
+          wx:for-index="index"
+          wx:key="index"
+        >
+          <view class="flex-row items-center">
+            <image
+              class="image_3"
+              src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=923a78155c657e807834b5c2477da904.png"
+            />
+            <view class="ml-18 flex-col items-start">
+              <text class="font text_8">宁溪</text>
+              <text class="mt-6 font_3 text_10">驼色的大衣还在吗？</text>
+            </view>
+          </view>
+          <view class="flex-col group_5">
+            <text class="self-start font_5 text_9">09 : 02</text>
+            <text class="self-center font_6 mt-9">回复</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-row self-stretch group_7">
+      <view class="flex-row justify-between flex-1 section_3">
+        <view class="flex-col items-center">
+          <image
+            class="image_4"
+            src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=40c9cf775732f61d6052eee67a938c50.png"
+          />
+          <text class="font text_16 mt-5">点赞</text>
+        </view>
+        <view class="flex-col items-center">
+          <image
+            class="image_4"
+            src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=9193b044363f739df65862d47be2efda.png"
+          />
+          <text class="font text_17 mt-5">评论</text>
+        </view>
+        <view class="flex-col items-center">
+          <image
+            class="image_5"
+            src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=294cd5e08d7584bedf10d1c787aeec15.png"
+          />
+          <text class="font text_18 mt-5">咨询</text>
+        </view>
+      </view>
+      <view class="flex-col items-center shrink-0 section_4">
+        <view class="group_8">
+          <text class="font text_15">￥</text>
+          <text class="text_14">20.00</text>
+        </view>
+        <text class="text_19 mt-9">去下单</text>
+      </view>
+    </view>
+  </view>
+</view>
