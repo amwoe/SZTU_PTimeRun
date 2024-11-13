@@ -8,15 +8,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "1",
-          "pathName": "pages/fabudingdan/fabudingdan",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "",
-          "pathName": "pages/xianwuchushou/xianwuchushou",
+          "pathName": "pages/xianwuchushouxiangqing/xianwuchushouxiangqing",
           "query": "",
           "launchMode": "default",
           "scene": null

@@ -19,13 +19,14 @@
     "pages/zujiexiangqing/zujiexiangqing",
     "pages/xiadanchenggong/xiadanchenggong",
     "pages/wodedingdan/wodedingdan",
-    "pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan",
+    "pages/zujiexiadan/zujiexiadan",
     "pages/fabudingdan/fabudingdan",
     "pages/dingdanxiangqing/xiangqing",
     "pages/fuxixiangqing/fuxixiangqing",
     "pages/kechengxiangqing/kechengxiangqing",
     "pages/dongtailiaotian/dongtailiaotian",
     "pages/denglu/denglu",
-    "pages/tixian/tixian"
+    "pages/tixian/tixian",
+    "pages/xianwuchushouxiangqing/xianwuchushouxiangqing"
   ]
 }

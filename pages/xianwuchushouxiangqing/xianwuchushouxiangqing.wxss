@@ -19,14 +19,9 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  flex: 1; /* 让内容区域自适应剩余空间 */
 }
-.section {
-  padding: 115.12rpx 0 593.02rpx;
-  border-radius: 17.44rpx 17.44rpx 0rpx 0rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=a9b4c900baec178aa4cb9a6c0bd900c8.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+
 .image {
   margin-left: 64.53rpx;
   width: 31.4rpx;
@@ -47,14 +42,13 @@
   font-size: 24.42rpx;
   font-family: SourceHanSansCN;
   line-height: 24.42rpx;
-  color: #ffffff;
+  color: #030303;
 }
 .text {
   line-height: 23.76rpx;
 }
 .section_2 {
   padding: 50.58rpx 22.67rpx 0 36.63rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=f61e8bf69f5d1f05409b09d1214e2cb6.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -67,12 +61,17 @@
   height: 92.44rpx;
 }
 .font_2 {
+  font-size: 50.91rpx;
+  font-family: SourceHanSansCN;
+  color: #000000;
+}
+.font_21{
   font-size: 27.91rpx;
   font-family: SourceHanSansCN;
   color: #000000;
 }
 .text_2 {
-  line-height: 25.95rpx;
+  line-height: 30.95rpx;
 }
 .font_3 {
   font-size: 20.93rpx;
@@ -104,13 +103,17 @@
 }
 .text_6 {
   line-height: 33.14rpx;
-  width: 167.44rpx;
+  width: 1000.44rpx;
 }
 .font_4 {
-  font-size: 20.93rpx;
+  font-size: 30.93rpx;
   font-family: SourceHanSansCN;
-  line-height: 24.42rpx;
+  line-height: 50.42rpx;
   color: #808080;
+}
+.text_62 {
+  line-height: 60.14rpx;
+  width: 500.44rpx;
 }
 .group_4 {
   margin-top: 45.35rpx;
@@ -159,7 +162,6 @@
 }
 .section_3 {
   padding: 17.44rpx 62.79rpx 24.42rpx 66.28rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=20e77c0aa239e9f55d4295d47c9c96c7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 118.6rpx;
@@ -183,7 +185,6 @@
 }
 .section_4 {
   padding: 24.42rpx 0 17.44rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=d2e79a0000fc0e36fd4b484812f94620.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 231.98rpx;
@@ -209,4 +210,50 @@
   font-family: SourceHanSansCN;
   font-weight: 700;
   line-height: 26.15rpx;
+}
+
+
+/* 咨询按钮样式 */
+.btn_consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a2cfa4; /* 按钮背景色 */
+  border-radius: 50%; /* 完全圆形 */
+  width: 40px; /* 设置按钮的宽度 */
+  height: 40px; /* 设置按钮的高度，与宽度相等，形成圆形 */
+  border: none;
+  color: #ffffff; /* 文本颜色 */
+  font-size: 16px;
+  position: absolute; /* 使用绝对定位 */
+  left: 10px; /* 距离左侧 10px */
+  bottom: 10px; /* 距离底部 10px */
+}
+
+.btn_consultation image {
+  width: 18px; /* 图标大小 */
+  height: 18px; /* 图标大小 */
+}
+
+
+
+/* 去下单按钮样式 */
+.btn_order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1baa0; /* 按钮背景色 */
+  border-radius: 8px; /* 按钮圆角 */
+  padding: 12px 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute; /* 使用绝对定位 */
+  right: 10px; /* 距离右侧 10px */
+  bottom: 10px; /* 距离底部 10px */
+}
+
+.btn_order:active {
+  background-color: #e0b481; /* 按钮按下时背景色变化 */
 }
