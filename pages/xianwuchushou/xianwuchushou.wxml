@@ -1,9 +1,4 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
-  <view class="group pos_4">
-    <text class="font text">9:4</text>
-    <text class="font text text_2">1</text>
-  </view>
   <image
     class="image pos"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
