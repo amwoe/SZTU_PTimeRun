@@ -12,6 +12,7 @@
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  overflow: hidden;
 }
 .section {
   background-size: 100% 100%;
@@ -69,6 +70,7 @@
   font-family: SourceHanSansCN;
   line-height: 25.92rpx;
   color: #808080;
+  
 }
 .text_4 {
   margin-left: 90.7rpx;
@@ -78,9 +80,12 @@
   padding: 31.4rpx 0 41.86rpx;
   background-color: #f5f5f5;
   border-radius: 52.33rpx;
+  width: 240px;                /* 设置输入框的宽度 */
+  padding-right: 40px;         /* 给右边留出足够空间放按钮 */
 }
 .text_5 {
   margin-left: 90.7rpx;
+  
 }
 .font_2 {
   font-size: 30.42rpx;
@@ -124,19 +129,27 @@
 }
 
 
+.input-wrapper {
+  display: flex;               /* 使用 flex 布局 */
+  align-items: center;         /* 垂直居中对齐 */
+  position: absolute;          /* 让按钮位置绝对定位 */
+  right: 45px;                 /* 距离右边10rpx */
+  margin-top: 5px;            /* 使图片向上调整 */
+
+}
+
 .toggle-visibility-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%; /* 完全圆形 */
-  width: 40px; /* 设置按钮的宽度 */
-  height: 40px; /* 设置按钮的高度，与宽度相等，形成圆形 */
-  border: none;
-  color: #f5f5f5; /* 文本颜色 */
-  font-size: 16px;
+  border: none; /* 去除边框 */
+  outline: none; /* 去除点击时的轮廓线 */
+  box-shadow: none; /* 去除阴影效果 */
 }
 
 .toggle-visibility-btn image {
-  width: 18px; /* 图标大小 */
-  height: 18px; /* 图标大小 */
+  width: 18px;                 /* 设置图标的大小 */
+  height: 18px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
 }

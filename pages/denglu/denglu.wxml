@@ -9,24 +9,30 @@
         <view class="flex-col justify-start items-start text-wrapper"><input class="font text_4" placeholder="请输入学号" bindinput="onAccountInput"/>
         </view>
         <view class="flex-col justify-start items-start text-wrapper_2 mt-25">
+
           <input class="font text_5" placeholder="请输入密码" password="{{isPasswordVisible}}" bindinput="onPasswordInput"/>
 
-          <button class="toggle-visibility-btn" bindtap="togglePasswordVisibility">
-            <image
-              class="image_5"
-              src="/pages/images/其他/眼睛_隐藏.png"
-            />
-            {{idPasswordVisible}}
-          </button> 
+          <view class="input-wrapper">
+            <view class="toggle-visibility-btn" bindtap="togglePasswordVisibility">
+              <image
+                class="image_5"
+                src="{{isPasswordVisible ? '/pages/images/其他/眼睛_隐藏.png' : '/pages/images/其他/眼睛_显示.png'}}"
+              />
+              {{idPasswordVisible}}
+            </view> 
+          </view>
          
         </view>
       </view>
-      <text class="self-end font_2 text_6">忘记密码</text>
+      <text class="self-end font_2 text_6" bindtap="onForget">忘记密码</text>
       <view class="flex-row items-center self-stretch group">
-        <view class="group_2"></view>
-        <text class="font text_7 ml-7">我已阅读并同意</text>
+        <view class="checkbox-container">
+          <checkbox class="checkbox" checked="{{isChecked}}" bindchange="onCheckboxChange"></checkbox>
+        </view>
+        <text class="font text_7 ml-7">我已阅读并同意<text style="color: #1E90FF;" bindtap="onAgreementTap">《用户协议》</text>
+      </text>
       </view>
-      <view class="flex-col justify-start items-center self-stretch text-wrapper_3">
+      <view class="flex-col justify-start items-center self-stretch text-wrapper_3" bindtap="onShouye">
         <text class="font_2 text_8">登录</text>
       </view>
     </view>
