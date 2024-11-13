@@ -6,7 +6,6 @@
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=bef61b7a4c83a4ae8fb5c9fb4fa4db06.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -15,7 +14,6 @@
   overflow-x: hidden;
 }
 .section {
-  background-image: url('https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=bef61b7a4c83a4ae8fb5c9fb4fa4db06.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 750rpx;
@@ -31,7 +29,7 @@
 .pos {
   position: absolute;
   left: 75.49rpx;
-  top: 294.72rpx;
+  top: 150.72rpx;
 }
 .text_2 {
   color: #808080;
@@ -42,7 +40,7 @@
 .pos_2 {
   position: absolute;
   left: 75.47rpx;
-  top: 390.66rpx;
+  top: 260.66rpx;
 }
 .section_2 {
   padding: 62.79rpx 69.77rpx 170.93rpx;
@@ -53,11 +51,11 @@
   position: absolute;
   left: 26.16rpx;
   right: 26.16rpx;
-  top: 479.65rpx;
+  top: 350.65rpx;
 }
 .text_3 {
   color: #000000;
-  font-size: 34.88rpx;
+  font-size: 40.88rpx;
   font-family: SourceHanSansCN;
   line-height: 32.23rpx;
 }
@@ -67,7 +65,7 @@
   border-radius: 52.33rpx;
 }
 .font {
-  font-size: 27.91rpx;
+  font-size: 30.91rpx;
   font-family: SourceHanSansCN;
   line-height: 25.92rpx;
   color: #808080;
@@ -85,7 +83,7 @@
   margin-left: 90.7rpx;
 }
 .font_2 {
-  font-size: 24.42rpx;
+  font-size: 30.42rpx;
   font-family: SourceHanSansCN;
   line-height: 22.66rpx;
 }
@@ -123,4 +121,22 @@
   color: #ffffff;
   font-weight: 700;
   line-height: 22.94rpx;
+}
+
+
+.toggle-visibility-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 完全圆形 */
+  width: 40px; /* 设置按钮的宽度 */
+  height: 40px; /* 设置按钮的高度，与宽度相等，形成圆形 */
+  border: none;
+  color: #f5f5f5; /* 文本颜色 */
+  font-size: 16px;
+}
+
+.toggle-visibility-btn image {
+  width: 18px; /* 图标大小 */
+  height: 18px; /* 图标大小 */
 }
