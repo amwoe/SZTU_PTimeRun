@@ -6,37 +6,36 @@
   </view>
   <image
     class="image pos"
-    src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=62a611866490af0db9c24a7695ec29b6.png"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
   />
   <image
     class="image_2 pos_2"
-    src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=2e42f729ecb564a07ab20d9d0bcef261.png"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
   />
   <image
     class="image_3 pos_3"
-    src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=e734e370dc0b277219c7cff7af96e195.png"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
   />
   <image
     class="image_5 pos_7"
-    src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=7d9307e2d02af99afc3a073bcf6ed9e9.png"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
   />
-  <text class="text_3 pos_6">全部任务</text>
+  <text class="text_3 pos_6">我的任务</text>
   <image
     class="image_4 pos_5"
-    src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=23e66ced94d0844fee9a1801fecc78df.png"
+    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
   />
   <view class="flex-row items-center section_2 pos_8">
     <image
       class="image_6"
-      src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=5df61151f276f834fb33df0133ae04ab.png"
+      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
     />
     <text class="font_2 text_4 ml-7">输入关键词搜索</text>
   </view>
-  <text class="font_3 text_5 pos_9">全部(10)</text>
-  <text class="font_4 text_6 pos_10">正在进行(2)</text>
-  <text class="font_4 text_7 pos_11">已完成(3)</text>
-  <view class="section_3 pos_12"></view>
-  <view class="flex-col pos_13">
+  <text class="font_3 text_5 pos_9">正在进行(10)</text>
+  <text class="font_4 text_6 pos_10">已完成(128)</text>
+  <view class="section_3 pos_11"></view>
+  <view class="flex-col pos_12">
     <view
       class="flex-col mt-8 section_4 list-item"
       wx:for="{{items}}"
@@ -47,52 +46,50 @@
       <view class="flex-row">
         <image
           class="self-start image_7 image_8"
-          src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=58cf7052591ff989eb0ce9b83766fb2f.png"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0daa292948aa22b21b0d4915ca3c8f18.png"
         />
         <view class="flex-col flex-1 group_2 ml-11">
           <view class="flex-row justify-between self-stretch group_3">
             <view class="flex-row items-center">
-              <text class="font_5 text_8">沈海辛</text>
+              <text class="font_5 text_7">沈海辛</text>
               <view class="flex-col justify-start shrink-0 text-wrapper ml-11">
-                <text class="font_2 text_10">食堂带饭</text>
+                <text class="font_2 text_9">食堂带饭</text>
               </view>
             </view>
             <view class="flex-row section_5">
               <image
                 class="shrink-0 image_9"
-                src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=bef93bb2603213c20e3dad575c7d188c.png"
+                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
               />
-              <text class="font_6 text_9 ml-3">09:18 截至</text>
+              <text class="font_4 text_8 ml-3">09:18 截至</text>
             </view>
           </view>
-          <text class="self-start font_7 text_11 mt-9">第二食堂带辣椒炒肉，西红柿鸡蛋</text>
+          <text class="self-start font_6 text_10 mt-9">第二食堂带辣椒炒肉，西红柿鸡蛋</text>
           <view class="flex-row justify-evenly self-start section_6 mt-9">
             <image
               class="image_10"
-              src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=a160aafbb9a3503a4954b37ec3b2db2e.png"
+              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
             />
-            <text class="font_3">女生</text>
+            <text class="font_3 text_11">女生</text>
           </view>
         </view>
       </view>
       <view class="flex-row justify-center items-center group_4">
         <image
           class="image_11"
-          src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=903aa9b189db018c477d4d48184190fe.png"
+          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
         />
-        <text class="font_7 ml-13">xx省xx市xx区学校宿舍5栋203</text>
+        <text class="font_6 ml-13">xx省xx市xx区学校宿舍5栋203</text>
       </view>
       <view class="flex-row justify-between items-center group_5">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_12"
-            src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=aa4c806c52caf550dc1bc9f3cfc4acc3.png"
+            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
           />
-          <text class="ml-10 font_8 text_12">20元</text>
+          <text class="ml-10 font_7 text_12">20元</text>
         </view>
-        <view class="flex-col justify-start items-center text-wrapper_2">
-          <text class="font_2 text_13">确定送达</text>
-        </view>
+        <view class="flex-col justify-start items-center text-wrapper_2"><text class="font_2">确定送达</text></view>
       </view>
     </view>
   </view>

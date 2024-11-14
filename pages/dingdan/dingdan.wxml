@@ -173,7 +173,7 @@
               <text class="font_7 text_21">可接单</text>
             </view>
           </view>
-          <view class="flex-row equal-division_2 section_8 fixed-bottom">
+          <!-- <view class="flex-row equal-division_2 section_8 fixed-bottom">
             <view class="flex-col items-center group_16 equal-division-item" bindtap="redirectToPage1">
               <image
                 class="image_13"
@@ -195,7 +195,7 @@
               />
               <text class="mt-2 font_10 text_24">我的</text>
             </view>
-          </view>
+          </view> -->
         </view>
       </view>
     </view>

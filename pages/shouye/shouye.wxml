@@ -90,7 +90,7 @@
         </view>
       </view>
     </view>
-    <view class="flex-row justify-center group_4 section_3 mt-7 fixed-bottom">
+    <!-- <view class="flex-row justify-center group_4 section_3 mt-7 fixed-bottom">
       <view class="flex-col items-center group_9 equal-division-item_3" bindtap="redirectToPage1">
         <image
           class="image_12"
@@ -112,6 +112,6 @@
         />
         <text class="mt-6 font_4">我的</text>
       </view>
-    </view>
+    </view> -->
   </view>
 </view>

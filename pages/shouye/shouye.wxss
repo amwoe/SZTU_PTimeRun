@@ -23,7 +23,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
 }
 .group {
   padding-left: 59.3rpx;

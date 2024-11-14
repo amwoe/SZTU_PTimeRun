@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/denglu/denglu",
     "pages/shouye/shouye",
     "pages/xuexizhidao/xuexizhidao",
     "pages/kechengziliao/kechengziliao",
@@ -20,13 +19,38 @@
     "pages/zujiexiangqing/zujiexiangqing",
     "pages/xiadanchenggong/xiadanchenggong",
     "pages/wodedingdan/wodedingdan",
-    "pages/zujiexiadan/zujiexiadan",
+    "pages/xiaoyuanjianzhixiadan/xiaoyuanjianzhixiadan",
     "pages/fabudingdan/fabudingdan",
     "pages/dingdanxiangqing/xiangqing",
     "pages/fuxixiangqing/fuxixiangqing",
     "pages/kechengxiangqing/kechengxiangqing",
-    "pages/dongtailiaotian/dongtailiaotian",
-    "pages/tixian/tixian",
-    "pages/xianwuchushouxiangqing/xianwuchushouxiangqing"
-  ]
+    "pages/dongtailiaotian/dongtailiaotian"
+  ],
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "#000000",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "pages/images/菜单/首页_2.png",
+        "selectedIconPath": "pages/images/菜单/首页_1.png"
+      },
+      {
+        "pagePath": "pages/dingdan/dingdan",
+        "text": "订单",
+        "iconPath": "pages/images/菜单/订单_2.png",
+        "selectedIconPath": "pages/images/菜单/订单_1.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "pages/images/菜单/我的_2.png",
+        "selectedIconPath": "pages/images/菜单/我的_1.png"
+      }
+    ]
+  }
 }

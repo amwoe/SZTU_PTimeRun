@@ -206,6 +206,7 @@
 }
 .list-item {
   padding: 13.95rpx 6.98rpx 41.86rpx;
+  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=da10be6b70f3ff824e0a1fb3084c953e.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

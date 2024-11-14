@@ -48,7 +48,7 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item">
           <image
             class="image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4894769383f1a7393a0f989bd5ff7501.png"
+            src="/assets/imgs/课程资料.png"
           />
           <view class="ml-14 flex-col items-start">
             <text class="font_3 text_6">课程资料</text>
@@ -58,7 +58,7 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item ml-11">
           <image
             class="image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=00a97e3a9e385032faf12bde3a254ad5.png"
+            src="/assets/imgs/高考复习-01.png"
           />
           <view class="ml-14 flex-col items-start">
             <text class="font_3 text_6">复习资料</text>
@@ -66,14 +66,19 @@
           </view>
         </view>
       </view>
-      <view class="mt-14 flex-row items-center self-start section_3">
-        <image
-          class="image_8"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=e1d75633942024b2427df5126283f824.png"
-        />
-        <view class="flex-col items-start flex-1 ml-7">
-          <text class="font_3 text_7">学习指导</text>
-          <text class="mt-18 font_4 text_8">指引你学习</text>
+      <view class="flex-row equal-division" style="margin-top: 20rpx;">
+        <view class="flex-row justify-center items-center section_2 equal-division-item">
+          <image
+            class="image_7"
+            src="/assets/imgs/我的学习.png"
+          />
+          <view class="ml-14 flex-col items-start">
+            <text class="font_3 text_6">学习指导</text>
+            <text class="font_4 mt-17">指引你学习</text>
+          </view>
+        </view>
+        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent;">
+          
         </view>
       </view>
     </view>
@@ -82,7 +87,7 @@
       <view class="flex-row justify-center items-center section_4 equal-division-item_2">
         <image
           class="image_9"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9ae8797e0f0ef9e9f20ae5d514435c3f.png"
+          src="/assets/imgs/签字.png"
         />
         <view class="ml-16 flex-col items-start group_5">
           <text class="font_3">代签</text>
@@ -92,7 +97,7 @@
       <view class="ml-10 flex-row justify-center items-center section_4 equal-division-item_2">
         <image
           class="image_9"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=df437a487c7605a8284713ce53c5e0db.png"
+          src="/assets/imgs/代课.png"
         />
         <view class="ml-14 flex-col items-start group_5">
           <text class="font_3">代课</text>

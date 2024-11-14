@@ -7,6 +7,59 @@ Page({
   data: {
 
   },
+  /**
+   * 跳转
+   */
+  onImageClick1:function(){
+    wx.navigateTo({
+      url: '/pages/wodedizhi/wodedizhi', 
+    });
+  },
+  onImageClick2:function(){
+    wx.navigateTo({
+      url: '/pages/xiaoxi/xiaoxi', 
+    });
+  },
+  onImageClick5:function(){
+    wx.navigateTo({
+      url: '/pages/liaotian/liaotian', // 跳转到详情页面
+    });
+  },
+  onImageClick6:function(){
+    wx.navigateTo({
+      url: '/pages/woderenwu/woderenwu', // 跳转到详情页面
+    });
+  },
+  onImageClick7:function(){
+    wx.navigateTo({
+      url: '/pages/jiedanshezhi/jiedanshezhi', // 跳转到详情页面
+    });
+  },
+  onImageClick8:function(){
+    wx.navigateTo({
+      url: '/pages/wodedingdan/wodedingdan', // 跳转到详情页面
+    });
+  },
+  onImageClick9:function(){
+    wx.navigateTo({
+      url: '/pages/yue/yue', // 跳转到详情页面
+    });
+  },
+  redirectToPage1:function(){
+    wx.redirectTo({
+      url: '/pages/shouye/shouye',
+    })
+  },
+  redirectToPage2:function(){
+    wx.redirectTo({
+      url: '/pages/dingdan/dingdan',
+    })
+  },
+  redirectToPage3:function(){
+    wx.redirectTo({
+      url: '/pages/wode/wode',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

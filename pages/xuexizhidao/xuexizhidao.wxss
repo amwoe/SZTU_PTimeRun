@@ -148,8 +148,8 @@
   border-radius: 17.44rpx;
 }
 .image_8 {
-  width: 113.37rpx;
-  height: 113.37rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 .text_7 {
   line-height: 29.76rpx;

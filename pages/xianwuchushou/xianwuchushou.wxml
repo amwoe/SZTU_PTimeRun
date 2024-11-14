@@ -1,4 +1,9 @@
 <view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="group pos_4">
+    <text class="font text">9:4</text>
+    <text class="font text text_2">1</text>
+  </view>
   <image
     class="image pos"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
@@ -28,14 +33,14 @@
     <view class="flex-col grid-item">
       <image
         class="self-stretch image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=120508caf554392c30f0b8d3c1d37f4d.png"
+        src="https://img0.baidu.com/it/u=3937969590,3303069898&fm=253&fmt=auto&app=138&f=JPEG?w=760&h=760"
       />
       <text class="mt-12 self-start font_3 text_7 text_8">低价闲置衣服‼️‼️‼️</text>
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=36b17815bf276824728f4c32a9b94592.png"
+            src="https://img2.baidu.com/it/u=2005381635,1790286061&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
           />
           <text class="ml-8 font_4 text_9">尼森</text>
         </view>
@@ -48,14 +53,14 @@
     <view class="flex-col grid-item">
       <image
         class="self-stretch image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0c48ead5d92f3ffce0204c7be9fd7b0c.png"
+        src="https://img0.baidu.com/it/u=3727047682,2339473151&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
       />
       <text class="mt-12 self-start font_3 text_7">真皮沙发-九成新</text>
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f5658f3e4a2db1738d87720534ca46d0.png"
+            src="https://img1.baidu.com/it/u=543918953,3991735498&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=546"
           />
           <text class="font_4 text_9 ml-9">白日梦想家</text>
         </view>
@@ -68,14 +73,14 @@
     <view class="flex-col grid-item">
       <image
         class="self-stretch image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0c48ead5d92f3ffce0204c7be9fd7b0c.png"
+        src="https://img2.baidu.com/it/u=3425540028,789201575&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
       />
       <text class="mt-12 self-start font_3 text_7">海氏m6面包机</text>
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c500834ff8d55728522a3963d8144476.png"
+            src="https://img0.baidu.com/it/u=2289838621,1480791646&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=506"
           />
           <text class="font_4 text_9 ml-7">镜明千里</text>
         </view>
@@ -88,14 +93,14 @@
     <view class="flex-col grid-item">
       <image
         class="self-stretch image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=cf4cd60d97122d618012c2c94caf0297.png"
+        src="https://img2.baidu.com/it/u=2028693522,1704825034&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667"
       />
       <text class="mt-12 self-start font_3 text_7 text_10">自用的14 pro 521g</text>
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2b0b8634c083704b65fabff9fe8e273a.png"
+            src="https://img1.baidu.com/it/u=3948967405,479232517&fm=253&fmt=auto?w=650&h=602"
           />
           <text class="ml-8 font_4 text_9">momo</text>
         </view>
@@ -106,10 +111,10 @@
       </view>
     </view>
   </view>
-  <view class="flex-col justify-start items-center image-wrapper pos_13">
+  <!-- <view class="flex-col justify-start items-center image-wrapper pos_13">
     <image
       class="image_8"
       src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3ebdd5eec95405c3476318132b2ae403.png"
     />
-  </view>
+  </view> -->
 </view>
