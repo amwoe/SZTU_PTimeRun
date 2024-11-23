@@ -153,3 +153,10 @@
   display: flex;
   align-items: center;
 }
+
+.error-message {
+  color: red; /* 错误消息显示为红色 */
+  font-size: 14px; /* 字体大小 */
+  margin-top: 10px; /* 与登录按钮的间距 */
+  text-align: center; /* 文本居中显示 */
+}
