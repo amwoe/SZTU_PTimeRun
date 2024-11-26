@@ -42,7 +42,7 @@
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=262f279172977e16e7e5d9f9d5fef23e.png"
+            src="https://img2.baidu.com/it/u=2501613786,676423259&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
           />
           <view class="flex-col shrink-0 ml-13">
             <view class="flex-row items-center self-stretch">
@@ -93,7 +93,7 @@
       <view class="flex-row items-center self-center">
         <image
           class="shrink-0 image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1fcffe9f6a28dbc4f7bf2008b0942c1e.png"
+          src="https://img1.baidu.com/it/u=1952845905,2234971166&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
         />
         <view class="ml-14 flex-col shrink-0">
           <view class="flex-row items-center self-stretch">
