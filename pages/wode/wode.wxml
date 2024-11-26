@@ -1,6 +1,6 @@
 <view class="flex-col justify-start page">
   <view class="flex-col section">
-    <view class="flex-row justify-between items-center group">
+    <!-- <view class="flex-row justify-between items-center group">
       <view class="group_2">
         <text class="font text">9:4</text>
         <text class="font text text_2">1</text>
@@ -19,16 +19,17 @@
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
         />
       </view>
-    </view>
+    </view> -->
     <view class="flex-col group_3">
-      <image
+      <view class="self-end image_4">申请退款</view>
+      <!-- <image
         class="self-end image_4"
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-      />
+      /> -->
       <view class="mt-14 flex-row items-center self-stretch">
         <image
           class="image_5"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9dcc58b0a3258d111849c4dd49861de7.png"
+          src="/assets/imgs/avatar.png"
         />
         <view class="flex-col items-start ml-19">
           <text class="font_2 text_3">Deindy</text>
@@ -46,79 +47,83 @@
           <view class="flex-row items-center section_3">
             <image
               class="shrink-0 image_6"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=955b6d521d3cee775bf30e6aa536bdd2.png"
+              src="/assets/imgs/提现.png"
             />
             <text class="font_4 text_7 ml-9">提现</text>
           </view>
         </view>
         <view class="flex-col justify-start section_4">
           <view class="flex-row equal-division">
-            <view class="flex-col items-center group_6 equal-division-item">
+            <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">2</text>
               <text class="font_4 text_8 mt-19">正在进行</text>
             </view>
-            <view class="flex-col items-center group_6 equal-division-item">
+            <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">5</text>
               <text class="mt-18 font_4 text_8">未接单</text>
             </view>
-            <view class="flex-col items-center group_6 equal-division-item">
+            <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">89</text>
               <text class="mt-18 font_4 text_8">已完成</text>
             </view>
           </view>
         </view>
       </view>
-      <view class="flex-row justify-between items-center section_5 mt-17">
+      <view class="flex-row justify-between items-center section_5 mt-17" bindtap="onImageClick6">
         <text class="font_6">我的任务</text>
         <image
           class="image_7"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=6b2d95b79344c9353dcb758c128844f7.png"
+          src="/assets/imgs/任务.png"
         />
       </view>
       <view class="flex-col section_6 mt-17">
         <text class="self-start font_2 text_9">其他功能</text>
-        <view class="flex-row justify-between self-stretch equal-division view">
-          <image
-            class="image_10"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a0a3e2b22d3e813acc2b0fc327d986f2.png"
-          />
-          <view class="flex-row items-center group_7">
+        <view class="flex-row justify-between self-stretch equal-division equal-division2 view">
+          <view class="self_item" bindtap="onImageClick1">
             <image
-              class="image_8"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=828392899a53d4cbab08fae81154712a.png"
+              class="image_10"
+              src="/assets/imgs/地址.png"
             />
+            <text class="font_3 text_10">我的地址</text>
+          </view>
+          <view class="self_item" bindtap="onImageClick2">
             <image
-              class="image_11 ml-47"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a12bf98f0fcbd0a584e890039feffd34.png"
+              class="image_10"
+              src="/assets/imgs/消息.png"
             />
+            <text class="font_3 text_10">我的消息</text>
+          </view>
+          <view class="self_item" bindtap="onImageClick9">
             <image
-              class="image_9 ml-47"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=48295d5837d711ab03bfd63c39b79933.png"
+              class="image_10 image_102"
+              src="/assets/imgs/提现 (2).png"
             />
+            <text class="font_3 text_10">提现</text>
+          </view>
+          <view class="self_item" bindtap="onImageClick7">
+            <image
+              class="image_103"
+              src="/assets/imgs/接单.png"
+            />
+            <text class="font_3 text_10">接单设置</text>
           </view>
         </view>
-        <view class="flex-row justify-between self-stretch group_8">
-          <text class="font_3 text_10">我的地址</text>
-          <text class="font_3 text_11">我的消息</text>
-          <text class="font_3">提现</text>
-          <text class="font_3 text_12">接单设置</text>
-        </view>
       </view>
-      <view class="flex-row justify-between items-center section_7 mt-17">
+      <view class="flex-row justify-between items-center section_7 mt-17" bindtap="onImageClick5">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_12"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1029266ad5609d2d120ed156b57e62a1.png"
+            src="/assets/imgs/cell_04.png"
           />
           <text class="font_6 text_13 ml-17">联系客服</text>
         </view>
         <image
           class="image_13"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=fbcf331d42d1a4985179f4fdf88a06cf.png"
+          src="/assets/imgs/yuan.png"
         />
       </view>
     </view>
-    <view class="flex-row equal-division_2 section_8">
+    <!-- <view class="flex-row equal-division_2 section_8">
       <view class="flex-col items-center group_9 equal-division-item_2">
         <image
           class="image_14"
@@ -140,6 +145,6 @@
         />
         <text class="font_6 mt-3">我的</text>
       </view>
-    </view>
+    </view> -->
   </view>
 </view>
