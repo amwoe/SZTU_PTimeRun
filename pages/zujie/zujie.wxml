@@ -37,7 +37,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_7"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de6e93458d2c803f4c85109c5aa7b4c9.png"
+        src="https://img2.baidu.com/it/u=2028693522,1704825034&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667"
       />
       <text class="font_2 text_7">苹果手机</text>
       <text class="font_3 text_8 text_9">iPhone 14, iPhone 15, iPhone 15 pl...</text>
@@ -45,7 +45,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=5d4764b3069075747346a86ab39fc81b.png"
+        src="https://img0.baidu.com/it/u=2793906778,2238912584&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750"
       />
       <text class="font_2">安卓手机</text>
       <text class="font_3 text_10">小米14，华为mate40 pro，op...</text>
@@ -53,7 +53,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=767c5d513eb6df4089c97de2d2ecb201.png"
+        src="https://img1.baidu.com/it/u=1202287513,439802740&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=800"
       />
       <text class="font_2 text_11">电脑设备</text>
       <text class="font_4 text_13 text_14">华为 ,戴尔，小米，惠普，苹果...</text>
@@ -61,7 +61,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=a0d469e236d26c7f2508bfea5a4ecbc2.png"
+        src="https://img1.baidu.com/it/u=177695102,2586726774&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1098"
       />
       <text class="font_2 text_12">平板ipad</text>
       <text class="font_4 text_13 text_15">华为 ,小米，三星，OPPO,联想...</text>
@@ -69,7 +69,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9d4fc2062f3362228783d784439562ad.png"
+        src="https://img2.baidu.com/it/u=2445199887,1632706299&fm=253&fmt=auto&app=138&f=JPEG?w=684&h=1216"
       />
       <text class="font_2 text_17">耳机配件</text>
       <text class="font_4 text_8 text_19">华为，索尼，森海塞尔，漫步者</text>
@@ -77,7 +77,7 @@
     <view class="flex-col items-start grid-item">
       <image
         class="image_8"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=52475ce73fb5ddcd244acd6338c43dce.png"
+        src="https://img0.baidu.com/it/u=1675962823,3897326625&fm=253&fmt=auto?w=606&h=500"
       />
       <text class="font_2 text_18">摄影航拍</text>
       <text class="font_4 text_20">索尼，佳能，富士，康尼，松下</text>
