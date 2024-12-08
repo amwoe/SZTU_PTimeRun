@@ -16,4 +16,4 @@ authRouter.get('/profile', verifyToken, (req, res) => {
   });
 });
 
-module.exports = authRouter
+module.exports = authRouter;

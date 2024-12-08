@@ -12,15 +12,13 @@ async function login(req, res) {
   }
 
   try {
-    // 查询数据库中的用户信息
     const [rows] = await db.execute('SELECT * FROM users WHERE account = ?', [account]);
 
-    // 如果账号不存在
     if (rows.length === 0) {
       return error(res, '账号不存在', 404);
     }
 
-    const user = rows[0]; // 获取数据库中查到的用户信息
+    const user = rows[0]; 
 
     // 明文密码比对
     if (password !== user.password) {

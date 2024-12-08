@@ -18,5 +18,5 @@ app.use('/api',authRouter)
 app.use('/api',taskRouter)
 
 app.listen(3000, ()=>{
-    console.log("server running at http://127.0.0.1")
+    console.log("server running at http://127.0.0.1:3000")
 })
