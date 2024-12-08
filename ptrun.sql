@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1:3306
--- 生成日期： 2024-12-07 09:01:50
+-- 生成日期： 2024-12-08 09:07:13
 -- 服务器版本： 9.1.0
 -- PHP 版本： 8.3.14
 
@@ -35,21 +35,14 @@ CREATE TABLE IF NOT EXISTS `tasks` (
   `type` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `employee_id` varchar(20) DEFAULT NULL,
-  `status` enum('待接单','已接单','进行中','已完成') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '待接单',
+  `status` enum('待接单','已接单','已完成') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '待接单',
   `amount` decimal(10,2) NOT NULL,
   `task_time` datetime NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `location` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`task_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- 转存表中的数据 `tasks`
---
-
-INSERT INTO `tasks` (`task_id`, `publisher_id`, `publisher_gender`, `type`, `description`, `employee_id`, `status`, `amount`, `task_time`, `created_at`, `updated_at`, `location`) VALUES
-(1, 'sztu', '', '食堂带饭', '去第二食堂带份辣椒炒肉和米饭', NULL, '待接单', 20.50, '2024-12-07 15:30:00', '2024-12-07 09:00:54', '2024-12-07 09:00:54', '学校宿舍5栋203');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -70,7 +63,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`account`, `password`, `balance`, `gender`) VALUES
-('sztu', '123456', 0, '未知');
+('sztu', '123456', 100, '未知'),
+('krampus', '666666', 100, '未知'),
+('美丽菲菲', '654321', 100, '女');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
