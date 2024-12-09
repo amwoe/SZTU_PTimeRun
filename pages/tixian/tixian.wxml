@@ -1,9 +1,6 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <view class="group pos_4">
-    <text class="font text">9:4</text>
-    <text class="font text text_2">1</text>
-  </view>
+
   <image
     class="image pos"
     src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=62a611866490af0db9c24a7695ec29b6.png"
@@ -20,7 +17,6 @@
     class="image_5 pos_6"
     src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=7d9307e2d02af99afc3a073bcf6ed9e9.png"
   />
-  <text class="font_2 text_3 pos_7">提现</text>
   <image
     class="image_4 pos_5"
     src="https://ide.code.fun/api/image?token=6733819a73147e0011b9ca33&name=23e66ced94d0844fee9a1801fecc78df.png"
