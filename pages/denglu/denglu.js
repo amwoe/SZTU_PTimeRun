@@ -37,9 +37,9 @@ Page({
     });
   },
 
-  onCheckboxChange(e) {
+  onCheckboxChange:function(e) {
     this.setData({
-      isChecked: e.detail.value
+      isChecked: !this.data.isChecked
     });
   },
 
