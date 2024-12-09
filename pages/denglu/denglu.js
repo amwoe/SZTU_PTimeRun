@@ -1,82 +1,107 @@
 Page({
   data: {
-    account:'',
-    password:'',
-    isPasswordVisible:false,
-    isChecked:false,
-    loginError:false,
-    correctAccount:'sztu',
-    correctPassword:'123456',
+    account: '',
+    password: '',
+    isPasswordVisible: false,
+    isChecked: false,
+    loginError: false,
   },
 
-  onAccountInput(e){
-    console.log(e.detail.value)
+  onAccountInput(e) {
     this.setData({
-      account:e.detail.value
+      account: e.detail.value
     });
   },
-  onPasswordInput(e){
-    console.log(e.detail.value)
+
+  onPasswordInput(e) {
     this.setData({
-      password:e.detail.value
-    })
+      password: e.detail.value
+    });
   },
 
-
-  togglePasswordVisibility(){
+  togglePasswordVisibility() {
     this.setData({
-      isPasswordVisible:!this.data.isPasswordVisible
-    })
+      isPasswordVisible: !this.data.isPasswordVisible
+    });
   },
 
-  onForget:function(){
+  onForget() {
     wx.getUserProfile({
       desc: '用于用户验证',
-      success:(res)=>{
-        console.log('用户授权信息',res.userInfo);
+      success: (res) => {
+        console.log('用户授权信息', res.userInfo);
       },
-      fail:(res)=>{
-        console.log('用户拒绝授权',res)
+      fail: (res) => {
+        console.log('用户拒绝授权', res);
       }
-    })
+    });
   },
 
-  onCheckboxChange:function(e){
+  onCheckboxChange(e) {
     this.setData({
-      isChecked: !this.data.isChecked
-    })
+      isChecked: e.detail.value
+    });
   },
 
-  onAgreementTap:function(){
+  onAgreementTap() {
     wx.openPrivacyContract();
     this.setData({
-      isChecked:true
-    })
+      isChecked: true
+    });
   },
 
   onShareAppMessage() {
     return {};
   },
-  onLogin:function(){
-    if(!this.data.isChecked){
+
+  onLogin() {
+    if (!this.data.isChecked) {
       wx.showToast({
         title: '请同意用户协议',
-        icon:'none'
+        icon: 'none'
       });
       return;
     }
-    if(this.data.account===this.data.correctAccount&&this.data.password===this.data.correctPassword){
-      wx.reLaunch({
-        url: '/pages/shouye/shouye',
-      }),
-      wx.showToast({
-        title: '登录成功',
-        icon:'success'
-      })
-    }else{
-      this.setData({
-        loginError:true
-      });
-    }
+
+    // 构建请求体
+    const loginData = {
+      account: this.data.account,
+      password: this.data.password,
+    };
+
+    // 发起网络请求
+    wx.request({
+      url: 'https://write/login', // 替换为后端API地址
+      method: 'POST',
+      data: loginData,
+      success: (res) => {
+        if (res.data.success) {
+          const token = res.data.data.token;
+          wx.setStorageSync('token', token); // 存储token到本地存储
+          wx.reLaunch({
+            url: '/pages/shouye/shouye',
+          });
+          wx.showToast({
+            title: '登录成功',
+            icon: 'success'
+          });
+        } else {
+          this.setData({
+            loginError: true,
+            password: '', // 清空密码字段
+          });
+          wx.showToast({
+            title: res.data.message,
+            icon: 'none'
+          });
+        }
+      },
+      fail: () => {
+        wx.showToast({
+          title: '网络请求失败',
+          icon: 'none'
+        });
+      }
+    });
   },
 });
