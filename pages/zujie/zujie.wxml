@@ -1,9 +1,5 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <view class="group pos_4">
-    <text class="font text text_2">9:4</text>
-    <text class="font text text_3">1</text>
-  </view>
   <image
     class="image pos"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
@@ -20,7 +16,7 @@
     class="image_5 pos_6"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
   />
-  <text class="text_4 pos_7">租借</text>
+
   <image
     class="image_4 pos_5"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
