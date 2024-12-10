@@ -71,11 +71,17 @@ Page({
 
     // 发起网络请求
     wx.request({
-      url: 'https://write/login', // 替换为后端API地址
+      url: 'http://127.0.0.1:3000/api/login', // 替换为后端API地址
       method: 'POST',
       data: loginData,
+      header: {
+        'content-Type': 'application/json',
+      },
       success: (res) => {
         if (res.data.success) {
+          
+          console.log(res.data.data)
+
           const token = res.data.data.token;
           wx.setStorageSync('token', token); // 存储token到本地存储
           wx.reLaunch({
