@@ -44,7 +44,6 @@
 }
 .section {
   padding: 5.4rpx 0 24.42rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
@@ -134,7 +133,7 @@
   line-height: 22.66rpx;
 }
 .group_5 {
-  padding-top: 1rpx;
+  padding-top: 0rpx;
 }
 .equal-division {
   align-self: center;
@@ -145,7 +144,7 @@
 }
 .section_3 {
   margin: 0 27.91rpx;
-  padding: 80rpx 17.44rpx 43.6rpx 38.37rpx;
+  padding: 50rpx 17.44rpx 30.6rpx 30.37rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #fdfffb;
