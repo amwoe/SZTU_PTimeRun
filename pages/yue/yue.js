@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  navigateToDetail: function() {
+    wx.navigateTo({
+      url: '/pages/tixian/tixian'
+    });
   }
 })
