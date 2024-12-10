@@ -299,10 +299,18 @@
 .equal-division_2 {
   margin-top: 212.79rpx;
 }
+
 .section_8 {
-  padding: 24.42rpx 6.98rpx;
-  background-color: #ffffff;
-  box-shadow: 0rpx -8.72rpx 17.44rpx 3.49rpx #00000014;
+  position: sticky; /* 粘性定位 */
+  bottom: 0; /* 底部对齐 */
+  left: 0; /* 左边对齐 */
+  right: 0; /* 右边对齐 */
+  width: 100%; /* 宽度100% */
+  padding: 24.42rpx 6.98rpx; /* 根据需要调整内边距 */
+  background-color: #ffffff; /* 背景颜色 */
+  box-shadow: 0rpx -8.72rpx 17.44rpx 3.49rpx #00000014; /* 根据需要调整阴影 */
+  display: flex;
+  justify-content: space-between; /* 子元素间隔均匀分布 */
 }
 .group_9 {
   flex: 1 1 244.62rpx;
