@@ -1,9 +1,5 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <view class="group pos_4">
-    <text class="font text">9:4</text>
-    <text class="font text text_2">1</text>
-  </view>
   <image
     class="image pos"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
@@ -20,12 +16,11 @@
     class="image_5 pos_7"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
   />
-  <text class="text_3 pos_6">我的订单</text>
   <image
     class="image_4 pos_5"
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
   />
-  <view class="flex-row items-center section_2 pos_8">
+  <view class="flex-row items-center section_1 pos_8">
     <image
       class="image_6"
       src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
@@ -33,8 +28,9 @@
     <text class="font_2 text_4 ml-7">输入关键词搜索</text>
   </view>
   <text class="font_2 text_5 pos_9">正在进行(2)</text>
-  <text class="font_2 text_6 pos_10">未接单(5)</text>
-  <text class="font_2 text_7 pos_11">已完成(89)</text>
+  <text class="font_2 text_6 pos_10"bindtap="onUnacceptedTap">未接单(1)</text>
+  <text class="font_2 text_7 pos_11"bindtap="onCompletedTap">已完成(1)</text>
+
   <view class="section_3 pos_12"></view>
   <view class="flex-col section_4 pos_13">
     <view class="flex-col">
@@ -59,7 +55,7 @@
             class="shrink-0 image_8"
             src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
           />
-          <text class="font_5 text_10 ml-3">09:18 截至</text>
+          <text class="font_5 text_8 ml-3">09:18 截止</text>
         </view>
       </view>
       <view class="flex-row justify-evenly self-start section_6 view">
@@ -110,7 +106,7 @@
           class="shrink-0 image_8"
           src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
         />
-        <text class="font_5 text_10 ml-3">09:18 截至</text>
+        <text class="font_5 text_8 ml-3">09:18 截止</text>
       </view>
     </view>
     <view class="flex-row justify-evenly self-start section_6 view_3">
