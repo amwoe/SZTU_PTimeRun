@@ -16,15 +16,15 @@ Page({
   },  
   onConfirm:function(){
     wx.showToast({
-      title:'接单成功',
-      icon:'success',
-      duration:2000,
-      complete:()=>{
-        setTimeout(()=>{
-          wx.navigateBack();
-        },1000);
-      }
+      title: '接单成功',
+      icon: 'success',
+      duration: 2000,
     });
+    setTimeout(() => {
+      wx.navigateBack({
+        delta: 1 
+      });
+    }, 2000);
   },
   /**
    * 生命周期函数--监听页面加载

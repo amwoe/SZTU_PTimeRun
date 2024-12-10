@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "学习指导",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black"
 }
