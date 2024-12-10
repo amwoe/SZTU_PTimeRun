@@ -62,5 +62,21 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+
+  navigateToDetail: function() {
+    wx.navigateTo({
+      url: '/pages/wodedizhi/wodedizhi' // 确保路径正确
+    });
+  },
+
+  data: {
+    activeService: '' // 默认没有激活的服务
+  },
+  onServiceTap: function(e) {
+    const service = e.currentTarget.dataset.service;
+    this.setData({
+      activeService: service // 更新激活的服务
+    });
+  },
 })
