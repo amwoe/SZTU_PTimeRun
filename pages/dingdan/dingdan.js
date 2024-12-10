@@ -144,14 +144,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // this.setData({
-    //   sections: this.data.sections.map((item, index) => {
-    //     if (item.type === '可接单') {
-    //       return { ...item, type: '不可接单' };
-    //     }
-    //     return item;
-    //   })
-    // });
+
   },
 
   /**
