@@ -29,7 +29,7 @@
       <view class="mt-14 flex-row items-center self-stretch">
         <image
           class="image_5"
-          src="/assets/imgs/avatar.png"
+          src="/pages/images/16/4.png"
         />
         <view class="flex-col items-start ml-19">
           <text class="font_2 text_3">Deindy</text>
@@ -44,13 +44,6 @@
             <text class="font_4 text_5">余额(元)</text>
             <text class="mt-10 font_5 text_6">5.3</text>
           </view>
-          <view class="flex-row items-center section_3">
-            <image
-              class="shrink-0 image_6"
-              src="/assets/imgs/提现.png"
-            />
-            <text class="font_4 text_7 ml-9">提现</text>
-          </view>
         </view>
         <view class="flex-col justify-start section_4">
           <view class="flex-row equal-division">
@@ -59,11 +52,11 @@
               <text class="font_4 text_8 mt-19">正在进行</text>
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
-              <text class="font_5">5</text>
+              <text class="font_5">1</text>
               <text class="mt-18 font_4 text_8">未接单</text>
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
-              <text class="font_5">89</text>
+              <text class="font_5">1</text>
               <text class="mt-18 font_4 text_8">已完成</text>
             </view>
           </view>
@@ -82,28 +75,28 @@
           <view class="self_item" bindtap="onImageClick1">
             <image
               class="image_10"
-              src="/assets/imgs/地址.png"
+              src="/pages/images/13/6.png"
             />
             <text class="font_3 text_10">我的地址</text>
           </view>
           <view class="self_item" bindtap="onImageClick2">
             <image
               class="image_10"
-              src="/assets/imgs/消息.png"
+              src="/pages/images/13/7.png"
             />
             <text class="font_3 text_10">我的消息</text>
           </view>
           <view class="self_item" bindtap="onImageClick9">
             <image
               class="image_10 image_102"
-              src="/assets/imgs/提现 (2).png"
+              src="/pages/images/13/8.png"
             />
             <text class="font_3 text_10">提现</text>
           </view>
           <view class="self_item" bindtap="onImageClick7">
             <image
               class="image_103"
-              src="/assets/imgs/接单.png"
+              src="/pages/images/13/9.png"
             />
             <text class="font_3 text_10">接单设置</text>
           </view>
@@ -113,7 +106,7 @@
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_12"
-            src="/assets/imgs/cell_04.png"
+            src="/pages/images/13/10.png"
           />
           <text class="font_6 text_13 ml-17">联系客服</text>
         </view>
@@ -123,28 +116,28 @@
         />
       </view>
     </view>
-    <!-- <view class="flex-row equal-division_2 section_8">
-      <view class="flex-col items-center group_9 equal-division-item_2">
+    <view class="flex-row equal-division_2 section_8">
+      <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage1">
         <image
           class="image_14"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=d7f6aff96e215bc396ee1f01467c554d.png"
+          src="/pages/images/菜单/首页1.png"
         />
         <text class="font_7 mt-3">首页</text>
       </view>
-      <view class="flex-col items-center group_9 equal-division-item_2">
+      <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage2">
         <image
           class="image_14"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=afc5d8bb3c64172464a03a70bdfdc16a.png"
+          src="/pages/images/菜单/订单2.png"
         />
         <text class="font_7 mt-3">订单</text>
       </view>
-      <view class="flex-col items-center group_9 equal-division-item_2">
+      <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage3">
         <image
           class="image_14"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=69477523330773934e359192f0216070.png"
+          src="/pages/images/菜单/我的2.png"
         />
         <text class="font_6 mt-3">我的</text>
       </view>
-    </view> -->
+    </view>
   </view>
 </view>
