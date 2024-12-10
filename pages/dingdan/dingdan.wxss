@@ -144,12 +144,12 @@
 }
 .section_3 {
   margin: 0 27.91rpx;
-  padding: 50rpx 17.44rpx 30.6rpx 30.37rpx;
+  padding: 50rpx 17.44rpx 20.6rpx 20.37rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #fdfffb;
   border-radius: 12.66rpx;
-  box-shadow: 0rpx 10.47rpx 8.72rpx #00000012;
+  box-shadow: 0rpx 20.47rpx 20.72rpx #00000012;
   border-left: solid 1.74rpx #ffffff;
   border-right: solid 1.74rpx #ffffff;
   border-top: solid 1.74rpx #ffffff;
@@ -164,7 +164,7 @@
   margin-top: 5.23rpx;
 }
 .group_6 {
-  margin-right: 3.49rpx;
+  margin-right: 20.49rpx;
 }
 .group_7 {
   padding-left: 3.49rpx;
