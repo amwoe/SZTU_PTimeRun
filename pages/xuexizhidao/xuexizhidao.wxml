@@ -1,9 +1,5 @@
 <view class="flex-col page">
   <view class="flex-row justify-between items-center group">
-    <view class="group_2">
-      <text class="font text">9:4</text>
-      <text class="font text text_2">1</text>
-    </view>
     <view class="flex-row">
       <image
         class="image"
@@ -48,7 +44,7 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item">
           <image
             class="image_7"
-            src="/assets/imgs/课程资料.png"
+            src="/pages/images/9，10，11/13.png"
           />
           <view class="ml-14 flex-col items-start">
             <text class="font_3 text_6">课程资料</text>
@@ -58,7 +54,7 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item ml-11">
           <image
             class="image_7"
-            src="/assets/imgs/高考复习-01.png"
+            src="/pages/images/9，10，11/16.png"
           />
           <view class="ml-14 flex-col items-start">
             <text class="font_3 text_6">复习资料</text>
@@ -70,7 +66,7 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item">
           <image
             class="image_7"
-            src="/assets/imgs/我的学习.png"
+            src="/pages/images/9，10，11/14.png"
           />
           <view class="ml-14 flex-col items-start">
             <text class="font_3 text_6">学习指导</text>
@@ -87,7 +83,7 @@
       <view class="flex-row justify-center items-center section_4 equal-division-item_2">
         <image
           class="image_9"
-          src="/assets/imgs/签字.png"
+          src="/pages/images/9，10，11/9.png"
         />
         <view class="ml-16 flex-col items-start group_5">
           <text class="font_3">代签</text>
@@ -97,7 +93,7 @@
       <view class="ml-10 flex-row justify-center items-center section_4 equal-division-item_2">
         <image
           class="image_9"
-          src="/assets/imgs/代课.png"
+          src="/pages/images/9，10，11/12.png"
         />
         <view class="ml-14 flex-col items-start group_5">
           <text class="font_3">代课</text>
