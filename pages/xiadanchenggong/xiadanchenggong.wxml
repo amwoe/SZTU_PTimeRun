@@ -1,9 +1,5 @@
 <view class="flex-col page">
   <view class="flex-row justify-between items-center group">
-    <view class="group_2">
-      <text class="font text">9:4</text>
-      <text class="font text text_2">1</text>
-    </view>
     <view class="flex-row">
       <image
         class="image"
@@ -26,7 +22,7 @@
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
       />
     </view>
-    <view class="flex-row justify-start items-center image-wrapper"><text class="text_3">下单成功</text></view>
+    <view class="flex-row justify-start items-center image-wrapper"></view>
     <view class="flex-row justify-start items-center image-wrapper view">
       <image
         class="image_4"
@@ -38,7 +34,7 @@
     <view class="flex-col justify-start items-center self-center image-wrapper_2">
       <image
         class="image_6"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3282c2d8db6f145e313fae6461d128b2.png"
+        src="/pages/images/16/4.png"
       />
     </view>
     <view class="flex-col items-center self-stretch mt-25">
