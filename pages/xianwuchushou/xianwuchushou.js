@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  navigateToDetail: function() {
+    wx.navigateTo({
+      url: '/pages/xianwuchushouxiangqing/xianwuchushouxiangqing'
+    });
   }
 })
