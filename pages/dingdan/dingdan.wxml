@@ -13,9 +13,7 @@
 
       <view class="search-results" wx:if="{{searchResults.length>0}}">
         <block wx:for="{{searchResults}}" wx:key="index">
-          <view class="search-result">
-            <text>{{item}}</text>
-          </view>
+          <view class="search-result" class="{{item.highlight ? 'search-result--highlight' :''}}">{{item.name}}</view>
         </block>
       </view>
 

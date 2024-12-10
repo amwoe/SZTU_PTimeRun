@@ -1,5 +1,4 @@
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -72,13 +71,29 @@ Page({
   },
 
   onSearch: function () {
-    if (!this.data.searchQuery.trim()) { return; }
-    setTimeout(() => {
-      const searchResults = [`结果1-${this.data.searchQuery}`, `结果2-${this.data.searchQuery}`];
-      this.setData({
-        searchResults
+    const { searchQuery, sections } = this.data;
+    if (!searchQuery.trim()) {
+      this.setData({ searchResults: [] });
+      return;
+    }
+    const searchResults = sections.filter(section =>
+      section.name.includes(searchQuery) ||
+      section.task.includes(searchQuery) ||
+      section.description.includes(searchQuery) ||
+      section.location.includes(searchQuery) ||
+      section.type.includes(searchQuery)
+    ).map(item=>({
+      ...item,highlight:true
+    }));
+    if (searchResults.length === 0) {
+      wx.showModal({
+        title: '提示',
+        content: '无结果',
+        showCancel: false
       });
-    }, 1000);
+    } else {
+      this.setData({ searchResults });
+    }
   },
 
   onInputChange: function (e) { //更新搜索关键词

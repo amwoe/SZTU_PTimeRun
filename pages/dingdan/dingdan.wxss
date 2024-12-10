@@ -144,7 +144,7 @@
 }
 .section_3 {
   margin: 0 27.91rpx;
-  padding: 50rpx 17.44rpx 20.6rpx 20.37rpx;
+  padding: 60rpx 17.44rpx 20.6rpx 20.37rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #fdfffb;
@@ -473,4 +473,13 @@
 .user-card .font_5 {
   font-size: 14px;
   color: #333;
+}
+
+.search-result {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff; /* 默认背景颜色 */
+}
+.search-result--highlight {
+  background-color: #ffa500; /* 橙色背景颜色 */
 }
