@@ -8,7 +8,7 @@
   margin-left: 1.74rpx;
 }
 .mt-27 {
-  margin-top: 47.09rpx;
+  margin-top: 30.09rpx;
 }
 .ml-11 {
   margin-left: 19.19rpx;
@@ -144,7 +144,7 @@
 }
 .section_3 {
   margin: 0 27.91rpx;
-  padding: 60rpx 17.44rpx 20.6rpx 20.37rpx;
+  padding: 60rpx 30.44rpx 30.6rpx 30.37rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #fdfffb;

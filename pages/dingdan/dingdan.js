@@ -48,10 +48,34 @@ Page({
     ],
   },
 
-  onImageClick1: function () {
-    wx.navigateTo({
-      url: '/pages/dingdanxiangqing/xiangqing',
-    });
+  updateSectionType: function(index, newType) {
+    if (index >= 0 && index < this.data.sections.length) {
+      const updatedSections = this.data.sections.map((item, idx) => {
+        if (idx === index) {
+          return { ...item, type: newType };
+        }
+        return item;
+      });
+      this.setData({ sections: updatedSections }, () => {
+        console.log('Sections updated:', this.data.sections);
+      });
+    } else {
+      console.error('Index out of range:', index);
+    }
+  },
+
+  onImageClick1: function (e) {
+    const index = e.currentTarget.dataset.index;
+    const item = this.data.sections[index];
+    console.log(item);
+    if (item.type === '不可接单') {
+      // 如果type为不可接单，则不执行任何操作
+      return;
+    }else{
+      wx.navigateTo({
+        url: '/pages/dingdanxiangqing/xiangqing?index=' + index,
+      });
+    }
   },
 
   redirectToPage1: function () {
@@ -82,8 +106,8 @@ Page({
       section.description.includes(searchQuery) ||
       section.location.includes(searchQuery) ||
       section.type.includes(searchQuery)
-    ).map(item=>({
-      ...item,highlight:true
+    ).map(item => ({
+      ...item, highlight: true
     }));
     if (searchResults.length === 0) {
       wx.showModal({
@@ -120,7 +144,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // this.setData({
+    //   sections: this.data.sections.map((item, index) => {
+    //     if (item.type === '可接单') {
+    //       return { ...item, type: '不可接单' };
+    //     }
+    //     return item;
+    //   })
+    // });
   },
 
   /**
