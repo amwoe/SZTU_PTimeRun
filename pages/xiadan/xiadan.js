@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  data: {
+    price: '20.00' // 初始价格
+  },
+  updatePrice: function(e) {
+    // 更新价格
+    this.setData({
+      price: e.detail.value ? e.detail.value + '.00' : '0.00'
+    });
   }
 })
