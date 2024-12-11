@@ -62,5 +62,29 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+  onImageClick1:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/xiadan/xiadan',
+    });
+  },
+  onImageClick2:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/fuxiziliao/fuxiziliao',
+    });
+  },
+  onImageClick3:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/fuxizhidao/fuxizhidao',
+    });
+  },
+  onImageClick4:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/kechengziliao/kechengziliao',
+    });
+  },
 })
