@@ -1,324 +1,259 @@
+.ml-25 {
+  margin-left: 43.6rpx;
+}
 .mt-11 {
   margin-top: 19.19rpx;
 }
-.ml-7 {
-  margin-left: 12.21rpx;
+.mt-3 {
+  margin-top: 5.23rpx;
+}
+.mt-5 {
+  margin-top: 8.72rpx;
+}
+.mt-9 {
+  margin-top: 15.7rpx;
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 100%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  height: 100%;
+  flex: 1; /* 让内容区域自适应剩余空间 */
 }
-.section {
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 750rpx;
-  height: 1625.58rpx;
-}
-.group {
-  line-height: 17.46rpx;
-}
-.pos_4 {
-  position: absolute;
-  left: 59.01rpx;
-  top: 35.48rpx;
-}
-.font {
-  font-size: 24.42rpx;
-  font-family: AlibabaPuHuiTi;
-  font-weight: 700;
-  color: #000000;
-}
-.text {
-  word-break: break-all;
-}
-.text_2 {
-  line-height: 17.46rpx;
-}
-.text_3 {
-  line-height: 16.95rpx;
-}
+
 .image {
-  width: 29.65rpx;
-  height: 19.19rpx;
+  margin-left: 64.53rpx;
+  width: 31.4rpx;
+  height: 31.4rpx;
+}
+.text-wrapper {
+  padding: 13.95rpx 0 10.47rpx;
+  background-color: #ffffff57;
+  border-radius: 52.33rpx;
+  width: 106.4rpx;
 }
 .pos {
   position: absolute;
-  right: 112.2rpx;
-  top: 30.82rpx;
+  right: 22.67rpx;
+  top: 661.05rpx;
 }
-.image_2 {
-  width: 26.16rpx;
-  height: 19.19rpx;
-}
-.pos_2 {
-  position: absolute;
-  right: 77.28rpx;
-  top: 30.23rpx;
-}
-.image_3 {
-  width: 41.86rpx;
-  height: 19.76rpx;
-}
-.pos_3 {
-  position: absolute;
-  right: 26.16rpx;
-  top: 30.23rpx;
-}
-.image_5 {
-  width: 29.65rpx;
-  height: 29.65rpx;
-}
-.pos_6 {
-  position: absolute;
-  left: 61.05rpx;
-  top: 115.12rpx;
-}
-.font_2 {
-  font-size: 27.91rpx;
+.font {
+  font-size: 24.42rpx;
   font-family: SourceHanSansCN;
-  line-height: 33.14rpx;
-  font-weight: 700;
-  color: #383838;
+  line-height: 24.42rpx;
+  color: #030303;
 }
-.text_4 {
-  line-height: 26.23rpx;
-}
-.pos_7 {
-  position: absolute;
-  left: 335.44rpx;
-  top: 118.64rpx;
-}
-.image_4 {
-  width: 150rpx;
-  height: 55.81rpx;
-}
-.pos_5 {
-  position: absolute;
-  right: 27.91rpx;
-  top: 101.16rpx;
+.text {
+  line-height: 23.76rpx;
 }
 .section_2 {
-  padding: 20.93rpx 31.4rpx;
-  background-color: #ffffff;
-  border-radius: 43.76rpx;
-  border-left: solid 1.74rpx #ffffff;
-  border-right: solid 1.74rpx #ffffff;
-  border-top: solid 1.74rpx #ffffff;
-  border-bottom: solid 1.74rpx #ffffff;
-}
-.pos_8 {
-  position: absolute;
-  left: 25.29rpx;
-  right: 32.27rpx;
-  top: 196.22rpx;
-}
-.image_6 {
-  width: 33.14rpx;
-  height: 33.14rpx;
-}
-.font_3 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
-  color: #808080;
-}
-.text_5 {
-  line-height: 22.66rpx;
-}
-.font_4 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
-  font-weight: 700;
-  color: #8dc74c;
-}
-.text_6 {
-  color: #383838;
-  line-height: 23.13rpx;
-}
-.pos_9 {
-  position: absolute;
-  left: 45.73rpx;
-  top: 309.09rpx;
-}
-.text_7 {
-  line-height: 22.52rpx;
-}
-.pos_10 {
-  position: absolute;
-  left: 133.83rpx;
-  top: 309.56rpx;
-}
-.font_5 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 29.65rpx;
-  color: #808080;
-}
-.text_8 {
-  text-align: center;
-  width: 118.6rpx;
-}
-.pos_11 {
-  position: absolute;
-  left: 248.95rpx;
-  top: 306.94rpx;
-}
-.text_9 {
-  text-align: center;
-  width: 165.7rpx;
-}
-.pos_12 {
-  position: absolute;
-  right: 183.63rpx;
-  top: 306.94rpx;
-}
-.text_10 {
-  line-height: 22.52rpx;
-}
-.pos_13 {
-  position: absolute;
-  right: 56.28rpx;
-  top: 309.56rpx;
-}
-.section_3 {
-  background-color: #383838;
-  width: 50.58rpx;
-  height: 3.49rpx;
-}
-.pos_14 {
-  position: absolute;
-  left: 45.35rpx;
-  top: 347.09rpx;
-}
-.pos_15 {
-  position: absolute;
-  left: 26.16rpx;
-  right: 29.67rpx;
-  top: 381.98rpx;
-}
-.list-item {
-  padding: 13.95rpx 6.98rpx 41.86rpx;
+  padding: 50.58rpx 22.67rpx 0 36.63rpx;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.list-item:first-child {
-  margin-top: 0;
+.group {
+  padding: 0 15.7rpx;
 }
-.image_7 {
-  border-radius: 17.44rpx;
-  width: 254.65rpx;
-  height: 277.33rpx;
-}
-.group_2 {
-  margin-bottom: 3.49rpx;
-}
-.text_11 {
-  margin-left: 3.49rpx;
-  text-align: center;
-  width: 298.26rpx;
-}
-.text_12 {
-  margin-top: 13.95rpx;
-  text-align: center;
-}
-.font_6 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
-  color: #d43030;
-}
-.text_13 {
-  line-height: 22.66rpx;
-}
-.text_14 {
-  margin-top: 17.44rpx;
-}
-.group_3 {
-  margin-top: 17.44rpx;
-}
-.text-wrapper {
-  padding: 10.47rpx 0;
-  background-color: #edf6fc;
-  border-radius: 8.72rpx;
-  width: 76.74rpx;
-  height: 43.6rpx;
-}
-.font_8 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
-  color: #44a2eb;
-}
-.text_15 {
-  line-height: 22.57rpx;
-}
-.text_16 {
-  line-height: 22.4rpx;
-}
-.group_4 {
-  margin-right: 20.93rpx;
-  line-height: 24.1rpx;
-  height: 27.42rpx;
-}
-.font_9 {
-  font-size: 20.93rpx;
-  font-family: SourceHanSansCN;
-  line-height: 15.45rpx;
-  font-weight: 700;
-  color: #d43030;
-}
-.font_7 {
-  font-size: 31.4rpx;
-  font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
-  font-weight: 700;
-  color: #d43030;
-}
-.font_10 {
-  font-size: 20.93rpx;
-  font-family: SourceHanSansCN;
-  line-height: 20.37rpx;
-  color: #d43030;
-}
-.group_5 {
-  padding: 0 8.72rpx;
-}
-.view {
-  margin-top: 3.49rpx;
-}
-.image_8 {
+.image_2 {
   border-radius: 50%;
-  width: 40.12rpx;
-  height: 40.12rpx;
+  width: 92.44rpx;
+  height: 92.44rpx;
 }
-.font_11 {
-  font-size: 24.42rpx;
+.font_2 {
+  font-size: 50.91rpx;
   font-family: SourceHanSansCN;
-  line-height: 24.1rpx;
   color: #000000;
 }
-.text_17 {
-  line-height: 22.48rpx;
+.font_21{
+  font-size: 27.91rpx;
+  font-family: SourceHanSansCN;
+  color: #000000;
 }
-.text-wrapper_2 {
-  margin-right: 3.49rpx;
-  padding: 13.95rpx 0;
-  border-radius: 52.33rpx;
-  width: 136.05rpx;
-  height: 54.07rpx;
-  border-left: solid 1.74rpx #8dc74c;
-  border-right: solid 1.74rpx #8dc74c;
-  border-top: solid 1.74rpx #8dc74c;
-  border-bottom: solid 1.74rpx #8dc74c;
+.text_2 {
+  line-height: 30.95rpx;
+}
+.font_3 {
+  font-size: 20.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 19.26rpx;
+  color: #808080;
+}
+.text_5 {
+  line-height: 19.81rpx;
+}
+.group_2 {
+  margin-right: 20.93rpx;
+  line-height: 29.13rpx;
+  height: 29.13rpx;
+}
+.text_4 {
+  color: #d43030;
+  line-height: 17.6rpx;
+}
+.text_3 {
+  color: #d43030;
+  font-size: 38.37rpx;
+  font-family: SourceHanSansCN;
+  line-height: 29.13rpx;
+}
+.group_3 {
+  margin-left: 17.44rpx;
+  margin-top: 48.84rpx;
+}
+.text_6 {
+  line-height: 33.14rpx;
+  width: 1000.44rpx;
+}
+.font_4 {
+  font-size: 30.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 50.42rpx;
+  color: #808080;
+}
+.text_62 {
+  line-height: 60.14rpx;
+  width: 500.44rpx;
+}
+.group_4 {
+  margin-top: 45.35rpx;
+  padding: 0 12.21rpx;
+}
+.text_7 {
+  margin-left: 3.49rpx;
+  line-height: 29.2rpx;
+}
+.list-item {
+  padding: 31.4rpx 3.49rpx 41.86rpx;
+  border-bottom: solid 1.74rpx #e5e5e5;
+}
+.image_3 {
+  border-radius: 50%;
+  width: 69.77rpx;
+  height: 69.77rpx;
+}
+.text_8 {
+  color: #000000;
+  line-height: 22.88rpx;
+}
+.text_10 {
+  line-height: 19.4rpx;
+}
+.group_5 {
+  width: 86.16rpx;
+}
+.font_5 {
+  font-size: 20.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 24.42rpx;
+  color: #000000;
+}
+.text_9 {
+  width: 43.6rpx;
+}
+.font_6 {
+  font-size: 20.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 19.26rpx;
+  color: #d43030;
+}
+.group_7 {
+  padding: 48.84rpx 0;
+}
+.section_3 {
+  padding: 17.44rpx 62.79rpx 24.42rpx 66.28rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 118.6rpx;
+}
+.image_4 {
+  width: 43.6rpx;
+  height: 43.6rpx;
+}
+.text_16 {
+  line-height: 22.78rpx;
+}
+.text_17 {
+  line-height: 22.71rpx;
+}
+.image_5 {
+  width: 45.35rpx;
+  height: 45.35rpx;
 }
 .text_18 {
-  line-height: 23.32rpx;
+  line-height: 22.94rpx;
+}
+.section_4 {
+  padding: 24.42rpx 0 17.44rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 231.98rpx;
+  height: 118.6rpx;
+}
+.group_8 {
+  line-height: 34.83rpx;
+}
+.text_15 {
+  font-weight: 700;
+  line-height: 18.02rpx;
+}
+.text_14 {
+  color: #ffffff;
+  font-size: 45.35rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 700;
+  line-height: 34.83rpx;
+}
+.text_19 {
+  color: #ffffff;
+  font-size: 27.91rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 700;
+  line-height: 26.15rpx;
+}
+
+
+/* 咨询按钮样式 */
+.btn_consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a2cfa4; /* 按钮背景色 */
+  border-radius: 50%; /* 完全圆形 */
+  width: 40px; /* 设置按钮的宽度 */
+  height: 40px; /* 设置按钮的高度，与宽度相等，形成圆形 */
+  border: none;
+  color: #ffffff; /* 文本颜色 */
+  font-size: 16px;
+  position: absolute; /* 使用绝对定位 */
+  left: 10px; /* 距离左侧 10px */
+  bottom: 10px; /* 距离底部 10px */
+}
+
+.btn_consultation image {
+  width: 18px; /* 图标大小 */
+  height: 18px; /* 图标大小 */
+}
+
+
+
+/* 去下单按钮样式 */
+.btn_order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1baa0; /* 按钮背景色 */
+  border-radius: 8px; /* 按钮圆角 */
+  padding: 12px 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute; /* 使用绝对定位 */
+  right: 10px; /* 距离右侧 10px */
+  bottom: 10px; /* 距离底部 10px */
+}
+
+.btn_order:active {
+  background-color: #e0b481; /* 按钮按下时背景色变化 */
 }
