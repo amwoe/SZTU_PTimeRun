@@ -64,7 +64,17 @@ Page({
 
   },
   data: {
-    price: '20.00' // 初始价格
+    categories: ['闲置', '租借', '代课'], // 可供选择的类别
+    selectedCategory: '闲置', // 默认选中的类别
+    selectedIndex: 0, // 默认选中的索引
+    price: '0.00' // 初始价格
+  },
+  onCategoryChange: function(e) {
+    // 更新选中的类别和索引
+    this.setData({
+      selectedIndex: e.detail.value,
+      selectedCategory: this.data.categories[e.detail.value]
+    });
   },
   updatePrice: function(e) {
     // 更新价格
@@ -72,4 +82,5 @@ Page({
       price: e.detail.value ? e.detail.value + '.00' : '0.00'
     });
   }
+  
 })
