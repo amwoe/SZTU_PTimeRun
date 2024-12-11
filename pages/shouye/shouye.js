@@ -25,13 +25,13 @@ Page({
   onImageClick5:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/xianwuchushou/xianwuchushou',
+      url: '/pages/xiadan/xiadan',
     });
   },
   onImageClick6:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/zujie/zujie',
+      url: '/pages/xiadan/xiadan',
     });
   },
   onImageClick7:function(){
