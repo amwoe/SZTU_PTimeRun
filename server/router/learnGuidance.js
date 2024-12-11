@@ -4,8 +4,6 @@ const {courseMaterial,reviewMaterial,learnGuidance} = require('../module/getLear
 
 const learnGuidanceRouter = express.Router();
 
-learnGuidanceRouter.get('/courseMaterial', courseMaterial);
-learnGuidanceRouter.get('/reviewMaterial', reviewMaterial);
-learnGuidanceRouter.get('/learnGuidance', learnGuidance);
+learnGuidanceRouter.get('/courseMaterial', getAllLearnGuidance);
 
 module.exports = learnGuidanceRouter;

@@ -13,19 +13,12 @@ async function getMaterial(req, res, tableName) {
     }
 }
 
-//获取课程资料信息
-async function courseMaterial(req, res) {
-    await getMaterial(req, res, 'course_material');
+// 获取所有学习指导信息
+async function getAllLearnGuidance(req, res) {
+    await getMaterial(req, res, 'learning_material');
 }
 
-//获取复习资料信息
-async function reviewMaterial(req, res) {
-    await getMaterial(req, res, 'review_material');
-}
 
-//获取学习指导信息
-async function learnGuidance(req, res) {
-    await getMaterial(req, res, 'learn_guidance');
-}
-
-module.exports = { courseMaterial, reviewMaterial, learnGuidance };
+module.exports = { 
+    getAllLearnGuidance 
+};
