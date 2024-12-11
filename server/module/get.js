@@ -1,6 +1,7 @@
 const db = require('../db/ssh');
 const { error, success } = require('../utils/response');
 
+//获取任务信息
 async function getTask(req, res) {
   try {
     // 等待 db 连接池初始化完成
@@ -14,6 +15,8 @@ async function getTask(req, res) {
   }
 }
 
+
+//查询我发布的任务
 async function myTask(req, res) {
   try {
     const { publisher_id } = req.body;
@@ -28,6 +31,8 @@ async function myTask(req, res) {
   }
 }
 
+
+//查询我接取的订单
 async function myOrder(req, res) {
   try {
     const { employee_id } = req.body;

@@ -1,6 +1,6 @@
 const db = require('../db/ssh');
 
-// 处理 POST 请求，插入任务信息
+//插入任务信息（发布任务）
 async function setTask(req, res) {
   const { publisher_id, type, description, employee_id, amount, task_time, location } = req.body;
 
@@ -45,6 +45,8 @@ async function setTask(req, res) {
   }
 }
 
+
+//更新任务状态（接取任务）
 async function setOrder(req, res) {
   const { task_id, employee_id } = req.body;
 
@@ -73,7 +75,8 @@ async function setOrder(req, res) {
   }
 }
 
-async function completeOrder(req, res) {
+//任务完成
+async function completeOrder(req, res) { 
   const { task_id } = req.body;
 
   if (!task_id) {
