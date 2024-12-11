@@ -21,7 +21,6 @@
       </view>
     </view> -->
     <view class="flex-col group_3">
-      <view class="self-end image_4">申请退款</view>
       <!-- <image
         class="self-end image_4"
         src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
@@ -45,7 +44,8 @@
             <text class="mt-10 font_5 text_6">5.3</text>
           </view>
         </view>
-        <view class="flex-col justify-start section_4">
+        <view class="flex-col section_6 mt-17">
+          <text class="self-start font_2 text_9">我发布的</text>
           <view class="flex-row equal-division">
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">2</text>
@@ -53,7 +53,7 @@
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">1</text>
-              <text class="mt-18 font_4 text_8">未接单</text>
+              <text class="mt-18 font_4 text_8">未被接单</text>
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
               <text class="font_5">1</text>
@@ -62,13 +62,19 @@
           </view>
         </view>
       </view>
-      <view class="flex-row justify-between items-center section_5 mt-17" bindtap="onImageClick6">
-        <text class="font_6">我的任务</text>
-        <image
-          class="image_7"
-          src="/assets/imgs/任务.png"
-        />
-      </view>
+      <view class="flex-col section_6 mt-17">
+  <text class="self-start font_2 text_9">我接单的</text>
+  <view class="flex-row equal-division">
+    <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
+      <text class="font_5">2</text>
+      <text class="font_4 text_8 mt-19">正在进行</text>
+    </view>
+    <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
+      <text class="font_5">1</text>
+      <text class="mt-18 font_4 text_8">已完成</text>
+    </view>
+  </view>
+</view>
       <view class="flex-col section_6 mt-17">
         <text class="self-start font_2 text_9">其他功能</text>
         <view class="flex-row justify-between self-stretch equal-division equal-division2 view">
@@ -119,21 +125,21 @@
     <view class="flex-row equal-division_2 section_8">
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage1">
         <image
-          class="image_14"
+          class="image_12"
           src="/pages/images/菜单/首页1.png"
         />
         <text class="font_7 mt-3">首页</text>
       </view>
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage2">
         <image
-          class="image_14"
+          class="image_12"
           src="/pages/images/菜单/订单2.png"
         />
         <text class="font_7 mt-3">订单</text>
       </view>
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage3">
         <image
-          class="image_14"
+          class="image_12"
           src="/pages/images/菜单/我的2.png"
         />
         <text class="font_6 mt-3">我的</text>
