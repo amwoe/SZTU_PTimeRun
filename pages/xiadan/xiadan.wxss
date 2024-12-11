@@ -123,16 +123,18 @@
   top: 196.22rpx;
 }
 .text-wrapper {
-  padding: 24.42rpx 0 20.93rpx;
+  width: 100%; /* 设置为100%，根据需要调整 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 24.42rpx 0 22.93rpx; /* 根据需要调整内边距 */
   background-color: #ff8d1a;
   border-radius: 34.88rpx;
-  width: 163.95rpx;
 }
 .pos_9 {
   position: absolute;
-  left: 26.77rpx;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 .font_3 {
   font-size: 31.4rpx;
@@ -266,12 +268,7 @@
   border-top: solid 1.74rpx #ffffff;
   border-bottom: solid 1.74rpx #ffffff;
 }
-.pos_15 {
-  position: absolute;
-  left: 20.06rpx;
-  right: 37.5rpx;
-  top: 1075.29rpx;
-}
+
 .image_9 {
   width: 54.07rpx;
   height: 54.07rpx;
@@ -308,7 +305,7 @@
   position: absolute;
   left: 20.06rpx;
   right: 37.5rpx;
-  top: 1258.43rpx;
+  top: 1070.43rpx;
 }
 .image_10 {
   width: 62.79rpx;
@@ -338,7 +335,6 @@
 .pos_17 {
   position: absolute;
   left: 29.65rpx;
-  top: 1449.42rpx;
 }
 .group_3 {
   margin-left: 62.79rpx;
@@ -364,5 +360,17 @@
 .pos_18 {
   position: absolute;
   right: 29.67rpx;
-  top: 1449.42rpx;
+}
+/* 底部容器样式 */
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 垂直居中 */
+  width: 100%; /* 宽度设置为100% */
+  position: fixed; /* 固定定位 */
+  bottom: 60rpx; /* 底部对齐 */
+  left: 0; /* 左侧对齐 */
+  padding: 20rpx; /* 根据需要调整内边距 */
+  background-color: #ffffff; /* 背景色，根据需要调整 */
+  box-sizing: border-box; /* 确保padding不影响总宽度 */
 }
