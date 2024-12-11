@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/shouye/shouye",
     "pages/denglu/denglu",
+    "pages/shouye/shouye",
     "pages/xuexizhidao/xuexizhidao",
     "pages/kechengziliao/kechengziliao",
     "pages/fuxiziliao/fuxiziliao",
     "pages/fuxizhidao/fuxizhidao",
-    "pages/xianwuchushou/xianwuchushou",
     "pages/zujie/zujie",
     "pages/wodedizhi/wodedizhi",
     "pages/faxiantuijianxiangqing/faxiantuijianxiangqing",
@@ -27,6 +26,8 @@
     "pages/kechengxiangqing/kechengxiangqing",
     "pages/dongtailiaotian/dongtailiaotian",
     "pages/tixian/tixian",
-    "pages/xianwuchushouxiangqing/xianwuchushouxiangqing"
+    "pages/xianwuchushouxiangqing/xianwuchushouxiangqing",
+    "pages/xiadan/xiadan",
+    "pages/daikexiangqing/daikexiangqing"
   ]
 }
