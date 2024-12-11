@@ -1,25 +1,24 @@
-// pages/fuxiziliao/fuxiziliao.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    items: [] // 假设您有一个items数组存放需要传递的数据
   },
 
-
-  onImageTap:function(e){
-    //获取图片索引
-    // const index=e.currentTarget.dataset.index;
-    // const item=this.data.items[index];
-    // wx.navigateTo({
-    //   url: '/pages/fuxixiangqing/fuxixiangqing?item='+encodeURIComponent(JSON.stringify(item)),
-    // });
-    wx.navigateTo({
-      url: '/pages/fuxixiangqing/fuxixiangqing',
-    })
+  onImageTap: function(e){
+    // 获取图片索引
+    const index = e.currentTarget.dataset.index;
+    const item = this.data.items[index];
+    // 确保item存在，然后使用encodeURIComponent对JSON字符串进行编码
+    if (item) {
+      wx.navigateTo({
+        url: '/pages/fuxixiangqing/fuxixiangqing?item=' + encodeURIComponent(JSON.stringify(item)),
+      });
+    }
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
