@@ -1,9 +1,12 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
   <view class="flex-row justify-center items-center section_2 pos_8">
-    <view class="flex-col justify-start items-center text-wrapper pos_9"><text class="font_3">闲置</text></view>
-    <text class="font_2 text_4">租借</text>
-    <text class="font_2 text_5 pos_10">代课</text>
+    <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange" value="{{selectedIndex}}">
+      <view class="flex-col justify-start items-center text-wrapper pos_9">
+        <text class="font_3">类别</text>
+        <text class="font_2 text_4">{{selectedCategory}}</text>
+      </view>
+    </picker>
   </view>
   <text class="font_2 text_6 pos_11">上传图片</text>
   <view class="flex-col justify-start section_3 pos_12">
@@ -38,35 +41,27 @@
   <view class="flex-col justify-start items-start text-wrapper_2 pos_14">
     <input class="font_2 text_8" type="text" placeholder="请描述..." />
   </view>
-  <view class="flex-row justify-between items-center section_4 pos_15">
-    <view class="flex-row items-center">
-      <image
-        class="shrink-0 image_9"
-        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=957c29d91b35b116fbd498c2fd7faef4.png" 
-      />
-      <text class="font_4 text_9 ml-11">定位</text>
-    </view>
-    <text class="font_5 text_10">获取位置</text>
-  </view>
   <view class="flex-row justify-between items-center section_5 pos_16">
     <view class="flex-row items-center">
       <image
         class="shrink-0 image_10"
         src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=2ab091cc136499f5ef10f73ebebe8936.png" 
       />
-      <input class="font_4 text_11 ml-7" type="number" placeholder="请输入" bindinput="updatePrice" />
+      <input class="font_4 text_11 ml-7" type="number" placeholder="请输入价格" bindinput="updatePrice" />
     </view>
     <view class="flex-row group_2">
       <text class="font_5 text_12">元</text>
     </view>
   </view>
-  <view class="flex-col justify-start items-start section_6 pos_17">
-    <view class="group_3">
-      <text class="font_4 text_15">￥</text>
-      <text class="text_14">{{ price }}</text>
+  <view class="bottom-container fixed-bottom">
+    <view class="flex-col justify-start items-start section_6 pos_17">
+      <view class="group_3">
+        <text class="font_4 text_15">￥</text>
+        <text class="text_14">{{ price }}</text>
+      </view>
     </view>
-  </view>
-  <view class="flex-col justify-start items-center text-wrapper_3 pos_18">
-    <text class="font_3">发布</text>
+    <view class="flex-col justify-start items-center text-wrapper_3 pos_18">
+      <text class="font_3">发布</text>
+    </view>
   </view>
 </view>
