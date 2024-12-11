@@ -19,7 +19,7 @@ Page({
       const pages = getCurrentPages();
       const prevPage = pages[pages.length - 2]; // 确保这是正确的前一个页面
       if (prevPage && this.data.index !== -1 && this.data.index < prevPage.data.sections.length) {
-        prevPage.updateSectionType(this.data.index, '不可接单');
+        prevPage.updateSectionType(this.data.index, '已接单');
       } else {
         console.error('Index out of range:', this.data.index);
       }

@@ -86,7 +86,6 @@
 }
 .text-wrapper {
   padding: 87.21rpx 0 24.42rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=f7e9e59dc5f15aeb505256aa43732b7c.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 148.26rpx;
@@ -114,7 +113,6 @@
 }
 .text-wrapper_2 {
   padding: 87.21rpx 0 24.42rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=65d62e3482a08f2f37ac7841b1014778.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 148.26rpx;
@@ -130,7 +128,6 @@
 }
 .text-wrapper_3 {
   padding: 87.21rpx 0 24.42rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=630311a036918dc5a255b8c9251a8f8f.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 148.26rpx;

@@ -49,10 +49,6 @@
 
                 <text class="self-start font_5 text_8">{{item.description}}</text>
                 <view class="flex-row justify-evenly self-start section_5 view_2">
-                  <image
-                    class="image_10"
-                    src="/pages/images/14.15/5.png"
-                  />
                   <text class="font_6 text_9">{{item.gender}}</text>
                 </view>
 

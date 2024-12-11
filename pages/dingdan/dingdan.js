@@ -17,20 +17,20 @@ Page({
         image: '/pages/images/8/1.png',
         borderColor: '#FF6347',
         bgColor: '#FFE4E1',
-        type: '可接单'
+        type: '未接单'
       },
       {
         name: '宁桑娅',
         task: '代取快递',
         time: '16:18',
         description: '菜鸟驿站 3个小件',
-        gender: '女生',
+        gender: '男生',
         location: 'xx省xx市xx区学校宿舍5栋203',
         price: '20',
         image: '/pages/images/8/3.png',
         borderColor: '#FF6347',
         bgColor: '#FFE4E1',
-        type: '可接单'
+        type: '未接单'
       },
       {
         name: '邓御寒',
@@ -44,6 +44,32 @@ Page({
         borderColor: '#FF6347',
         bgColor: '#FFE4E1',
         type: '已完成'
+      },
+      {
+        name: '小陈',
+        task: '闲物出售',
+        time: '20:00',
+        description: '毕业季清仓',
+        gender: '不限',
+        location: 'xx省xx市xx区学校宿舍e2栋203',
+        price: '0',
+        image: '/pages/images/17,18/1.png',
+        borderColor: '#FF6347',
+        bgColor: '#FFE4E1',
+        type: '未接单'
+      },
+      {
+        name: '李哥',
+        task: '租借',
+        time: '20:00',
+        description: '出租佳能',
+        gender: '不限',
+        location: 'xx省xx市xx区学校宿舍e3栋1703',
+        price: '100',
+        image: '/pages/images/17,18/2.png',
+        borderColor: '#FF6347',
+        bgColor: '#FFE4E1',
+        type: '未接单'
       },
     ],
   },

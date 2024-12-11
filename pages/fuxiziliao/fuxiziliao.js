@@ -8,15 +8,18 @@ Page({
   },
 
   onImageTap: function(e){
-    // 获取图片索引
-    const index = e.currentTarget.dataset.index;
-    const item = this.data.items[index];
-    // 确保item存在，然后使用encodeURIComponent对JSON字符串进行编码
-    if (item) {
-      wx.navigateTo({
-        url: '/pages/fuxixiangqing/fuxixiangqing?item=' + encodeURIComponent(JSON.stringify(item)),
-      });
-    }
+    // // 获取图片索引
+    // const index = e.currentTarget.dataset.index;
+    // const item = this.data.items[index];
+    // // 确保item存在，然后使用encodeURIComponent对JSON字符串进行编码
+    // if (item) {
+    //   wx.navigateTo({
+    //     url: '/pages/fuxixiangqing/fuxixiangqing?item=' + encodeURIComponent(JSON.stringify(item)),
+    //   });
+    // }
+    wx.navigateTo({
+      url: '/pages/fuxixiangqing/fuxixiangqing',
+    })
   },
 
   /**
