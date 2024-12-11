@@ -11,38 +11,38 @@
       <view class="flex-col justify-start items-center equal-division-item image-wrapper">
         <image
           class="image_8"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=6caf8746c7d832c5cd4e7f97143aa62e.png"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=6caf8746c7d832c5cd4e7f97143aa62e.png" 
         />
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_2 ml-13">
         <image
           class="image_6"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png" 
         />
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_3 ml-13">
         <image
           class="image_6"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png" 
         />
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_4 ml-13">
         <image
           class="image_6 image_7"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=684c3adeba9c6be65d007a5de513f5d1.png"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=684c3adeba9c6be65d007a5de513f5d1.png" 
         />
       </view>
     </view>
   </view>
   <text class="font_2 text_7 pos_13">描述详情</text>
   <view class="flex-col justify-start items-start text-wrapper_2 pos_14">
-    <text class="font_2 text_8">请描述...</text>
+    <input class="font_2 text_8" type="text" placeholder="请描述..." />
   </view>
   <view class="flex-row justify-between items-center section_4 pos_15">
     <view class="flex-row items-center">
       <image
         class="shrink-0 image_9"
-        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=957c29d91b35b116fbd498c2fd7faef4.png"
+        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=957c29d91b35b116fbd498c2fd7faef4.png" 
       />
       <text class="font_4 text_9 ml-11">定位</text>
     </view>
@@ -52,20 +52,21 @@
     <view class="flex-row items-center">
       <image
         class="shrink-0 image_10"
-        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=2ab091cc136499f5ef10f73ebebe8936.png"
+        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=2ab091cc136499f5ef10f73ebebe8936.png" 
       />
-      <text class="font_4 text_11 ml-7">价格</text>
+      <input class="font_4 text_11 ml-7" type="number" placeholder="请输入" bindinput="updatePrice" />
     </view>
     <view class="flex-row group_2">
-      <text class="font_5 text_12">请输入</text>
-      <text class="ml-12 font_4 text_13">元</text>
+      <text class="font_5 text_12">元</text>
     </view>
   </view>
   <view class="flex-col justify-start items-start section_6 pos_17">
     <view class="group_3">
       <text class="font_4 text_15">￥</text>
-      <text class="text_14">20.00</text>
+      <text class="text_14">{{ price }}</text>
     </view>
   </view>
-  <view class="flex-col justify-start items-center text-wrapper_3 pos_18"><text class="font_3">发布</text></view>
+  <view class="flex-col justify-start items-center text-wrapper_3 pos_18">
+    <text class="font_3">发布</text>
+  </view>
 </view>
