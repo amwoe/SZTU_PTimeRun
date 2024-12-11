@@ -41,36 +41,36 @@
     <text class="self-start font_2 text_5">学习提升</text>
     <view class="flex-col self-stretch group_4">
       <view class="flex-row equal-division">
-        <view class="flex-row justify-center items-center section_2 equal-division-item">
+        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick4">
           <image
             class="image_7"
             src="/pages/images/9，10，11/13.png"
           />
-          <view class="ml-14 flex-col items-start">
+          <view class="ml-14 flex-col items-start"bindtap="onImageClick4">
             <text class="font_3 text_6">课程资料</text>
             <text class="font_4 mt-17">提供知识宝库</text>
           </view>
         </view>
-        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11">
+        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11"bindtap="onImageClick2">
           <image
             class="image_7"
             src="/pages/images/9，10，11/16.png"
           />
-          <view class="ml-14 flex-col items-start">
+          <view class="ml-14 flex-col items-start"bindtap="onImageClick2">
             <text class="font_3 text_6">复习资料</text>
             <text class="mt-16 font_4">带你巩固知识</text>
           </view>
         </view>
       </view>
       <view class="flex-row equal-division" style="margin-top: 20rpx;">
-        <view class="flex-row justify-center items-center section_2 equal-division-item">
+        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick3">
           <image
             class="image_7"
             src="/pages/images/9，10，11/14.png"
           />
-          <view class="ml-14 flex-col items-start">
-            <text class="font_3 text_6">学习指导</text>
-            <text class="font_4 mt-17">指引你学习</text>
+          <view class="ml-14 flex-col items-start"bindtap="onImageClick3">
+            <text class="font_3 text_6">复习指导</text>
+            <text class="font_4 mt-17">高速复习神器</text>
           </view>
         </view>
         <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent;">
@@ -80,12 +80,12 @@
     </view>
     <text class="self-start font_2 text_9">代办</text>
     <view class="flex-row equal-division_2">
-      <view class="flex-row justify-center items-center section_4 equal-division-item_2">
+      <view class="flex-row justify-center items-center section_4 equal-division-item_2"bindtap="onImageClick1">
         <image
           class="image_9"
           src="/pages/images/9，10，11/9.png"
         />
-        <view class="ml-16 flex-col items-start group_5">
+        <view class="ml-16 flex-col items-start group_5"bindtap="onImageClick1">
           <text class="font_3">代课</text>
           <text class="mt-12 font_4">找我代课/代签</text>
         </view>
