@@ -1,1 +1,71 @@
-
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <view class="flex-row justify-center items-center section_2 pos_8">
+    <view class="flex-col justify-start items-center text-wrapper pos_9"><text class="font_3">闲置</text></view>
+    <text class="font_2 text_4">租借</text>
+    <text class="font_2 text_5 pos_10">代课</text>
+  </view>
+  <text class="font_2 text_6 pos_11">上传图片</text>
+  <view class="flex-col justify-start section_3 pos_12">
+    <view class="flex-row equal-division">
+      <view class="flex-col justify-start items-center equal-division-item image-wrapper">
+        <image
+          class="image_8"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=6caf8746c7d832c5cd4e7f97143aa62e.png"
+        />
+      </view>
+      <view class="flex-col justify-start items-end equal-division-item image-wrapper_2 ml-13">
+        <image
+          class="image_6"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png"
+        />
+      </view>
+      <view class="flex-col justify-start items-end equal-division-item image-wrapper_3 ml-13">
+        <image
+          class="image_6"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png"
+        />
+      </view>
+      <view class="flex-col justify-start items-end equal-division-item image-wrapper_4 ml-13">
+        <image
+          class="image_6 image_7"
+          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=684c3adeba9c6be65d007a5de513f5d1.png"
+        />
+      </view>
+    </view>
+  </view>
+  <text class="font_2 text_7 pos_13">描述详情</text>
+  <view class="flex-col justify-start items-start text-wrapper_2 pos_14">
+    <text class="font_2 text_8">请描述...</text>
+  </view>
+  <view class="flex-row justify-between items-center section_4 pos_15">
+    <view class="flex-row items-center">
+      <image
+        class="shrink-0 image_9"
+        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=957c29d91b35b116fbd498c2fd7faef4.png"
+      />
+      <text class="font_4 text_9 ml-11">定位</text>
+    </view>
+    <text class="font_5 text_10">获取位置</text>
+  </view>
+  <view class="flex-row justify-between items-center section_5 pos_16">
+    <view class="flex-row items-center">
+      <image
+        class="shrink-0 image_10"
+        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=2ab091cc136499f5ef10f73ebebe8936.png"
+      />
+      <text class="font_4 text_11 ml-7">价格</text>
+    </view>
+    <view class="flex-row group_2">
+      <text class="font_5 text_12">请输入</text>
+      <text class="ml-12 font_4 text_13">元</text>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-start section_6 pos_17">
+    <view class="group_3">
+      <text class="font_4 text_15">￥</text>
+      <text class="text_14">20.00</text>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-center text-wrapper_3 pos_18"><text class="font_3">发布</text></view>
+</view>
