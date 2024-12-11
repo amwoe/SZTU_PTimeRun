@@ -86,18 +86,8 @@
           src="/pages/images/9，10，11/9.png"
         />
         <view class="ml-16 flex-col items-start group_5">
-          <text class="font_3">代签</text>
-          <text class="mt-12 font_4">找我代签</text>
-        </view>
-      </view>
-      <view class="ml-10 flex-row justify-center items-center section_4 equal-division-item_2">
-        <image
-          class="image_9"
-          src="/pages/images/9，10，11/12.png"
-        />
-        <view class="ml-14 flex-col items-start group_5">
           <text class="font_3">代课</text>
-          <text class="mt-12 font_4">找我代课</text>
+          <text class="mt-12 font_4">找我代课/代签</text>
         </view>
       </view>
     </view>
