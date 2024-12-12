@@ -1,5 +1,5 @@
 <view class="flex-col page">
-  <block wx:for="{{detailItem}}" wx:key="index">
+  <block wx:for="{{detailItem}}" wx:key="imageSrc">
     <image src="{{item.imageSrc}}" mode="aspectFill" style="width: 100%; height: 45%;"></image>
     <view class="flex-col group_2">
       <text class="self-start text_3">{{item.title}}</text>
