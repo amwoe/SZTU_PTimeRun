@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');  // 使用mysql2/promise来支持Promise
 const { Client } = require('ssh2');
 require('dotenv').config();
 
@@ -18,17 +18,45 @@ const dbConfig = {
   database: process.env.DB_NAME,
   waitForConnections: true,
   connectionLimit: 100, // 合理的连接池大小
-  connectTimeout: 10000,
+  connectTimeout: 600000, // 连接时限
+  timezone: 'Z', // 配置时区，避免时区问题
 };
 
 let isSSHConnected = false; // 标记是否已建立SSH连接
 let pool; // MySQL连接池实例
 
-function connectToDatabase() {
+// 验证数据库连接是否有效
+async function validateConnection() {
+  try {
+    const [rows] = await pool.query('SELECT 1');
+    return rows.length > 0;
+  } catch (err) {
+    console.error('连接验证失败:', err);
+    return false;
+  }
+}
+
+// 获取数据库连接，若连接无效则重新连接
+async function getDbConnection() {
+  if (!pool) {
+    throw new Error('数据库连接池未初始化');
+  }
+
+  const isValid = await validateConnection();
+  if (!isValid) {
+    console.log('连接失效，正在重连...');
+    await connectToDatabase(); // 重新建立数据库连接池
+  }
+
+  return pool;
+}
+
+// 连接到数据库
+async function connectToDatabase() {
   return new Promise((resolve, reject) => {
     if (isSSHConnected && pool) {
       console.log('复用已有的数据库连接池');
-      return resolve(pool.promise());
+      return resolve(pool);
     }
 
     sshClient
@@ -54,7 +82,7 @@ function connectToDatabase() {
             });
 
             console.log('通过SSH隧道建立MySQL连接');
-            resolve(pool.promise());
+            resolve(pool);
           }
         );
       })
@@ -75,6 +103,17 @@ function reconnectSSH() {
   });
 }
 
+// 定期保持数据库连接活跃
+setInterval(async () => {
+  try {
+    const connection = await getDbConnection();
+    console.log('保持数据库连接活跃...');
+    await connection.query('SELECT 1');
+  } catch (err) {
+    console.error('保持连接失败:', err);
+  }
+}, 300000); // 每5分钟执行一次
+
 // 初始化连接
 connectToDatabase().catch((err) => {
   console.error('初始化连接失败:', err);
@@ -83,9 +122,6 @@ connectToDatabase().catch((err) => {
 
 module.exports = {
   get db() {
-    if (!pool) {
-      throw new Error('数据库连接未准备好');
-    }
-    return pool.promise();
+    return getDbConnection();
   },
 };
