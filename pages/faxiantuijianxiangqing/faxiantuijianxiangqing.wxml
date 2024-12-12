@@ -21,7 +21,7 @@
     </text>
   </view>
   <view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">
-    <input class="flex-1 section_3" placeholder="请输入" bindinput="onInput"/>
+    <input class="flex-1 section_3" placeholder="请小主大胆发言" value="{{inputContent}}" bindinput="onInput"/>
     <button class="text_4 image_9 ml-5" bindtap="onSend">发送</button>
   </view>
   <view class="output-container">
