@@ -22,21 +22,20 @@
     src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
   />
   <text class="font_2 text_4 pos_8">最近</text>
-  <text class="font_2 text_5 pos_9">五折</text>
-  <text class="font_2 text_6 pos_10">最热</text>
   <view class="section_2 pos_11"></view>
   <view class="grid pos_12">
     <view class="flex-col grid-item">
       <image
         class="self-stretch image_6"
-        src="https://img0.baidu.com/it/u=3937969590,3303069898&fm=253&fmt=auto&app=138&f=JPEG?w=760&h=760"
+        src="/pages/images/5，6/1.png"
+        bindtap="onImageClick1"
       />
       <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail">低价闲置衣服‼️‼️‼️</text>
-      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1">
         <view class="flex-row items-center">
           <image
             class="shrink-0 image_7"
-            src="https://img2.baidu.com/it/u=2005381635,1790286061&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500 "
+            src="/pages/images/8/3.png"
           />
           <text class="ml-8 font_4 text_9">尼森</text>
         </view>
@@ -46,71 +45,5 @@
         </view>
       </view>
     </view>
-    <view class="flex-col grid-item">
-      <image
-        class="self-stretch image_6"
-        src="https://img0.baidu.com/it/u=3727047682,2339473151&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
-      />
-      <text class="mt-12 self-start font_3 text_7">真皮沙发-九成新</text>
-      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
-        <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_7"
-            src="https://img1.baidu.com/it/u=543918953,3991735498&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=546"
-          />
-          <text class="font_4 text_9 ml-9">白日梦想家</text>
-        </view>
-        <view class="group_3">
-          <text class="font_6">￥</text>
-          <text class="font_5">998</text>
-        </view>
-      </view>
-    </view>
-    <view class="flex-col grid-item">
-      <image
-        class="self-stretch image_6"
-        src="https://img2.baidu.com/it/u=3425540028,789201575&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
-      />
-      <text class="mt-12 self-start font_3 text_7">海氏m6面包机</text>
-      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
-        <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_7"
-            src="https://img0.baidu.com/it/u=2289838621,1480791646&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=506"
-          />
-          <text class="font_4 text_9 ml-7">镜明千里</text>
-        </view>
-        <view class="group_3">
-          <text class="font_6">￥</text>
-          <text class="font_5">528</text>
-        </view>
-      </view>
-    </view>
-    <view class="flex-col grid-item">
-      <image
-        class="self-stretch image_6"
-        src="https://img2.baidu.com/it/u=2028693522,1704825034&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667"
-      />
-      <text class="mt-12 self-start font_3 text_7 text_10">自用的14 pro 521g</text>
-      <view class="mt-12 flex-row justify-between items-center self-stretch group_2">
-        <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_7"
-            src="https://img1.baidu.com/it/u=3948967405,479232517&fm=253&fmt=auto?w=650&h=602"
-          />
-          <text class="ml-8 font_4 text_9">momo</text>
-        </view>
-        <view class="group_3">
-          <text class="font_6">￥</text>
-          <text class="font_5">9858</text>
-        </view>
-      </view>
-    </view>
   </view>
-  <!-- <view class="flex-col justify-start items-center image-wrapper pos_13">
-    <image
-      class="image_8"
-      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=3ebdd5eec95405c3476318132b2ae403.png"
-    />
-  </view> -->
 </view>
