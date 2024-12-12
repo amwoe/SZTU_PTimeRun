@@ -20,6 +20,12 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+// app.use(expressJWT({
+//     secret: process.env.JWT_SECRET,
+//     algorithms: ['HS256']
+// }).unless({ path: ['/api/login'] }));
+
+
 app.use('/api',authRouter)
 app.use('/api',taskRouter)
 

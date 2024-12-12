@@ -17,7 +17,7 @@ const dbConfig = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   waitForConnections: true,
-  connectionLimit: 50, // 合理的连接池大小
+  connectionLimit: 100, // 合理的连接池大小
   connectTimeout: 10000,
 };
 
