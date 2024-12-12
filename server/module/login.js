@@ -5,6 +5,8 @@ const { error, success } = require('../utils/response');
 
 async function login(req, res) {
   const { account, password } = req.body;
+  
+  console.log('接收到的请求数据:', req.body);
 
   // 账号和密码不能为空
   if (!account || !password) {
@@ -14,7 +16,7 @@ async function login(req, res) {
   try {
     // 等待数据库连接池初始化
     const connection = await db.db;
-    const [rows] = await connection.query('SELECT * FROM users WHERE account = ?', [account]);
+    const [rows] = await connection.query('SELECT * FROM users WHERE user_id = ?', [account]);
 
     if (rows.length === 0) {
       return error(res, '账号不存在', 404);
