@@ -63,9 +63,10 @@ Page({
   onShareAppMessage() {
 
   },
-  navigateToDetail: function() {
+  onImageClick1:function(){
+    // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/xianwuchushouxiangqing/xianwuchushouxiangqing'
+      url: '/pages/xianwuchushouxiangqing/xianwuchushouxiangqing',
     });
-  }
+  },
 })
