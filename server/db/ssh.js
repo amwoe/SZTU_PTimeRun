@@ -1,4 +1,4 @@
-const mysql = require('mysql2/promise');  // 使用mysql2/promise来支持Promise
+const mysql = require('mysql2/promise');
 const { Client } = require('ssh2');
 require('dotenv').config();
 
@@ -9,6 +9,9 @@ const sshConfig = {
   port: parseInt(process.env.SSH_PORT, 10),
   username: process.env.SSH_USER,
   password: process.env.SSH_PASSWORD,
+  // 配置SSH连接保持活跃
+  keepaliveInterval: 30000,  // 每30秒发送一次心跳包
+  keepaliveCountMax: 3,      // 如果连续3次没有收到响应，则断开连接
 };
 
 const dbConfig = {
@@ -17,7 +20,7 @@ const dbConfig = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   waitForConnections: true,
-  connectionLimit: 100, // 合理的连接池大小
+  connectionLimit: 100, // 连接池大小
   connectTimeout: 600000, // 连接时限
   timezone: 'Z', // 配置时区，避免时区问题
 };
@@ -45,7 +48,14 @@ async function getDbConnection() {
   const isValid = await validateConnection();
   if (!isValid) {
     console.log('连接失效，正在重连...');
-    await connectToDatabase(); // 重新建立数据库连接池
+
+    try {
+      await connectToDatabase();
+      console.log('数据库连接已恢复');
+    } catch (err) {
+      console.error('重连数据库失败:', err);
+      throw new Error('数据库重连失败');
+    }
   }
 
   return pool;
