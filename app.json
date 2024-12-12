@@ -1,9 +1,7 @@
 {
   "pages": [
-    "pages/liaotian/liaotian",
-    "pages/shouye/shouye",
     "pages/denglu/denglu",
-
+    "pages/shouye/shouye",
     "pages/xuexizhidao/xuexizhidao",
     "pages/kechengziliao/kechengziliao",
     "pages/fuxiziliao/fuxiziliao",
@@ -14,7 +12,7 @@
     "pages/yue/yue",
     "pages/jiedanshezhi/jiedanshezhi",
     "pages/xiaoxi/xiaoxi",
-
+    "pages/liaotian/liaotian",
     "pages/wode/wode",
     "pages/dingdan/dingdan",
     "pages/woderenwu/woderenwu",
