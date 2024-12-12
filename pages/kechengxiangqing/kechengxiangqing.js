@@ -13,8 +13,7 @@ Page({
         imageSrc:'',
         title:'',
         content:''
-      },
-      {}
+      }
     ]
   },
 

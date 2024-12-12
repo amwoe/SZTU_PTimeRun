@@ -1,23 +1,19 @@
 <view class="flex-col page">
-  <image src="/pages/images/2，3，4/5.png" mode="aspectFill" style="width: 100%; height: 45%;"></image>
+  <image src="/pages/images/1/屏幕截图 2024-12-12 112857.png" mode="aspectFill" style="width: 100%; height: 45%;"></image>
   <view class="flex-col group_2">
     <view class="flex-col">
-      <text class="self-start text_3">小哥取件很快，推荐</text>
+      <text class="self-start text_3">招聘启事</text>
       <view class="mt-16 flex-col self-stretch relative">
         <text class="self-stretch font_2">
-          🙌🏻寄件： 
-          1、可以直接使用校园兼职APP上门取件，价格相对比较高！
-          2、中通快递，可以加入群聊享优惠，到快递点寄件可以打折！
-          3、申通百世快递，可以上门取件！加入群聊也可享折扣～ 
-          🙌🏻取件：
-          1、可以有偿代拿快递。
-          2、东门左手边第一家水果店，找老板买水果可以免费代拿，十元起送～很方便！
+          🙌🏻技能要求：
+          熟悉python的fastAPI框架、sqlite数据库，熟悉数据库设计和重构。
+          🙌🏻联系方式：123456789101
         </text>
-        <text class="font_2 pos">在学校所有的快递都集中到三堂后及东门啦</text>
+        <text class="font_2 pos">岗位：后台开发 ( 1-2人)</text>
       </view>
     </view>
     <text class="font_2 mt-232">
-      -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n还有什么方便快捷又便宜的快递攻略吗！分享一下吧！！！
+      -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n大家火速咨询！！！
     </text>
   </view>
   <view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">

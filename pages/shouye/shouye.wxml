@@ -77,9 +77,9 @@
         <view class="flex-col items-start section_2 equal-division-item_2"bindtap="onImageClick8">
           <image
             class="image_11"
-            src="/pages/images/1/9.png"
+            src="/pages/images/1/屏幕截图 2024-12-12 112857.png"
           />
-          <text class="mt-6 font_5 text_13">小哥取件很快，推荐</text>
+          <text class="mt-6 font_5 text_13">招聘启事</text>
         </view>
         <view class="flex-col items-start section_2 equal-division-item_2 ml-17">
           <image
