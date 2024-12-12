@@ -18,7 +18,6 @@ async function getAllLearnGuidance(req, res) {
     await getMaterial(req, res, 'learning_material');
 }
 
-
 module.exports = { 
     getAllLearnGuidance 
 };
