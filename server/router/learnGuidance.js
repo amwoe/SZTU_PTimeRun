@@ -1,6 +1,6 @@
 const express = require('express');
 
-const {courseMaterial,reviewMaterial,learnGuidance} = require('../module/getLearnGuidance');
+const {getAllLearnGuidance} = require('../module/getLearnGuidance');
 
 const learnGuidanceRouter = express.Router();
 

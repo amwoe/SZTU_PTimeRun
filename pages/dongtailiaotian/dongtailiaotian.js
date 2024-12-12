@@ -7,7 +7,8 @@ Page({
   data: {
     currentTime:'',
     messages:[],
-    inputValue:''
+    inputValue:'',
+    toView: '' // 新增属性
   },
 
   /**
@@ -19,14 +20,8 @@ Page({
       this.updateTime();
     },60000);//每一分钟变化
 
-    this.setData({
-      messages:[
-        { from: 'user', content: '请问可以慢一点送达吗' },
-        { from: 'bot', content: '不行，我这周要去深圳出差' },
-        { from: 'user', content: '因为你这个物件有点大，可以加价吗' },
-        { from: 'bot', content: '加多少' }
-      ]
-    });
+    this.getMessagesFromDB();
+    this.listenForNewMessages();
   },
   updateTime(){
     const now=new Date();
@@ -40,6 +35,56 @@ Page({
     });
   },
 
+  getMessagesFromDB() {
+    wx.request({
+      url: 'http://localhost:3000/getTaking', // 调用新的 getTaking API
+      method: 'GET',
+      success: res => {
+        this.setData({
+          messages: res.data
+        });
+      },
+      fail: err => {
+        console.error('获取消息失败', err);
+      }
+    });
+  },
+
+  listenForNewMessages() {
+    // 假设使用 WebSocket 进行实时监听
+    const socket = wx.connectSocket({
+      url: 'ws://localhost:3000'
+    });
+
+    socket.onMessage(message => {
+      const newMessage = JSON.parse(message.data);
+      this.setData({
+        messages: [...this.data.messages, newMessage],
+        toView: `msg-${this.data.messages.length}` // 更新 toView
+      });
+    });
+
+    socket.onError(err => {
+      console.error('WebSocket 连接错误', err);
+    });
+  },
+
+  queryMessages(query) {
+    wx.request({
+      url: 'http://localhost:3000/messages/search',
+      method: 'GET',
+      data: { query },
+      success: res => {
+        this.setData({
+          messages: res.data
+        });
+      },
+      fail: err => {
+        console.error('查询消息失败', err);
+      }
+    });
+  },
+
   onInput:function(e){
     this.setData({
       inputValue:e.detail.value
@@ -50,9 +95,20 @@ Page({
     const{inputValue}=this.data;
     if(inputValue.trim()){
       const newMessage={from:'user',content:inputValue};
-      this.setData({
-        messages:[...this.data.messages,newMessage],
-        inputValue:''
+      wx.request({
+        url: 'http://localhost:3000/api/messages',
+        method: 'POST',
+        data: newMessage,
+        success: () => {
+          this.setData({
+            inputValue:'',
+            messages: [...this.data.messages, newMessage],
+            toView: `msg-${this.data.messages.length}` // 更新 toView
+          });
+        },
+        fail: err => {
+          console.error('发送消息失败', err);
+        }
       });
     }
   },

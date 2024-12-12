@@ -25,7 +25,7 @@ Page({
   onImageClick5:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/xiadan/xiadan',
+      url: '/pages/xianwuchushou/xianwuchushou',
     });
   },
   onImageClick6:function(){
