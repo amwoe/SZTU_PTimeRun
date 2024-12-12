@@ -2,10 +2,10 @@ const db = require('../db/ssh');
 
 //插入任务信息（发布任务）
 async function setTask(req, res) {
-  const { publisher_id, type, description, employee_id, amount, task_time, location } = req.body;
+  const { publisher_id, task_type, description, employee_id, salary, task_time, location } = req.body;
 
   // 校验必填字段是否存在
-  if (!publisher_id || !type || !description || !amount || !task_time) {
+  if (!publisher_id || !task_type || !description || !salary || !task_time) {
     return res.status(400).json({ message: '缺少必填字段' });
   }
 
@@ -24,15 +24,15 @@ async function setTask(req, res) {
 
     // 插入任务信息
     const insertTaskQuery = `
-      INSERT INTO tasks (publisher_id, publisher_gender, type, description, amount, task_time, location)
+      INSERT INTO tasks (publisher_id, publisher_gender, task_type, description, salary, task_time, location)
       VALUES (?, ?, ?, ?, ?, ?, ?)
     `;
     const [result] = await connection.query(insertTaskQuery, [
       publisher_id,
       publisher_gender,
-      type,
+      task_type,
       description,
-      amount,
+      salary,
       task_time,
       location || null,
     ]);
@@ -99,7 +99,7 @@ async function completeOrder(req, res) {
       return res.status(400).json({ message: '任务未开始或已完成' });
     }
 
-    const { amount, publisher_id, employee_id } = task;
+    const { salary, publisher_id, employee_id } = task;
 
     // 更新任务状态为 "已完成"
     const updateTaskStatusQuery = 'UPDATE tasks SET status = "已完成" WHERE task_id = ?';
@@ -107,11 +107,11 @@ async function completeOrder(req, res) {
 
     // 更新发布者账户，余额减少
     const updatePublisherBalanceQuery = 'UPDATE users SET balance = balance - ? WHERE account = ?';
-    await connection.query(updatePublisherBalanceQuery, [amount, publisher_id]);
+    await connection.query(updatePublisherBalanceQuery, [salary, publisher_id]);
 
     // 更新接单人账户，余额增加
     const updateEmployeeBalanceQuery = 'UPDATE users SET balance = balance + ? WHERE account = ?';
-    await connection.query(updateEmployeeBalanceQuery, [amount, employee_id]);
+    await connection.query(updateEmployeeBalanceQuery, [salary, employee_id]);
 
     return res.status(200).json({ message: '订单已完成，余额已更新' });
   } catch (err) {

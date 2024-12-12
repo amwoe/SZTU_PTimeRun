@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 const { Client } = require('ssh2');
 require('dotenv').config();
 
@@ -9,6 +9,9 @@ const sshConfig = {
   port: parseInt(process.env.SSH_PORT, 10),
   username: process.env.SSH_USER,
   password: process.env.SSH_PASSWORD,
+  // 配置SSH连接保持活跃
+  keepaliveInterval: 30000,  // 每30秒发送一次心跳包
+  keepaliveCountMax: 3,      // 如果连续3次没有收到响应，则断开连接
 };
 
 const dbConfig = {
@@ -17,18 +20,53 @@ const dbConfig = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   waitForConnections: true,
-  connectionLimit: 100, // 合理的连接池大小
-  connectTimeout: 10000,
+  connectionLimit: 100, // 连接池大小
+  connectTimeout: 600000, // 连接时限
+  timezone: 'Z', // 配置时区，避免时区问题
 };
 
 let isSSHConnected = false; // 标记是否已建立SSH连接
 let pool; // MySQL连接池实例
 
-function connectToDatabase() {
+// 验证数据库连接是否有效
+async function validateConnection() {
+  try {
+    const [rows] = await pool.query('SELECT 1');
+    return rows.length > 0;
+  } catch (err) {
+    console.error('连接验证失败:', err);
+    return false;
+  }
+}
+
+// 获取数据库连接，若连接无效则重新连接
+async function getDbConnection() {
+  if (!pool) {
+    throw new Error('数据库连接池未初始化');
+  }
+
+  const isValid = await validateConnection();
+  if (!isValid) {
+    console.log('连接失效，正在重连...');
+
+    try {
+      await connectToDatabase();
+      console.log('数据库连接已恢复');
+    } catch (err) {
+      console.error('重连数据库失败:', err);
+      throw new Error('数据库重连失败');
+    }
+  }
+
+  return pool;
+}
+
+// 连接到数据库
+async function connectToDatabase() {
   return new Promise((resolve, reject) => {
     if (isSSHConnected && pool) {
       console.log('复用已有的数据库连接池');
-      return resolve(pool.promise());
+      return resolve(pool);
     }
 
     sshClient
@@ -54,7 +92,7 @@ function connectToDatabase() {
             });
 
             console.log('通过SSH隧道建立MySQL连接');
-            resolve(pool.promise());
+            resolve(pool);
           }
         );
       })
@@ -75,6 +113,17 @@ function reconnectSSH() {
   });
 }
 
+// 定期保持数据库连接活跃
+setInterval(async () => {
+  try {
+    const connection = await getDbConnection();
+    console.log('保持数据库连接活跃...');
+    await connection.query('SELECT 1');
+  } catch (err) {
+    console.error('保持连接失败:', err);
+  }
+}, 300000); // 每5分钟执行一次
+
 // 初始化连接
 connectToDatabase().catch((err) => {
   console.error('初始化连接失败:', err);
@@ -83,9 +132,6 @@ connectToDatabase().catch((err) => {
 
 module.exports = {
   get db() {
-    if (!pool) {
-      throw new Error('数据库连接未准备好');
-    }
-    return pool.promise();
+    return getDbConnection();
   },
 };
