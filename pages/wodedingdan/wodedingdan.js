@@ -77,4 +77,4 @@ Page({
       url: '/pages/completed/completed'
     });
   },
-})
+}) 
