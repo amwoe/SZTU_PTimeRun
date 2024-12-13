@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+  onImageClick1:function(){
+    wx.navigateTo({
+      url: '/pages/zujiexiangqing/zujiexiangqing', 
+    });
+  },
+  onImageClick2:function(){
+    wx.navigateTo({
+      url: '/pages/xiadan/xiadan', 
+    });
+  },
 })
