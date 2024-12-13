@@ -41,7 +41,7 @@
         <button class="btn_order" bindtap="onOrderTap">
           <view class="group_8">
             <text class="font text_15">￥</text>
-            <text class="text_14">20.00</text>
+            <text class="text_14">98.00</text>
           </view>
           <text class="text_19 mt-9">去下单</text>
         </button>
