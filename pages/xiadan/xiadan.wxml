@@ -2,55 +2,31 @@
   <view class="section"></view>
   <view class="flex-row justify-center items-center section_2 pos_8">
     <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange" value="{{selectedIndex}}">
-      <view class="flex-col justify-start items-center text-wrapper pos_9">
-        <text class="font_3">类别</text>
-        <text class="font_2 text_4">{{selectedCategory}}</text>
-      </view>
     </picker>
   </view>
-  <text class="font_2 text_6 pos_11">上传图片</text>
+  <text class="font_2 text_6 pos_11" style="position: absolute; left: 43rpx; top: 38rpx">上传图片</text>
   <view class="flex-col justify-start section_3 pos_12">
     <view class="flex-row equal-division">
-      <view class="flex-col justify-start items-center equal-division-item image-wrapper">
-        <image
-          class="image_8"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=6caf8746c7d832c5cd4e7f97143aa62e.png" 
-        />
+      <view class="flex-col justify-start items-center equal-division-item image-wrapper" style="position: relative; left: 0rpx; top: -373rpx">
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_2 ml-13">
-        <image
-          class="image_6"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png" 
-        />
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_3 ml-13">
-        <image
-          class="image_6"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=dc585e9f80d9475c72707b9b8a687885.png" 
-        />
       </view>
       <view class="flex-col justify-start items-end equal-division-item image-wrapper_4 ml-13">
-        <image
-          class="image_6 image_7"
-          src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=684c3adeba9c6be65d007a5de513f5d1.png" 
-        />
       </view>
     </view>
   </view>
-  <text class="font_2 text_7 pos_13">描述详情</text>
-  <view class="flex-col justify-start items-start text-wrapper_2 pos_14">
+  <text class="font_2 text_7 pos_13" style="position: absolute; left: 43rpx; top: 293rpx">描述详情</text>
+  <view class="flex-col justify-start items-start text-wrapper_2 pos_14" style="position: absolute; left: 29rpx; top: 347rpx">
     <input class="font_2 text_8" type="text" placeholder="请描述..." />
   </view>
-  <view class="flex-row justify-between items-center section_5 pos_16">
+  <view class="flex-row justify-between items-center section_5 pos_16" style="position: absolute; left: 24rpx; top: 1074rpx">
     <view class="flex-row items-center">
-      <image
-        class="shrink-0 image_10"
-        src="https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=2ab091cc136499f5ef10f73ebebe8936.png" 
-      />
-      <input class="font_4 text_11 ml-7" type="number" placeholder="请输入价格" bindinput="updatePrice" />
+      <input style="position: relative; left: 26rpx; top: -420rpx" class="font_4 text_11 ml-7" type="number" placeholder="请输入价格" bindinput="updatePrice" />
+      <text class="font_4 text_15" style="height: 52rpx; display: block; box-sizing: border-box; position: relative; left: -347rpx; top: -406rpx">￥</text>
     </view>
     <view class="flex-row group_2">
-      <text class="font_5 text_12">元</text>
     </view>
   </view>
   <view class="bottom-container fixed-bottom">
@@ -58,10 +34,8 @@
       <view class="group_3">
         <text class="font_4 text_15">￥</text>
         <text class="text_14">{{ price }}</text>
+        <text class="text_14" style="position: relative; left: 279rpx; font-size: 40rpx; top: -5rpx"bindtap="bit1">确认发布</text>
       </view>
-    </view>
-    <view class="flex-col justify-start items-center text-wrapper_3 pos_18">
-      <text class="font_3">发布</text>
     </view>
   </view>
 </view>
