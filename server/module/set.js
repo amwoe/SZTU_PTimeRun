@@ -85,7 +85,7 @@ async function completeOrder(req, res) {
     }
 
     const task = taskResult[0];
-    if (task.status !== '已接单') {
+    if (task.status === '未接单' || task.status === '已完成') {
       return res.status(400).json({ message: '任务未开始或已完成' });
     }
 
@@ -96,11 +96,11 @@ async function completeOrder(req, res) {
     await connection.query(updatetasktatusQuery, [task_id]);
 
     // 更新发布者账户，余额减少
-    const updatePublisherBalanceQuery = 'UPDATE users SET balance = balance - ? WHERE account = ?';
+    const updatePublisherBalanceQuery = 'UPDATE users SET balance = balance - ? WHERE user_id = ?';
     await connection.query(updatePublisherBalanceQuery, [salary, publisher_id]);
 
     // 更新接单人账户，余额增加
-    const updateEmployeeBalanceQuery = 'UPDATE users SET balance = balance + ? WHERE account = ?';
+    const updateEmployeeBalanceQuery = 'UPDATE users SET balance = balance + ? WHERE user_id = ?';
     await connection.query(updateEmployeeBalanceQuery, [salary, employee_id]);
 
     return res.status(200).json({ message: '订单已完成，余额已更新' });
