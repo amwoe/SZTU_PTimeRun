@@ -9,7 +9,6 @@
 }
 .page {
   padding-top: 31.4rpx;
-  background-color: #c7fb8c;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
