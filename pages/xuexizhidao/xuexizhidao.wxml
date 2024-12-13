@@ -1,47 +1,23 @@
 <view class="flex-col page">
   <view class="flex-row justify-between items-center group">
     <view class="flex-row">
-      <image
-        class="image"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-      />
-      <image
-        class="image_2 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-      />
-      <image
-        class="image_3 ml-5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-      />
     </view>
   </view>
   <view class="mt-28 flex-col">
     <view class="flex-row justify-between items-center self-stretch group_3">
-      <image
-        class="image_5"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-      />
-      <image
-        class="image_4"
-        src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-      />
     </view>
-    <view class="flex-row justify-between items-center self-stretch section">
+    <view class="flex-row justify-between items-center self-stretch section" style="position: relative; left: -5rpx; top: -73rpx">
       <view class="flex-col items-start">
         <text class="text_3">学习分享</text>
         <text class="font_2 text_4 mt-15">相互激励，彼此促进</text>
       </view>
       <view class="flex-col justify-start items-center image-wrapper">
-        <image
-          class="image_6"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=7e1014b8b8316b6f298196ccac1470f1.png"
-        />
       </view>
     </view>
-    <text class="self-start font_2 text_5">学习提升</text>
+    <text class="self-start font_2 text_5" style="height: 29rpx; display: block; box-sizing: border-box; position: relative; left: -15rpx; top: -78rpx">学习提升</text>
     <view class="flex-col self-stretch group_4">
       <view class="flex-row equal-division">
-        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick4">
+        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick4" style="position: relative; left: 0rpx; top: -94rpx">
           <image
             class="image_7"
             src="/pages/images/9，10，11/13.png"
@@ -51,7 +27,7 @@
             <text class="font_4 mt-17">提供知识宝库</text>
           </view>
         </view>
-        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11"bindtap="onImageClick2">
+        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11"bindtap="onImageClick2" style="position: relative; left: 0rpx; top: -94rpx">
           <image
             class="image_7"
             src="/pages/images/9，10，11/16.png"
@@ -62,8 +38,8 @@
           </view>
         </view>
       </view>
-      <view class="flex-row equal-division" style="margin-top: 20rpx;">
-        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick3">
+      <view class="flex-row equal-division" style="margin-top: 20rpx; height: 162rpx; display: flex; box-sizing: border-box">
+        <view class="flex-row justify-center items-center section_2 equal-division-item"bindtap="onImageClick3" style="position: relative; left: 0rpx; top: -94rpx">
           <image
             class="image_7"
             src="/pages/images/9，10，11/14.png"
@@ -73,23 +49,40 @@
             <text class="font_4 mt-17">高速复习神器</text>
           </view>
         </view>
-        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent;">
+        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent; position: relative; left: -279rpx; top: 275rpx">
           
         </view>
-      </view>
-    </view>
-    <text class="self-start font_2 text_9">代办</text>
-    <view class="flex-row equal-division_2">
-      <view class="flex-row justify-center items-center section_4 equal-division-item_2"bindtap="onImageClick1">
-        <image
-          class="image_9"
-          src="/pages/images/9，10，11/9.png"
-        />
-        <view class="ml-16 flex-col items-start group_5"bindtap="onImageClick1">
-          <text class="font_3">代课</text>
-          <text class="mt-12 font_4">找我代课/代签</text>
-        </view>
+         <text class="font_2 text_4 pos_8" style="position: absolute; left: 38rpx; top: 683rpx; width: 94rpx; height: 54rpx; display: block; box-sizing: border-box">最近</text>
       </view>
     </view>
   </view>
 </view>
+<view class="flex-col grid-item" style="position: relative; left: 26rpx; top: -389rpx">
+      <image style="width: 324rpx; height: 315rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -68rpx"
+        class="self-stretch image_6"
+        src="/pages/images/1/English.jpg"
+        bindtap="onImageClick1"
+      />
+      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail" style="position: relative; left: 0rpx; top: -59rpx">大学英语代课</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1">
+        <view class="flex-row items-center">
+          <image style="position: relative; left: 12rpx; top: -29rpx"
+            class="shrink-0 image_7"
+            src="/pages/images/8/3.png"
+          />
+          <text class="ml-8 font_4 text_9" style="position: relative; left: 0rpx; top: -64rpx">尼森</text>
+        </view>
+        <view class="group_3" style="position: relative; left: -183rpx; top: -20rpx">
+          <text class="font_6" style="position: relative; left: -258rpx; top: -15rpx">￥</text>
+          
+        </view>
+        <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick11">
+          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 132rpx; top: 0rpx"
+            class="image_11"
+            src="/pages/images/1/jia.png"
+          />
+          <text style="position: relative; left: 132rpx; top: 22rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布代课</text>
+        </view>
+      </view>
+    </view>
+
