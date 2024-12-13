@@ -81,6 +81,18 @@ Page({
     this.setData({
       price: e.detail.value ? e.detail.value + '.00' : '0.00'
     });
-  }
-  
+  },
+
+  bit1:function(){
+    wx.showToast({
+      title:'发布成功',
+      icon:'success',
+      duration:2000,
+      complete:()=>{
+        setTimeout(()=>{
+          wx.navigateBack();
+        },1000);
+      }
+    });
+  },
 })
