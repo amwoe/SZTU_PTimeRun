@@ -92,7 +92,6 @@
 .image-wrapper {
   padding: 52.33rpx 0 55.81rpx;
   border-radius: 50%;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=22bf5416ebc83f8af5d2a98db7549d84.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 148.26rpx;
@@ -141,6 +140,13 @@
   font-family: SourceHanSansCN;
   line-height: 22.53rpx;
   color: #808080;
+}
+.font_6 {
+  color: #912c2c;
+}
+
+.font_5 {
+  color: #912c2c;
 }
 .section_3 {
   padding: 27.91rpx 8.72rpx 47.09rpx;
