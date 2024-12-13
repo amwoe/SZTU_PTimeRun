@@ -47,7 +47,7 @@
             <text class="font text_15">￥</text>
             <text class="text_14">35.00</text>
           </view>
-          <text class="text_19 mt-9">去下单</text>
+          <text class="text_19 mt-9">去支付</text>
         </button>
       </view>
     </view>
