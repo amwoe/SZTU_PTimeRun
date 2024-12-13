@@ -24,7 +24,7 @@ async function setTask(req, res) {
 
     // 插入任务信息
     const insertTaskQuery = `
-      INSERT INTO tasks (publisher_id, publisher_gender, task_type, description, salary, task_time, location)
+      INSERT INTO task (publisher_id, publisher_gender, task_type, description, salary, task_time, location)
       VALUES (?, ?, ?, ?, ?, ?, ?)
     `;
     const [result] = await connection.query(insertTaskQuery, [
@@ -58,7 +58,7 @@ async function setOrder(req, res) {
     const connection = await db.db; // 等待数据库连接初始化
 
     const query = `
-      UPDATE tasks 
+      UPDATE task 
       SET employee_id = ?, status = '已接单' 
       WHERE task_id = ? AND status = '待接单'
     `;
@@ -87,7 +87,7 @@ async function completeOrder(req, res) {
     const connection = await db.db; // 等待数据库连接初始化
 
     // 查询任务是否存在
-    const getTaskQuery = 'SELECT * FROM tasks WHERE task_id = ?';
+    const getTaskQuery = 'SELECT * FROM task WHERE task_id = ?';
     const [taskResult] = await connection.query(getTaskQuery, [task_id]);
 
     if (taskResult.length === 0) {
@@ -102,7 +102,7 @@ async function completeOrder(req, res) {
     const { salary, publisher_id, employee_id } = task;
 
     // 更新任务状态为 "已完成"
-    const updateTaskStatusQuery = 'UPDATE tasks SET status = "已完成" WHERE task_id = ?';
+    const updateTaskStatusQuery = 'UPDATE task SET status = "已完成" WHERE task_id = ?';
     await connection.query(updateTaskStatusQuery, [task_id]);
 
     // 更新发布者账户，余额减少
