@@ -1,53 +1,29 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <image
-    class="image pos"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-  />
-  <image
-    class="image_2 pos_2"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-  />
-  <image
-    class="image_3 pos_3"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-  />
-  <image
-    class="image_5 pos_6"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-  />
-  <image
-    class="image_4 pos_5"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-  />
-  <view class="flex-col section_2 pos_8">
-    <view class="flex-col self-stretch group_2">
+  <view class="flex-col section_2 pos_8" style="position: absolute; left: 31rpx; top: 207rpx">
+    <view class="flex-col self-stretch group_2" style="position: relative; left: -6rpx; top: -183rpx">
       <view class="flex-row justify-between items-start self-stretch">
         <text class="font_3 text_5">陈雨思 13288888888</text>
         <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_6"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=90fcf2aa7210b26c5fdebc13cbc1628c.png"
-          />
           <text class="font_2 text_4 ml-11">默认地址</text>
         </view>
       </view>
       <text class="self-start font_4 text_6 mt-9">xx省 xx市 xxxx区 xxxx街道 xxxxxx校区 南门 学生宿舍5栋</text>
     </view>
-    <view class="flex-col items-start self-stretch group_3 view">
+    <view class="flex-col items-start self-stretch group_3 view" style="position: relative; left: 3rpx; top: -190rpx">
       <text class="font_3">陈雨思 13288888888</text>
       <text class="font_4 text_6 mt-9">xx省 xx市 xxxx区 xxxx街道 xxxxxx校区 南门 学生宿舍5栋</text>
     </view>
-    <view class="flex-col items-start self-stretch group_3 view_2">
+    <view class="flex-col items-start self-stretch group_3 view_2" style="position: relative; left: 0rpx; top: -204rpx">
       <text class="font_3">陈雨思 13288888888</text>
       <text class="font_4 text_6 mt-9">xx省 xx市 xxxx区 xxxx街道 xxxxxx校区 南门 学生宿舍5栋</text>
     </view>
-    <view class="flex-col items-start self-stretch group_4">
+    <view class="flex-col items-start self-stretch group_4" style="position: relative; left: 0rpx; top: -228rpx">
       <text class="font_3">陈雨思 13288888888</text>
       <text class="font_4 text_6 mt-9">xx省 xx市 xxxx区 xxxx街道 xxxxxx校区 南门 学生宿舍5栋</text>
     </view>
-    <view class="self-stretch divider"></view>
-    <view class="flex-col justify-start items-center self-center text-wrapper">
+    <view class="self-stretch divider" style="position: relative; left: 0rpx; top: -256rpx"></view>
+    <view class="flex-col justify-start items-center self-center text-wrapper" style="position: relative; left: 0rpx; top: -224rpx">
       <text class="text_7">新建地址</text>
     </view>
   </view>
