@@ -22,7 +22,7 @@ Page({
   },
   onImageClick5:function(){
     wx.navigateTo({
-      url: '/pages/liaotian/liaotian', // 跳转到详情页面
+      url: '/pages/dongtailiaotian/dongtailiaotian', // 跳转到详情页面
     });
   },
   onImageClick6:function(){
@@ -43,6 +43,11 @@ Page({
   onImageClick9:function(){
     wx.navigateTo({
       url: '/pages/yue/yue', // 跳转到详情页面
+    });
+  },
+  onImageClick10:function(){
+    wx.navigateTo({
+      url: '/pages/denglu/denglu', // 跳转到详情页面
     });
   },
   redirectToPage1:function(){
