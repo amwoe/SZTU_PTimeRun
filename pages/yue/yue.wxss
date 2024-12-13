@@ -15,7 +15,6 @@
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -24,7 +23,6 @@
   overflow-x: hidden;
 }
 .section {
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=57ba539cc9dd71f0b8bca0941c1c5c48.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 750rpx;
@@ -156,7 +154,6 @@
 }
 .section_3 {
   padding: 0 13.95rpx 15.7rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=e6e0005ed799c09ee008ecf0c3205fa3.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
