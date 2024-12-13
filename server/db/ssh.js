@@ -61,8 +61,8 @@ async function getDbConnection() {
   return pool;
 }
 
-// 连接到数据库
-async function connectToDatabase() {
+// 通过ssh通道连接数据库
+function connectToDatabase() {
   return new Promise((resolve, reject) => {
     if (isSSHConnected && pool) {
       console.log('复用已有的数据库连接池');
@@ -100,9 +100,15 @@ async function connectToDatabase() {
         console.error('SSH连接错误:', err);
         reject(err);
       })
+      .on('end', () => {
+        console.log('SSH连接已关闭');
+        // 移除所有事件监听器
+        sshClient.removeAllListeners();  // 确保移除监听器，防止内存泄漏
+      })
       .connect(sshConfig);
   });
 }
+
 
 // 尝试重连SSH
 function reconnectSSH() {
