@@ -1,91 +1,61 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
-  <image
-    class="image pos"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=1686af5a367ba350d79c3f8eb7d2158f.png"
-  />
-  <image
-    class="image_2 pos_2"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=94a2dec55b3ffc3ff854e0864cff0523.png"
-  />
-  <image
-    class="image_3 pos_3"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=25a8d53ed0bea2d2fdf9739fb1c8a2d0.png"
-  />
-  <image
-    class="image_5 pos_7"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=4a5e7727d46761e2a8b78f5bb4ef7d2a.png"
-  />
-  <image
-    class="image_4 pos_5"
-    src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=2244eeecaf935ce3d0807b5642915414.png"
-  />
-  <view class="flex-row items-center section_2 pos_8">
+  <view class="flex-row items-center section_2 pos_4" style="position: absolute; left: 30rpx; top: 29rpx">
     <image
-      class="image_6"
-      src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=de31d57fcc0555cbc4649606a1c0e0fa.png"
+      class="image_3"
+      src="/pages/images/1/sousuo.png"
     />
-    <text class="font_2 text_4 ml-7">输入关键词搜索</text>
+    <input
+      class="font text_2 ml-7"
+      type="text"
+      placeholder="输入关键词搜索"
+    />
   </view>
-  <text class="font_3 text_5 pos_9">正在进行(10)</text>
-  <text class="font_4 text_6 pos_10">已完成(128)</text>
-  <view class="section_3 pos_11"></view>
-  <view class="flex-col pos_12">
-    <view
-      class="flex-col mt-8 section_4 list-item"
-      wx:for="{{items}}"
-      wx:for-item="item"
-      wx:for-index="index"
-      wx:key="index"
-    >
-      <view class="flex-row">
-        <image
-          class="self-start image_7 image_8"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=0daa292948aa22b21b0d4915ca3c8f18.png"
-        />
-        <view class="flex-col flex-1 group_2 ml-11">
-          <view class="flex-row justify-between self-stretch group_3">
-            <view class="flex-row items-center">
-              <text class="font_5 text_7">沈海辛</text>
-              <view class="flex-col justify-start shrink-0 text-wrapper ml-11">
-                <text class="font_2 text_9">食堂带饭</text>
-              </view>
-            </view>
-            <view class="flex-row section_5">
-              <image
-                class="shrink-0 image_9"
-                src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=31415a0e46df0afa3b0ef58f861d2a0b.png"
-              />
-              <text class="font_4 text_8 ml-3">09:18 截至</text>
-            </view>
-          </view>
-          <text class="self-start font_6 text_10 mt-9">第二食堂带辣椒炒肉，西红柿鸡蛋</text>
-          <view class="flex-row justify-evenly self-start section_6 mt-9">
-            <image
-              class="image_10"
-              src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=9eac1f93f903714469838370229aae76.png"
-            />
-            <text class="font_3 text_11">女生</text>
-          </view>
+  <text class="font_2 text_3 pos_5" style="position: absolute; left: 52rpx; top: 148rpx">全部(2)</text>
+  <view class="section_3 pos_8" style="position: absolute; left: 50rpx; top: 190rpx"></view>
+  <view class="flex-col section_4 pos_9" style="position: absolute; left: 26rpx; top: 242rpx">
+    <view class="flex-row justify-between self-stretch group">
+      <view class="flex-row items-center">
+        <text class="font_3 text_5">宁桑娅</text>
+        <view class="ml-14 flex-col justify-start shrink-0 text-wrapper">
+          <text class="font text_6">代取快递</text>
         </view>
       </view>
-      <view class="flex-row justify-center items-center group_4">
+      <view class="flex-row section_5" style="width: 279rpx; display: flex; box-sizing: border-box">
         <image
-          class="image_11"
-          src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=427d5e31367ee8a0cc8e70b331618a96.png"
+          class="shrink-0 image_5"
+          src="/pages/images/1/time.png"
         />
-        <text class="font_6 ml-13">xx省xx市xx区学校宿舍5栋203</text>
-      </view>
-      <view class="flex-row justify-between items-center group_5">
-        <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_12"
-            src="https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=c269d0647b3111ff2601ccd357c35e69.png"
-          />
-          <text class="ml-10 font_7 text_12">20元</text>
-        </view>
-        <view class="flex-col justify-start items-center text-wrapper_2"><text class="font_2">确定送达</text></view>
+        <text class="font_4 text_7 ml-3" style="width: 230rpx; display: block; box-sizing: border-box">24-12-13 09:18 截止</text>
       </view>
     </view>
+    <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -165rpx; top: 8rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">取消订单</text></view>
+    <image
+      class="image_4 pos_10"
+      src="/pages/images/1/clx.png"
+    />
+  </view>
+<view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -61rpx; top: -1266rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">确认完成</text></view>
+  <view class="flex-col section_6 pos_11" style="position: absolute; left: 40rpx; top: 467rpx">
+    <view class="flex-row justify-between self-stretch group_2">
+      <view class="flex-row items-center">
+        <text class="font_3 text_8">邓御寒</text>
+        <view class="flex-col justify-start shrink-0 text-wrapper_3 ml-15">
+          <text class="font text_9">外卖上楼</text>
+        </view>
+      </view>
+      <view class="flex-row section_5 view" style="width: 284rpx; display: flex; box-sizing: border-box">
+        <image
+          class="shrink-0 image_5"
+          src="/pages/images/1/time.png"
+        />
+        <text class="font_4 text_7 ml-3" style="width: 244rpx; display: block; box-sizing: border-box">24-23-06 09:18 截止</text>
+      </view>
+    </view>
+    <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: 0rpx; top: 0rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">已完成</text></view>
+    <image
+      class="image_4 pos_12"
+      src="/pages/images/1/shu.png"
+    />
   </view>
 </view>
