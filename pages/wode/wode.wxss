@@ -32,9 +32,6 @@
 .section {
   /* padding: 31.4rpx 0 24.42rpx; */
   padding: 0 0 24.42rpx;
-  /* background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=bef61b7a4c83a4ae8fb5c9fb4fa4db06.png'); */
-  /* background: linear-gradient(315deg,#8BC34A 0,#00F9E5 100%); */
-  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .group {
@@ -118,7 +115,6 @@
   padding: 0 27.91rpx;
 }
 .section_2 {
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=e6e0005ed799c09ee008ecf0c3205fa3.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -162,16 +158,10 @@
   line-height: 25.73rpx;
 }
 .section_4 {
-  /* padding: 31.4rpx 0 13.95rpx;
-  background-color: #f7ffe8;
-  border-radius: 17.44rpx;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.03); */
-
   background-image: linear-gradient(0deg, #fff, #f3f5f8);
   border: 2px solid #fff;
   border-radius: 20px;
   box-shadow: 8px 8px 20px 0 rgba(55, 99, 170, .1), -8px -8px 20px 0 #fff;
-  /* padding: 12px 0; */
   margin-top: 30rpx;
 }
 .equal-division {
@@ -201,7 +191,6 @@
   border-radius: 20px;
   box-shadow: 8px 8px 20px 0 rgba(55, 99, 170, .1), -8px -8px 20px 0 #fff;
   margin-top: 40rpx;
-  /* padding: 12px 0; */
 }
 .font_6 {
   font-size: 27.91rpx;
@@ -275,7 +264,6 @@
 .section_7 {
   padding: 29.65rpx 41.86rpx 34.88rpx 66.28rpx;
   border-radius: 21.49rpx;
-  background-image: url('https://ide.code.fun/api/image?token=6722de9fc471750012dd97cc&name=6b9556ac6430a8d1f6541439302c9916.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
