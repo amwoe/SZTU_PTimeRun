@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+  onOrderTap:function(){
+    wx.navigateTo({
+      url: '/pages/zhifu/zhifu', 
+    });
+  },
+  onConsultationTap:function(){
+    wx.navigateTo({
+      url: '/pages/dongtailiaotian/dongtailiaotian', 
+    });
+  },
 })
