@@ -66,7 +66,7 @@ Page({
   onImageClick1:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/xiadan/xiadan',
+      url: '/pages/daikexiangqing/daikexiangqing',
     });
   },
   onImageClick2:function(){
@@ -85,6 +85,12 @@ Page({
     // console.log("Image clicked!"); 
     wx.navigateTo({
       url: '/pages/kechengziliao/kechengziliao',
+    });
+  },
+  onImageClick11:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/xiadan/xiadan',
     });
   },
 })
