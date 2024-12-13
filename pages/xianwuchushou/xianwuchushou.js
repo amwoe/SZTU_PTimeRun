@@ -69,4 +69,11 @@ Page({
       url: '/pages/xianwuchushouxiangqing/xianwuchushouxiangqing',
     });
   },
+
+  onImageClick2:function(){
+    // console.log("Image clicked!"); 
+    wx.navigateTo({
+      url: '/pages/xiadan/xiadan',
+    });
+  },
 })
