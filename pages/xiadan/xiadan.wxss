@@ -9,7 +9,6 @@
 }
 .page {
   background-color: #ffffff;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=79b10275a966a048a2083a86161a6ff7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -18,7 +17,6 @@
   overflow-x: hidden;
 }
 .section {
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=79b10275a966a048a2083a86161a6ff7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 750rpx;
@@ -201,7 +199,6 @@
 .image-wrapper_2 {
   padding: 8.72rpx 0 99.42rpx;
   border-radius: 17.44rpx;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=4133e0fb140e1414406296592cf9685a.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 139.53rpx;
@@ -214,7 +211,6 @@
 .image-wrapper_3 {
   padding: 8.72rpx 0 99.42rpx;
   border-radius: 17.44rpx;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=1d4ed469f1b55bb126b22934149dd9aa.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 139.53rpx;
@@ -222,7 +218,6 @@
 .image-wrapper_4 {
   padding: 12.21rpx 0 95.93rpx;
   border-radius: 17.44rpx;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=4ce95977828362ebad1eebb932010ebc.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 139.53rpx;
@@ -327,7 +322,6 @@
 }
 .section_6 {
   padding: 38.37rpx 0;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=20e77c0aa239e9f55d4295d47c9c96c7.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 458.72rpx;
@@ -340,11 +334,11 @@
   margin-left: 62.79rpx;
 }
 .text_15 {
-  color: #fae0c3;
+  color: #c55e2f;
   line-height: 20.6rpx;
 }
 .text_14 {
-  color: #fae0c3;
+  color: #c55e2f;
   font-size: 52.33rpx;
   font-family: SourceHanSansCN;
   font-weight: 700;
@@ -352,7 +346,6 @@
 }
 .text-wrapper_3 {
   padding: 48.84rpx 0 41.86rpx;
-  background-image: url('https://ide.code.fun/api/image?token=67581dc3797f850011f1eb67&name=d2e79a0000fc0e36fd4b484812f94620.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 231.98rpx;
