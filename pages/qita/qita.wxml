@@ -1,0 +1,52 @@
+<!--pages/qita/qita.wxml-->
+<view class="flex-col page">
+  <view class="flex-row justify-between items-center group">
+    <view class="flex-row">
+    </view>
+  </view>
+  <view class="mt-28 flex-col">
+    <view class="flex-row justify-between items-center self-stretch group_3">
+    </view>
+    <view class="flex-col self-stretch group_4">
+      <view class="flex-row equal-division">
+      </view>
+      <view class="flex-row equal-division" style="margin-top: 20rpx; height: 162rpx; display: flex; box-sizing: border-box">
+        
+        <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent; position: relative; left: -279rpx; top: 275rpx">
+          
+        </view>
+         <text class="font_2 text_4 pos_8" style="position: absolute; left: 38rpx; top: 45rpx; width: 94rpx; height: 54rpx; display: block; box-sizing: border-box">最近</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="flex-col grid-item" style="position: relative; left: 26rpx; top: -389rpx">
+      <image style="width: 324rpx; height: 315rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -668rpx"
+        class="self-stretch image_6"
+        src="/pages/images/1/English.jpg"
+        bindtap="onImageClick1"
+      />
+      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail" style="position: relative; left: 106rpx; top: -659rpx">大学英语代课</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1">
+        <view class="flex-row items-center">
+          <image style="position: relative; left: 12rpx; top: -673rpx; height: 80rpx; display: block; box-sizing: border-box; width: 87rpx"
+            class="shrink-0 image_7"
+            src="/pages/images/8/3.png"
+          />
+          <text class="ml-8 font_4 text_9" style="position: relative; left: 0rpx; top: -660rpx">尼森</text>
+        </view>
+        <view class="group_3" style="position: relative; left: -183rpx; top: -20rpx">
+          <text class="font_6" style="position: relative; left: -258rpx; top: -15rpx">￥</text>
+          
+        </view>
+        <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick11">
+          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 132rpx; top: 0rpx"
+            class="image_11"
+            src="/pages/images/1/jia.png"
+          />
+          <text style="position: relative; left: 132rpx; top: 22rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布代课</text>
+          <text style="position: relative; left: -223rpx; top: -563rpx">￥</text>
+          <text style="position: relative; left: -223rpx; top: -563rpx ">35</text>
+        </view>
+      </view>
+    </view>
