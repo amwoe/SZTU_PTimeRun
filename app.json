@@ -29,6 +29,8 @@
     "pages/xianwuchushouxiangqing/xianwuchushouxiangqing",
     "pages/xianwuchushou/xianwuchushou",
     "pages/xiadan/xiadan",
-    "pages/daikexiangqing/daikexiangqing"
+    "pages/daikexiangqing/daikexiangqing",
+    "pages/zhifu/zhifu",
+    "pages/qita/qita"
   ]
 }
