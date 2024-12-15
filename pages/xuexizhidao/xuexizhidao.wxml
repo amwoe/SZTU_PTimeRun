@@ -52,36 +52,26 @@
         <view class="flex-row justify-center items-center section_2 equal-division-item ml-11" style="background: transparent; position: relative; left: -279rpx; top: 275rpx">
           
         </view>
-         <text class="font_2 text_4 pos_8" style="position: absolute; left: 38rpx; top: 683rpx; width: 94rpx; height: 54rpx; display: block; box-sizing: border-box">最近</text>
+         
       </view>
     </view>
   </view>
 </view>
 <view class="flex-col grid-item" style="position: relative; left: 26rpx; top: -389rpx">
-      <image style="width: 324rpx; height: 315rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -68rpx"
-        class="self-stretch image_6"
-        src="/pages/images/1/English.jpg"
-        bindtap="onImageClick1"
-      />
-      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail" style="position: relative; left: 0rpx; top: -59rpx">大学英语代课</text>
+      
+      
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1">
         <view class="flex-row items-center">
-          <image style="position: relative; left: 12rpx; top: -29rpx"
-            class="shrink-0 image_7"
-            src="/pages/images/8/3.png"
-          />
-          <text class="ml-8 font_4 text_9" style="position: relative; left: 0rpx; top: -64rpx">尼森</text>
+          
+          
         </view>
         <view class="group_3" style="position: relative; left: -183rpx; top: -20rpx">
           <text class="font_6" style="position: relative; left: -258rpx; top: -15rpx">￥</text>
           
         </view>
         <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick11">
-          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 132rpx; top: 0rpx"
-            class="image_11"
-            src="/pages/images/1/jia.png"
-          />
-          <text style="position: relative; left: 132rpx; top: 22rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布代课</text>
+          
+          
         </view>
       </view>
     </view>
