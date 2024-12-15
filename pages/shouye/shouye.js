@@ -31,13 +31,13 @@ Page({
   onImageClick6:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/xiadan/xiadan',
+      url: '/pages/zujie/zujie',
     });
   },
   onImageClick7:function(){
     // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages',
+      url: '/pages/qita/qita',
     });
   },
   onImageClick8:function(){
