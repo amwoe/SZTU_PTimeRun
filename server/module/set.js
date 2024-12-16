@@ -44,8 +44,15 @@ async function setOrder(req, res) {
     return res.status(400).json({ message: '缺少必要的参数' });
   }
 
+  const connection = await db.db; // 等待数据库连接初始化
+  const [col] = await connection.query(`SELECT * FROM task WHERE task_id = ? AND publisher_id = ?;`, [task_id, employee_id]);
+
+  if (col.length > 0) { 
+    return res.status(400).json({ message: '用户无法接取由自己发布的订单' });
+  }
+
   try {
-    const connection = await db.db; // 等待数据库连接初始化
+    // const connection = await db.db; // 等待数据库连接初始化
 
     const query = `
       UPDATE task 
