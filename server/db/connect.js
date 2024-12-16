@@ -1,4 +1,4 @@
-const mysql = require('mysql2')
+const mysql = require('mysql2/promise')
 require('dotenv').config()
 
 const db = mysql.createPool({
@@ -15,4 +15,4 @@ const db = mysql.createPool({
   connectTimeout: 10000,
 });
 
-module.exports = db.promise()
+module.exports = db;

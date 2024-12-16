@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const http = require('http');
+
 const jwt = require('jsonwebtoken')
 const expressJWT = require('express-jwt').expressjwt
 
@@ -29,11 +31,6 @@ async function keepConnectionAlive() {
 // 启动定期任务
 setInterval(keepConnectionAlive, KEEP_ALIVE_INTERVAL);
 
-// learning guidance 路由导入
-const learnGuidanceRouter = require('./router/learnGuidance.js')
-
-// talk 路由导入
-const talkRouter = require('./router/Talking.js')
 
 app.use(cors())
 
@@ -45,15 +42,36 @@ app.use(express.urlencoded({ extended: false }))
 //     algorithms: ['HS256']
 // }).unless({ path: ['/api/login'] }));
 
-
 app.use('/api',authRouter)
 app.use('/api',taskRouter)
 
+// learning guidance 路由导入
+const learnGuidanceRouter = require('./router/learnGuidance.js')
 // learning guidance
 app.use('/api',learnGuidanceRouter)
 
+// talk 路由导入
+const talkRouter = require('./router/Talking.js')
 // talk
 app.use('/api',talkRouter)
+
+let clients = [];
+
+app.get('/api/long-polling', (req, res) => {
+  clients.push(res);
+
+  // 设置超时处理
+  req.on('close', () => {
+    clients = clients.filter(client => client !== res);
+  });
+
+  // 设置超时响应
+  setTimeout(() => {
+    res.status(204).end(); // No Content
+    clients = clients.filter(client => client !== res);
+  }, 60000); // 60秒超时
+});
+
 
 app.listen(3000, ()=>{
     console.log("server running at http://127.0.0.1:3000")

@@ -3,17 +3,20 @@
   <view class="flex-col section">
     <text class="self-center text_5">{{currentTime}}</text>
     <view class="chat-container">
-			<view class="messages">
-				<block wx:for="{{messages}}" wx:key="index">
-					<view class="message {{item.from==='user' ?'user-message':'bot-message'}}">
-						<text>{{item.content}}</text>
-					</view>
-				</block>
-			</view>
-				<view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">
-					<input type="text" value="{{inputValue}}" bindinput="onInput" placeholder="请输入信息"/>
-					<button class="text_4 image_9 ml-5" bindtap="onSendTap">发送</button>
-				</view>
-		</view>
+      <scroll-view class="messages" scroll-y="true" scroll-into-view="{{toView}}" style="height: 80vh;">
+        <block wx:for="{{messages}}" wx:key="index">
+          <view id="msg-{{index}}" class="message {{item.sender_id === '4444' ? 'message-right' : 'message-left'}}">
+            <view class="sender">{{item.sender_id}}</view>
+            <view class="content">{{item.message_content}}</view>
+            <view class="time">{{item.conversation_created_at}}</view>
+          </view>
+          <view class="divider"></view> <!-- 添加分割线 -->
+        </block>
+      </scroll-view>
+      <view class="flex-row items-center self-stretch section_4 fixed-bottom input-area">
+        <input type="text" value="{{inputValue}}" bindinput="onInput" placeholder="请输入信息"/>
+        <button class="text_4 image_9 ml-5" bindtap="onSendTap">发送</button>
+      </view>
+    </view>
   </view>
 </view>
