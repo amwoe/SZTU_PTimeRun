@@ -25,7 +25,7 @@
         src="/pages/images/9，10，11/3.png"
       />
       <text class="font_4 text_7">任务描述：</text>
-      <textarea class="font_5 text_8" placeholder="请输入内容" auto-height="true"></textarea>
+      <textarea class="font_5 text_8" placeholder="请输入内容" auto-height="true" bindinput="onDescriptionChange"></textarea>
     </view>
     <view class="flex-col self-stretch group_6">
       <view class="flex-row items-center self-stretch">
@@ -36,7 +36,7 @@
         <text class="font_4 text_9">送货地址：</text>
         <text class="font_5 text_10">限所在地级市</text>
       </view>
-      <textarea class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址" auto-height="true"></textarea>
+      <textarea class="self-start font_5 text_11 mt-19" placeholder="请输入详细地址" auto-height="true" bindinput="onAddressChange"></textarea>
     </view>
     <view class="flex-row items-center self-stretch group_7">
       <image
@@ -69,21 +69,21 @@
         <text class="ml-6 font_4 text_13">跑腿员要求：</text>
       </view>
       <view class="flex-row items-center group_9">
-          <radio-group>
-            <label class="radio-option">
-              <radio value="不限" checked="{{selected === '不限'}}" bindchange="onOptionChange"></radio>
-              <text class="font_6 text_14">不限</text>
-              <radio value="男" checked="{{selected === '男'}}" bindchange="onOptionChange"></radio>
-              <text class="font_6 text_15">男</text>
-              <radio value="女" checked="{{selected === '女'}}" bindchange="onOptionChange"></radio>
-              <text class="font_6 text_16">女</text>
-            </label>
-          </radio-group>
-        </view>
+        <radio-group>
+          <label class="radio-option">
+            <radio value="不限" checked="{{selected === '不限'}}" bindchange="onOptionChange"></radio>
+            <text class="font_6 text_14">不限</text>
+            <radio value="男" checked="{{selected === '男'}}" bindchange="onOptionChange"></radio>
+            <text class="font_6 text_15">男</text>
+            <radio value="女" checked="{{selected === '女'}}" bindchange="onOptionChange"></radio>
+            <text class="font_6 text_16">女</text>
+          </label>
+        </radio-group>
+      </view>
     </view>
     <view class="self-end group_11" style="display: flex; align-items: center;">
       <text class="text_17">赏金(元)：</text>
-      <input class="font_2 text_18" placeholder="请输入金额"></input>
+      <input class="font_2 text_18" placeholder="请输入金额" bindinput="onRewardChange"/>
     </view>
   </view>
   <view class="flex-col justify-start items-center text-wrapper_2 pos_9" bindtap="onConfirm">

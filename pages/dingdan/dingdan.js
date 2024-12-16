@@ -95,20 +95,20 @@ Page({
   fetchData:function(){
     const that=this;
     wx.request({
-      url: 'http://127.0.0.1:3000/api/getTask',
+      url: 'http://127.0.0.1:3000/api/allTask',
       method:'Get',
       success:function(res){
         if(res.statusCode===200){
           const formattedData=res.data.map(item=>({
-            name:item.publisher_id,
+            name:item.publisher_username,
             task:item.task_type,
             time:item.deadline,
-            description:item.description,
+            description:item.task_description,
             gender:item.runner_gender_requirement,
-            location:item.location,
+            location:item.address_info,
             price:item.salary,
             image:item.cover,
-            type:item.status,
+            type:item.task_status,
             byColor:item.gender==='男'?'#FFE4E1':'#E1F5FE',
             borderColor:item.gender==='男'?'#FF6347':'#2196F3'
           }));

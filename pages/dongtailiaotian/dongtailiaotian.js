@@ -51,7 +51,7 @@ Page({
   },
 
   listenForNewMessages() {
-    // 假设使用 WebSocket 进行实时监听
+    // 使用 WebSocket 进行实时监听
     const socket = wx.connectSocket({
       url: 'ws://localhost:3000'
     });
