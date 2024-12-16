@@ -5,47 +5,7 @@ Page({
   data: {
     searchQuery: '',
     searchResults: [],
-    sections: [
-      {
-        name: '沈海辛',
-        task: '食堂带饭',
-        time: '09:18',
-        description: '第二食堂带辣椒炒肉，西红柿鸡蛋',
-        gender: '女生',
-        location: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20',
-        image: '/pages/images/8/1.png',
-        borderColor: '#FF6347',
-        bgColor: '#FFE4E1',
-        type: '未接单'
-      },
-      {
-        name: '宁桑娅',
-        task: '代取快递',
-        time: '16:18',
-        description: '菜鸟驿站 3个小件',
-        gender: '男生',
-        location: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20',
-        image: '/pages/images/8/3.png',
-        borderColor: '#FF6347',
-        bgColor: '#FFE4E1',
-        type: '未接单'
-      },
-      {
-        name: '邓御寒',
-        task: '外卖上楼',
-        time: '20:00',
-        description: '娃哈哈 x1',
-        gender: '女生',
-        location: 'xx省xx市xx区学校宿舍5栋203',
-        price: '20',
-        image: '/pages/images/8/4.png',
-        borderColor: '#FF6347',
-        bgColor: '#FFE4E1',
-        type: '已完成'
-      },
-    ],
+    sections: [],
   },
 
   updateSectionType: function(index, newType) {
@@ -130,9 +90,40 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.fetchData();
   },
-
+  fetchData:function(){
+    const that=this;
+    wx.request({
+      url: 'http://127.0.0.1:3000/api/getTask',
+      method:'Get',
+      success:function(res){
+        if(res.statusCode===200){
+          const formattedData=res.data.map(item=>({
+            name:item.publisher_id,
+            task:item.task_type,
+            time:item.deadline,
+            description:item.description,
+            gender:item.runner_gender_requirement,
+            location:item.location,
+            price:item.salary,
+            image:item.cover,
+            type:item.status,
+            byColor:item.gender==='男'?'#FFE4E1':'#E1F5FE',
+            borderColor:item.gender==='男'?'#FF6347':'#2196F3'
+          }));
+          that.setData({
+            sections:formattedData
+          });
+        }else{
+          console.error("接口请求失败",res);
+        }
+      },
+      fail:function(error){
+        console.error('请求失败',error);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
