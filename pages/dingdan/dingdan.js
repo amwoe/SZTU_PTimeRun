@@ -33,7 +33,7 @@ Page({
       return;
     }else{
       wx.navigateTo({
-        url: '/pages/dingdanxiangqing/xiangqing?index=' + index,
+        url: '/pages/dingdanxiangqing/xiangqing?item=' + encodeURIComponent(JSON.stringify(item)),
       });
     }
   },

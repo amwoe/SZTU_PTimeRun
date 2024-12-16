@@ -5,9 +5,8 @@
       <view class="flex-row items-center">
         <image
           class="shrink-0 image_6"
-          src="/pages/images/8/1.png"
-        />
-        <text class="font_2 text_4 ml-13">沈海辛</text>
+        >{{item.image}}</image>
+        <text class="font_2 text_4 ml-13">{{item.name}}</text>
       </view>
       <view class="flex-row items-center group_3">
         <text class="font_3 text_5" bindtap="navigateToContact">联系Ta</text>
@@ -22,7 +21,9 @@
         class="image_8"
         src="/pages/images/9，10，11/2.png"
       />
-      <view class="ml-16 flex-col justify-start text-wrapper"><text class="font_3 text_6">食堂带饭</text></view>
+      <view class="ml-16 flex-col justify-start text-wrapper">
+        <text class="font_3 text_6">{{item.task}}</text>
+      </view>
     </view>
     <view class="flex-row items-center self-stretch group_5">
       <image
@@ -30,7 +31,7 @@
         src="/pages/images/9，10，11/3.png"
       />
       <text class="font_4 text_7">任务描述：</text>
-      <text class="font_5 text_8">第二食堂带辣椒炒肉，西红柿鸡蛋</text>
+      <text class="font_5 text_8">{{item.description}}</text>
     </view>
     <view class="flex-col self-stretch group_6">
       <view class="flex-row items-center self-stretch">
@@ -40,7 +41,7 @@
         />
         <text class="font_4 text_9">送货地址：</text>
       </view>
-      <text class="self-start font_5 text_11 mt-19">xxxxxx学校宿舍5栋203</text>
+      <text class="self-start font_5 text_11 mt-19">{{item.location}}</text>
     </view>
     <view class="flex-row items-center self-stretch group_7">
       <image
@@ -48,7 +49,7 @@
         src="/pages/images/9，10，11/5.png"
       />
       <text class="font_4 ml-9">送达时间：</text>
-      <text class="font_5 text_12 ml-9">2024-10-20</text>
+      <text class="font_5 text_12 ml-9">{{item.time}}</text>
     </view>
     <view class="flex-row justify-between items-center self-stretch group_8">
       <view class="flex-row items-center">
@@ -59,20 +60,16 @@
         <text class="ml-6 font_4 text_13">跑腿员要求：</text>
       </view>
       <view class="flex-row items-center group_9">
-        <view class="shrink-0 group_10"></view>
-        <text class="font_6 text_14">不限</text>
-        <view class="shrink-0 group_10 view"></view>
-        <text class="font_6 text_15">男</text>
         <image
           class="shrink-0 image_12"
           src="/pages/images/9，10，11/7.png"
         />
-        <text class="font_4 text_16">女</text>
+        <text class="font_4 text_16">{{item.gender}}</text>
       </view>
     </view>
     <view class="self-end group_11">
       <text class="text_17">赏金：</text>
-      <text class="font_2 text_18">20.00元</text>
+      <text class="font_2 text_18">{{item.price}}元</text>
     </view>
   </view>
   <view class="flex-col justify-start items-center text-wrapper_2 pos_9" bindtap="onConfirm">
