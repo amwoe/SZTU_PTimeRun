@@ -1,0 +1,29 @@
+post接口:
+/api/login 
+登录接口，接受参数account(账号)、password
+
+/api/setTask
+发布任务接口，接受参数如下：
+{
+  "publisher_id": , //必填
+  "task_type": "", //规定的任务类型，必填
+  "description": "", //必填
+  "salary": , //必填
+  "location": "",
+  "hour":, //必填
+  "minute":, //必填
+  "runner_gender_requirement": "" //必填
+}
+
+/api/setOrder
+接单，接收参数task_id、user_id
+
+/api/myTask
+查询我发布的订单，接收参数user_id
+/api/myOrder
+查询我的接单，接收参数user_id
+
+get接口:
+/api/profile  发送token
+/api/getTask_1   发送代取快递, 食堂带饭, 外卖上楼三种类型的任务详情
+/api/getTask_2   发送其余三种类型的任务详情

@@ -2,12 +2,16 @@ const db = require('../db/ssh');
 
 //插入任务信息（发布任务）
 async function setTask(req, res) {
-  const { publisher_id, task_type, description, salary, location, deadline, runner_gender_requirement } = req.body;
+  const { publisher_id, task_type, description, salary, location, hour, minute, runner_gender_requirement } = req.body;
 
   // 校验必填字段是否存在
-  if (!publisher_id || !task_type || !description || !salary || !deadline) {
+  if (!publisher_id || !task_type || !description || !salary || !hour || !minute) {
     return res.status(400).json({ message: '缺少必填字段' });
   }
+  
+  const deadline = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:00`;
+
+  console.log(deadline)
 
   try {
     const connection = await db.db; // 等待数据库连接初始化
@@ -38,14 +42,14 @@ async function setTask(req, res) {
 
 //更新任务状态（接取任务）
 async function setOrder(req, res) {
-  const { task_id, employee_id } = req.body;
+  const { task_id, user_id } = req.body;
 
-  if (!task_id || !employee_id) {
+  if (!task_id || !user_id) {
     return res.status(400).json({ message: '缺少必要的参数' });
   }
 
   const connection = await db.db; // 等待数据库连接初始化
-  const [col] = await connection.query(`SELECT * FROM task WHERE task_id = ? AND publisher_id = ?;`, [task_id, employee_id]);
+  const [col] = await connection.query(`SELECT * FROM task WHERE task_id = ? AND publisher_id = ?;`, [task_id, user_id]);
 
   if (col.length > 0) { 
     return res.status(400).json({ message: '用户无法接取由自己发布的订单' });
@@ -59,7 +63,7 @@ async function setOrder(req, res) {
       SET employee_id = ?, status = '正在进行' 
       WHERE task_id = ? AND status = '未接单'
     `;
-    const [result] = await connection.query(query, [employee_id, task_id]);
+    const [result] = await connection.query(query, [user_id, task_id]);
 
     if (result.affectedRows === 0) {
       return res.status(400).json({ message: '该任务已被分配' });

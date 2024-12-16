@@ -1,6 +1,6 @@
 const express = require('express');
 const { setTask, setOrder,completeOrder } = require('../module/set');
-const { getTask, myTask, myOrder , allTask } = require('../module/get')
+const { getTask, myTask, myOrder , getTask_1 , getTask_2} = require('../module/get')
 
 const taskRouter = express.Router();
 
@@ -15,6 +15,7 @@ taskRouter.post('/myOrder', myOrder);
 
 taskRouter.post('/complete', completeOrder);
 
-taskRouter.get('/allTask', allTask);
+taskRouter.get('/getTask_1', getTask_1);
+taskRouter.get('/getTask_2', getTask_2);
 
 module.exports = taskRouter;
