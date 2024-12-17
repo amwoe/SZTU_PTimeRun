@@ -14,8 +14,8 @@
   height: 100%;
   width: 100%;
   overflow-y: auto;
-	overflow-x: hidden;
-	position: relative; /* 设置为相对定位，以便绝对定位的子元素可以相对于它定位 */
+  overflow-x: hidden;
+  position: relative; /* 设置为相对定位，以便绝对定位的子元素可以相对于它定位 */
   min-height: 100vh; /* 确保页面有足够的高度 */
 }
 .section {
@@ -86,8 +86,7 @@
 .text_4 {
   color: #f1bd12;
   font-size: 35.91rpx;
-	line-height: 26.37rpx;
-	
+  line-height: 26.37rpx;
 }
 .pos {
   position: absolute;
@@ -112,7 +111,7 @@
 .group_4 {
   margin-top: 45.35rpx;
   padding: 0 69.77rpx;
-  z-index:1;
+  z-index: 1;
 }
 .text-wrapper {
   padding: 20.93rpx 0;
@@ -198,8 +197,8 @@
   padding: 31.4rpx 10.47rpx 31.4rpx 15.7rpx;
   background-color: #ffffff;
   filter: drop-shadow(0rpx -3.49rpx 5.23rpx #0000000f);
-	overflow: hidden;
-	z-index: 1000;
+  overflow: hidden;
+  z-index: 1000;
 }
 .section_5 {
   background-color: #f0f0f0;
@@ -214,7 +213,7 @@
   height: 51.47rpx;
 }
 .image_9 {
-  width:130.33rpx;
+  width: 130.33rpx;
   height: 80.33rpx;
 }
 
@@ -227,8 +226,6 @@
   padding: 10px; /* 可选：添加内边距 */
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* 可选：添加阴影效果 */
 }
-
-
 
 .image-background {
   position: absolute;
@@ -244,8 +241,8 @@
 .chat-container {
   flex-direction: column;
   height: calc(100% - 10px); /* 减去底部输入区域的高度 */
-	overflow-y: auto;
-	align-items: flex-end;
+  overflow-y: auto;
+  align-items: flex-end;
 }
 .messages {
   flex: 1;
@@ -256,43 +253,64 @@
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
-	max-width: 45%; /* 限制消息的最大宽度 */
+  max-width: 70%; /* 限制消息的最大宽度 */
+}
+.message-right {
+  align-self: flex-end;
+  background-color: #e0e0e0;
 }
 
+.message-left {
+  align-self: flex-start;
+  background-color: #c8e6c9;
+}
+.sender {
+  font-weight: bold;
+  margin-bottom: 5px; /* 添加下边距 */
+}
+.content {
+  margin-top: 5px;
+}
+.time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
 .user-message {
-	background-color: #e0e0e0;
-	margin-left: auto;
-	align-self: flex-end;
-	border-top-left-radius: 0;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 0;
-	border-top-right-radius: 5px;
+  background-color: #e0e0e0;
+  margin-left: auto;
+  align-self: flex-end;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
 }
-
 .bot-message {
   background-color: #c8e6c9;
-	align-self: flex-start;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 0;
-	border-bottom-left-radius: 5px;
-	border-top-right-radius: 0;
+  align-self: flex-start;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
 }
-
 .input-area {
   display: flex; /* 使用flex布局 */
   align-items: center; /* 垂直居中对齐 */
   padding: 3px; /* 根据需要添加内边距 */
   background-color: #e7e4e4ee; /* 背景颜色 */
 }
-
 input {
   flex-grow: 1; /* 输入框占据剩余空间 */
   padding: 5px; /* 内边距 */
   border-radius: 5px; /* 圆角 */
   border: 1px solid rgb(194, 191, 191); /* 边框 */
 }
-
 button {
   margin-left: 10px; /* 按钮与输入框之间的间距 */
   padding: 10px; /* 内边距 */
+}
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0; /* 上下间距 */
 }

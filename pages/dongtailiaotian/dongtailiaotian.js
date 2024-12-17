@@ -1,47 +1,45 @@
-// pages/liaotian/liaotian.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    currentTime:'',
-    messages:[],
-    inputValue:'',
-    toView: '' // 新增属性
+    currentTime: '',
+    messages: [],
+    inputValue: '',
+    toView: ''
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad(options) {
     this.updateTime();
-    setInterval(()=>{
+    setInterval(() => {
       this.updateTime();
-    },60000);//每一分钟变化
+    }, 60000);
 
     this.getMessagesFromDB();
     this.listenForNewMessages();
   },
-  updateTime(){
-    const now=new Date();
-    const options={
-      weekday:'long',
-      hour:'numeric',
-      minute:'numeric'
+
+  updateTime() {
+    const now = new Date();
+    const options = {
+      weekday: 'long',
+      hour: 'numeric',
+      minute: 'numeric'
     };
     this.setData({
-      currentTime:now.toLocaleDateString('zh-CN',options),
+      currentTime: now.toLocaleDateString('zh-CN', options),
     });
   },
 
   getMessagesFromDB() {
     wx.request({
-      url: 'http://localhost:3000/getTaking', // 调用新的 getTaking API
+      url: 'http://127.0.0.1:3000/api/getTalking',
       method: 'GET',
       success: res => {
+        console.log('获取消息成功', res.data); // 添加日志
+        const messages = res.data;
+        const toView = messages.length ? `msg-${messages.length - 1}` : '';
+        console.log('toView:', toView); // 打印 toView 的值
         this.setData({
-          messages: res.data
+          messages: messages,
+          toView: toView
         });
       },
       fail: err => {
@@ -51,59 +49,65 @@ Page({
   },
 
   listenForNewMessages() {
-    // 使用 WebSocket 进行实时监听
-    const socket = wx.connectSocket({
-      url: 'ws://localhost:3000'
-    });
-
-    socket.onMessage(message => {
-      const newMessage = JSON.parse(message.data);
-      this.setData({
-        messages: [...this.data.messages, newMessage],
-        toView: `msg-${this.data.messages.length}` // 更新 toView
-      });
-    });
-
-    socket.onError(err => {
-      console.error('WebSocket 连接错误', err);
-    });
-  },
-
-  queryMessages(query) {
-    wx.request({
-      url: 'http://localhost:3000/messages/search',
-      method: 'GET',
-      data: { query },
-      success: res => {
-        this.setData({
-          messages: res.data
-        });
-      },
-      fail: err => {
-        console.error('查询消息失败', err);
-      }
-    });
-  },
-
-  onInput:function(e){
-    this.setData({
-      inputValue:e.detail.value
-    });
-  },
-
-  sendMessage:function(){
-    const{inputValue}=this.data;
-    if(inputValue.trim()){
-      const newMessage={from:'user',content:inputValue};
+    const poll = () => {
       wx.request({
-        url: 'http://localhost:3000/api/messages',
+        url: 'http://127.0.0.1:3000/api/long-polling',
+        method: 'GET',
+        timeout: 60000, // 设置超时时间为60秒
+        success: res => {
+          if (res.statusCode === 204) {
+            // No new messages, continue polling
+            poll();
+            return;
+          }
+          console.log('收到新消息', res.data); // 添加日志
+          const newMessages = [...this.data.messages, res.data];
+          const toView = `msg-${newMessages.length - 1}`;
+          console.log('toView:', toView); // 打印 toView 的值
+          this.setData({
+            messages: newMessages,
+            toView: toView
+          });
+          poll(); // 继续轮询
+        },
+        fail: err => {
+          console.error('长轮询错误', err);
+          setTimeout(poll, 5000); // 失败后5秒重试
+        }
+      });
+    };
+    poll(); // 开始轮询
+  },
+
+  onInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    });
+  },
+
+  sendMessage: function () {
+    const { inputValue } = this.data;
+    if (inputValue.trim()) {
+      const newMessage = {
+        sender_id: '4444', // 替换为实际的发送者ID
+        participant_user_id: '200203000', // 替换为实际的参与者ID
+        message_content: inputValue, // 消息内容
+        conversation_created_at: new Date().toISOString() // 当前时间
+      };
+      console.log('发送消息:', newMessage); // 添加日志
+      wx.request({
+        url: 'http://127.0.0.1:3000/api/sendMessageToDB',
         method: 'POST',
         data: newMessage,
-        success: () => {
+        success: (res) => {
+          console.log('发送消息成功', res); // 添加日志
+          const newMessages = [...this.data.messages, newMessage];
+          const toView = `msg-${newMessages.length - 1}`;
+          console.log('toView:', toView); // 打印 toView 的值
           this.setData({
-            inputValue:'',
-            messages: [...this.data.messages, newMessage],
-            toView: `msg-${this.data.messages.length}` // 更新 toView
+            inputValue: '',
+            messages: newMessages,
+            toView: toView  // 更新 toView
           });
         },
         fail: err => {
@@ -113,7 +117,7 @@ Page({
     }
   },
 
-  onSendTap:function(){
+  onSendTap: function () {
     this.sendMessage();
   },
 
@@ -128,7 +132,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.getMessagesFromDB(); // 页面显示时获取最新消息
   },
 
   /**
@@ -149,7 +153,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    this.getMessagesFromDB(); // 下拉刷新时获取最新消息
   },
 
   /**
@@ -165,4 +169,4 @@ Page({
   onShareAppMessage() {
 
   }
-})
+});
