@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "",
-          "pathName": "pages/dongtailiaotian/dongtailiaotian",
+          "name": "pages/shouye/shouye",
+          "pathName": "pages/shouye/shouye",
           "query": "",
           "launchMode": "default",
           "scene": null
