@@ -95,7 +95,7 @@ Page({
   fetchData:function(){
     const that=this;
     wx.request({
-      url: 'http://127.0.0.1:3000/api/allTask',
+      url: 'http://127.0.0.1:3000/api/getTask_1',
       method:'Get',
       success:function(res){
         if(res.statusCode===200){
