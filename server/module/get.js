@@ -29,7 +29,7 @@ async function getTask_1(req, res) {
         t.description AS task_description, 
         t.runner_gender_requirement, 
         t.location AS address_info,
-        t.deadline, 
+        DATE_FORMAT(t.deadline, '%H:%i') AS deadline,  -- 格式化只保留时和分
         t.salary, 
         t.status AS task_status, 
         u.username AS publisher_username,
@@ -66,7 +66,7 @@ async function getTask_2(req, res) {
         t.description AS task_description, 
         t.runner_gender_requirement, 
         t.location AS address_info,
-        t.deadline, 
+        DATE_FORMAT(t.deadline, '%H:%i') AS deadline,  
         t.salary, 
         t.status AS task_status, 
         u.username AS publisher_username,
