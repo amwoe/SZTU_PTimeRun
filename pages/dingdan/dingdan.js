@@ -107,7 +107,7 @@ Page({
             gender:item.runner_gender_requirement,
             location:item.address_info,
             price:item.salary,
-            image:item.cover,
+            image:item.publisher_avator,
             type:item.task_status,
             byColor:item.gender==='男'?'#FFE4E1':'#E1F5FE',
             borderColor:item.gender==='男'?'#FF6347':'#2196F3'

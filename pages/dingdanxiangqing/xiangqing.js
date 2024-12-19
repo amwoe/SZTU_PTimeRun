@@ -23,7 +23,7 @@ Page({
       const prevPage = pages[pages.length - 2]; // 获取上一个页面实例
       if (prevPage && this.data.index !== -1 && this.data.index < prevPage.data.sections.length) {
         // 更新上一个页面中相应订单的状态
-        prevPage.updateSectionType(this.data.index, '已接单');
+        prevPage.updateSectionType(this.data.index, '正在进行');
       } else {
         console.error('Index out of range:', this.data.index);
       }
