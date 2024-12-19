@@ -1,3 +1,4 @@
+const { woderenwuList } = require('../woderenwu/woderenwu.js');
 Page({
   data: {
     index: -1,
@@ -22,8 +23,10 @@ Page({
       const pages = getCurrentPages();
       const prevPage = pages[pages.length - 2]; // 获取上一个页面实例
       if (prevPage && this.data.index !== -1 && this.data.index < prevPage.data.sections.length) {
+        console.log(this.data.index)
         // 更新上一个页面中相应订单的状态
         prevPage.updateSectionType(this.data.index, '正在进行');
+        this.saveToWoderenwu(prevPage.data.sections[this.data.index]);
       } else {
         console.error('Index out of range:', this.data.index);
       }
@@ -32,16 +35,29 @@ Page({
       });
     }, 500);
   },
-
+  
+  saveToWoderenwu:function(item){
+    if(typeof woderenwuList !== 'undefined'){
+      woderenwuList.push({
+        ...item,
+        status:'正在进行'
+      });
+      console.log(woderenwuList)
+    }else{
+      console.error('woderenwuList is not defined in woderenwu.js');
+    }
+  },
   // 生命周期函数--监听页面加载
   onLoad: function (options) {
     console.log(options)
     // 从上一个页面接收
+    const index = parseInt(options.index, 10);
     const item = JSON.parse(decodeURIComponent(options.item));
     if (!["不限", "男", "女"].includes(item.gender)) {
       item.gender = "不限"; // 默认值或错误处理
     }
     this.setData({
+      index:index,
       item:item,
     });
   },

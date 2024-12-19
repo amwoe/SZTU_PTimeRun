@@ -1,4 +1,9 @@
 // pages/woderenwu/woderenwu.js
+let woderenwuList=[];
+module.exports={
+  woderenwuList
+};
+console.log(woderenwuList)
 Page({
 
   /**
