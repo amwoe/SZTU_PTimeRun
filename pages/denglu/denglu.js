@@ -84,6 +84,7 @@ Page({
 
           const token = res.data.data.token;
           wx.setStorageSync('token', token); // 存储token到本地存储
+          wx.setStorageSync('userId', userId); 
           wx.setStorageSync('isLogin', true)
           wx.reLaunch({
             url: '/pages/shouye/shouye',

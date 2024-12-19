@@ -66,6 +66,17 @@ Page({
     })
   },
 
+
+  //退出逻辑
+  ontuichu:function(){
+    wx.removeStorageSync('userInfo');
+    wx.removeStorageSync('token');
+    wx.removeStorageSync('isLogin');
+    wx.redirectTo({
+      url: '/pages/denglu/denglu',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

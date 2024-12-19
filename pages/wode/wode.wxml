@@ -99,8 +99,7 @@
       </view>
     </view>
 <view class="flex-row justify-between items-center section_7 mt-17" bindtap="onImageClick10" style="position: relative; left: 34rpx; top: -176rpx; height: 136rpx; display: flex; box-sizing: border-box; width: 683rpx">
-        <view class="flex-row items-center">
-          
+        <view class="flex-row items-center" bindtap="ontuichu">
           <text class="font_6 text_13 ml-17" style="width: 129rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 160rpx; top: 17rpx">退出登录</text>
         </view>
         <image
