@@ -1,3 +1,9 @@
+请将images文件夹复制到F:\路径下
+f:\images\users 中存放用户头像，可以自行添加，格式为账号.jpg
+f:\images\tasks 中存放任务附图，暂定
+
+
+
 post接口:
 /api/login 
 登录接口，接受参数account(账号)、password
@@ -25,5 +31,6 @@ post接口:
 
 get接口:
 /api/profile  发送token
-/api/getTask_1   发送代取快递, 食堂带饭, 外卖上楼三种类型的任务详情
-/api/getTask_2   发送其余三种类型的任务详情
+/api/getTask_1   发送代取快递, 食堂带饭, 外卖上楼三种类型的 未接单的 任务详情
+/api/getTask_2   发送代取快递, 食堂带饭, 外卖上楼三种类型的 其余两种 任务详情 
+/api/getTask_3   发送其余三种类型的任务详情
