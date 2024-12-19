@@ -1,17 +1,15 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const path = require('path');
+const cors = require('cors');
 
 const http = require('http');
+const jwt = require('jsonwebtoken');
+const expressJWT = require('express-jwt').expressjwt;
 
-const jwt = require('jsonwebtoken')
-const expressJWT = require('express-jwt').expressjwt
-
-const cors = require('cors')
-
-const authRouter = require('./router/auth')
-const taskRouter = require('./router/task')
-const db = require('./db/ssh')
-
+const authRouter = require('./router/auth');
+const taskRouter = require('./router/task');
+const db = require('./db/ssh');
 
 // 定期验证数据库连接的间隔（单位：毫秒）
 const KEEP_ALIVE_INTERVAL = 30000; 
@@ -31,32 +29,28 @@ async function keepConnectionAlive() {
 // 启动定期任务
 setInterval(keepConnectionAlive, KEEP_ALIVE_INTERVAL);
 
+// 提供图片静态资源访问
+app.use('/images/users', express.static(path.join('F:', 'images', 'users')));
+app.use('/images/tasks', express.static(path.join('F:', 'images', 'tasks')));
 
-app.use(cors())
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-
-// app.use(expressJWT({
-//     secret: process.env.JWT_SECRET,
-//     algorithms: ['HS256']
-// }).unless({ path: ['/api/login'] }));
-
-app.use('/api',authRouter)
-app.use('/api',taskRouter)
+// 路由配置
+app.use('/api', authRouter);
+app.use('/api', taskRouter);
 
 // learning guidance 路由导入
-const learnGuidanceRouter = require('./router/learnGuidance.js')
-// learning guidance
-app.use('/api',learnGuidanceRouter)
+const learnGuidanceRouter = require('./router/learnGuidance.js');
+app.use('/api', learnGuidanceRouter);
 
 // talk 路由导入
-const talkRouter = require('./router/Talking.js')
-// talk
-app.use('/api',talkRouter)
+const talkRouter = require('./router/Talking.js');
+app.use('/api', talkRouter);
 
+// 长轮询功能
 let clients = [];
-
 app.get('/api/long-polling', (req, res) => {
   clients.push(res);
 
@@ -77,7 +71,7 @@ function sendNewMessage(message) {
   clients = [];
 }
 
-app.listen(3000, ()=>{
-    console.log("server running at http://127.0.0.1:3000")
-    console.log(`已启动全局定期保持数据库连接的任务，每隔 ${KEEP_ALIVE_INTERVAL / 60000} 分钟执行一次`)
-})
+app.listen(3000, () => {
+  console.log("server running at http://127.0.0.1:3000");
+  console.log(`已启动全局定期保持数据库连接的任务，每隔 ${KEEP_ALIVE_INTERVAL / 60000} 分钟执行一次`);
+});
