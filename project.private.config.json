@@ -9,7 +9,7 @@
     "miniprogram": {
       "list": [
         {
-          "name": "",
+          "name": "pages/shouye/shouye",
           "pathName": "pages/shouye/shouye",
           "query": "",
           "launchMode": "default",

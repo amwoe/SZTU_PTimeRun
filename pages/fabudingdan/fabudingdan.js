@@ -135,7 +135,6 @@ Page({
   },
 
   submitForm() {
-    console.log(this.data)
     const dataToSend = {
       task_type: this.data.selectedOption,
       description: this.data.description,
@@ -146,6 +145,7 @@ Page({
       salary: this.data.reward,
       publisher_id:this.data.userId,
     };
+    console.log(dataToSend)
 
     wx.request({
       url: 'http://127.0.0.1:3000/api/setTask', 
