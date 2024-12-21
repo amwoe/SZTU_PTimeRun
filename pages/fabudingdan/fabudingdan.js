@@ -151,6 +151,7 @@ Page({
       url: 'http://127.0.0.1:3000/api/setTask', 
       method: 'POST',
       data: dataToSend,
+      timeout: 30000,
       success: res => {
         if (res.statusCode === 200) {
           wx.showToast({
