@@ -4,12 +4,16 @@ const path = require('path');
 const cors = require('cors');
 
 const http = require('http');
-const jwt = require('jsonwebtoken');
-const expressJWT = require('express-jwt').expressjwt;
+const WebSocket = require('ws'); // 引入 WebSocket 模块
+const jwt = require('jsonwebtoken')
+const expressJWT = require('express-jwt').expressjwt
 
-const authRouter = require('./router/auth');
-const taskRouter = require('./router/task');
-const db = require('./db/ssh');
+const cors = require('cors')
+
+const authRouter = require('./router/auth')
+const taskRouter = require('./router/task')
+const db = require('./db/ssh')
+
 
 // 定期验证数据库连接的间隔（单位：毫秒）
 const KEEP_ALIVE_INTERVAL = 30000; 
@@ -49,29 +53,15 @@ app.use('/api', learnGuidanceRouter);
 const talkRouter = require('./router/Talking.js');
 app.use('/api', talkRouter);
 
-// 长轮询功能
-let clients = [];
-app.get('/api/long-polling', (req, res) => {
-  clients.push(res);
+// 创建 HTTP Server
+const server = http.createServer(app);
 
-  // 设置超时处理
-  req.on('close', () => {
-    clients = clients.filter(client => client !== res);
-  });
+const { createWebSocketServer } = require('./router/websocket'); // 引入 WebSocket 服务模块
+// 使用 WebSocket 服务
+createWebSocketServer(server);
 
-  // 设置超时响应
-  setTimeout(() => {
-    res.status(204).end(); // No Content
-    clients = clients.filter(client => client !== res);
-  }, 60000); // 60秒超时
-});
 
-function sendNewMessage(message) {
-  clients.forEach(client => client.json(message));
-  clients = [];
-}
-
-app.listen(3000, () => {
-  console.log("server running at http://127.0.0.1:3000");
-  console.log(`已启动全局定期保持数据库连接的任务，每隔 ${KEEP_ALIVE_INTERVAL / 60000} 分钟执行一次`);
-});
+server.listen(3000, ()=>{
+    console.log("server running at http://127.0.0.1:3000")
+    console.log(`已启动全局定期保持数据库连接的任务，每隔 ${KEEP_ALIVE_INTERVAL / 60000} 分钟执行一次`)
+})

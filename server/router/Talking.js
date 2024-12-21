@@ -2,7 +2,7 @@ const express = require('express');
 
 const {getTalking} = require('../module/getTalking');
 
-const {sendMessageToDB,sendNewMessage} = require('../module/sendMessages');
+const {sendMessageToDB} = require('../module/sendMessages');
 
 const talkRouter = express.Router();
 
