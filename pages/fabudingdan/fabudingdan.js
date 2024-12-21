@@ -16,6 +16,7 @@ Page({
     description: '',
     address: '',
     reward: '',
+    userId:'',
   },
 
   onOptionChange(e) {
@@ -62,6 +63,7 @@ Page({
       selectedYear: currentYear.toString(),
       hours: hours,
       minutes: minutes,
+      userId: wx.getStorageSync('userId') || '',
     });
     this.updateDays();
   },
@@ -137,19 +139,19 @@ Page({
       task_type: this.data.selectedOption,
       description: this.data.description,
       location: this.data.address,
-      year: this.data.selectedYear,
-      month: this.data.selectedMonth,
-      day: this.data.selectedDay,
       hour: this.data.selectedHour,
       minute: this.data.selectedMinute,
       runner_gender_requirement: this.data.selected,
       salary: this.data.reward,
+      publisher_id:this.data.userId,
     };
+    console.log(dataToSend)
 
     wx.request({
       url: 'http://127.0.0.1:3000/api/setTask', 
       method: 'POST',
       data: dataToSend,
+      timeout: 30000,
       success: res => {
         if (res.statusCode === 200) {
           wx.showToast({

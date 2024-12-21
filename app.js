@@ -1,7 +1,7 @@
 App({
   onLaunch() {
     if(!wx.getStorageSync('isLogin')){
-      wx.setStorageSync('isLggin', false)
+      wx.setStorageSync('isLogin', false)
     }
   },
   globalData: {}

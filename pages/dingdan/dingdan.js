@@ -28,12 +28,12 @@ Page({
     const index = e.currentTarget.dataset.index;
     const item = this.data.sections[index];
     console.log(item);
-    if (item.type === '不可接单') {
+    if (item.type === '正在进行') {
       // 如果type为不可接单，则不执行任何操作
       return;
     }else{
       wx.navigateTo({
-        url: '/pages/dingdanxiangqing/xiangqing?item=' + encodeURIComponent(JSON.stringify(item)),
+        url: '/pages/dingdanxiangqing/xiangqing?index='+index+'&item=' + encodeURIComponent(JSON.stringify(item)),
       });
     }
   },
@@ -107,7 +107,7 @@ Page({
             gender:item.runner_gender_requirement,
             location:item.address_info,
             price:item.salary,
-            image:item.cover,
+            image:item.publisher_avator,
             type:item.task_status,
             byColor:item.gender==='男'?'#FFE4E1':'#E1F5FE',
             borderColor:item.gender==='男'?'#FF6347':'#2196F3'
