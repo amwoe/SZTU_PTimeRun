@@ -3,7 +3,9 @@ Page({
     currentTime: '',
     messages: [],
     inputValue: '',
-    toView: ''
+    toView: '',
+    socketOpen: false, // WebSocket 是否已连接
+    isSocketMessageBound : false
   },
 
   onLoad(options) {
@@ -13,7 +15,7 @@ Page({
     }, 60000);
 
     this.getMessagesFromDB();
-    this.listenForNewMessages();
+    this.initWebSocket();
   },
 
   updateTime() {
@@ -48,72 +50,122 @@ Page({
     });
   },
 
-  listenForNewMessages() {
-    const poll = () => {
-      wx.request({
-        url: 'http://127.0.0.1:3000/api/long-polling',
-        method: 'GET',
-        timeout: 60000, // 设置超时时间为60秒
-        success: res => {
-          if (res.statusCode === 204) {
-            // No new messages, continue polling
-            poll();
-            return;
-          }
-          console.log('收到新消息', res.data); // 添加日志
-          const newMessages = [...this.data.messages, res.data];
-          const toView = `msg-${newMessages.length - 1}`;
-          console.log('toView:', toView); // 打印 toView 的值
-          this.setData({
-            messages: newMessages,
-            toView: toView
-          });
-          poll(); // 继续轮询
-        },
-        fail: err => {
-          console.error('长轮询错误', err);
-          setTimeout(poll, 5000); // 失败后5秒重试
-        }
+  appendMessage(newMessage) {
+    const { messages } = this.data;
+  
+    // 检查是否已存在该消息（根据唯一标识符）
+    const isDuplicate = messages.some(msg => msg.id === newMessage.id);
+    if (!isDuplicate) {
+      const updatedMessages = [...messages, newMessage];
+      const toView = `msg-${updatedMessages.length - 1}`;
+      this.setData({
+        messages: updatedMessages,
+        toView: toView
       });
-    };
-    poll(); // 开始轮询
+    } else {
+      console.log('收到重复消息，已忽略:', newMessage);
+    }
+  },
+
+  initWebSocket() {
+    if (this.data.isSocketMessageBound) {
+      console.log('WebSocket 监听器已绑定，跳过重复绑定');
+      return;
+    }
+    const socketUrl = 'ws://127.0.0.1:3000/ws'; // 替换为实际 WebSocket 服务地址
+
+    wx.connectSocket({
+      url: socketUrl,
+      success: () => {
+        console.log('WebSocket 连接成功');
+      },
+      fail: err => {
+        console.error('WebSocket 连接失败', err);
+      }
+    });
+
+    // 监听 WebSocket 打开事件
+    wx.onSocketOpen(() => {
+      console.log('WebSocket 已打开');
+      this.setData({ socketOpen: true });
+    });
+
+    // 监听服务器发送的消息
+    wx.onSocketMessage((res) => {
+      console.log('收到服务器消息:', res.data);
+      try {
+        const message = JSON.parse(res.data); // 假设消息是 JSON 格式
+        this.appendMessage(message);
+      } catch (err) {
+        console.error('解析消息失败', err);
+      }
+    });
+
+    // 监听 WebSocket 错误事件
+    wx.onSocketError((err) => {
+      console.error('WebSocket 错误:', err);
+    });
+
+    // 监听 WebSocket 关闭事件
+    wx.onSocketClose(() => {
+      console.log('WebSocket 已关闭');
+      this.setData({ socketOpen: false });
+    });
   },
 
   onInput: function (e) {
     this.setData({
       inputValue: e.detail.value
     });
+        // 标记监听器已绑定
+    this.setData({ isSocketMessageBound: true });
   },
 
-  sendMessage: function () {
-    const { inputValue } = this.data;
-    if (inputValue.trim()) {
+  sendMessage() {
+    const { inputValue, socketOpen } = this.data;
+    if (inputValue.trim() && socketOpen) {
       const newMessage = {
         sender_id: '4444', // 替换为实际的发送者ID
         participant_user_id: '200203000', // 替换为实际的参与者ID
-        message_content: inputValue, // 消息内容
-        conversation_created_at: new Date().toISOString() // 当前时间
+        message_content: inputValue,
+        conversation_created_at: new Date().toISOString()
       };
-      console.log('发送消息:', newMessage); // 添加日志
-      wx.request({
-        url: 'http://127.0.0.1:3000/api/sendMessageToDB',
-        method: 'POST',
-        data: newMessage,
-        success: (res) => {
-          console.log('发送消息成功', res); // 添加日志
-          const newMessages = [...this.data.messages, newMessage];
-          const toView = `msg-${newMessages.length - 1}`;
-          console.log('toView:', toView); // 打印 toView 的值
-          this.setData({
-            inputValue: '',
-            messages: newMessages,
-            toView: toView  // 更新 toView
+
+wx.request({
+      url: 'http://127.0.0.1:3000/api/sendMessageToDB', // 后端 API 地址
+      method: 'POST',
+      data: newMessage,
+      success: res => {
+        if (res.data.success) {
+          console.log('消息已成功保存到数据库:', newMessage);
+
+          // 发送 WebSocket 消息
+          wx.sendSocketMessage({
+            data: JSON.stringify(newMessage),
+            success: () => {
+              console.log('消息通过 WebSocket 发送成功:', newMessage);
+              const newMessages = [...this.data.messages, newMessage];
+              const toView = `msg-${newMessages.length - 1}`;
+              this.setData({
+                inputValue: '',
+                messages: newMessages,
+                toView: toView
+              });
+            },
+            fail: err => {
+              console.error('WebSocket 发送失败:', err);
+            }
           });
-        },
+        } else {
+          console.error('消息保存失败:', res.data.error);
+        }
+      },
         fail: err => {
-          console.error('发送消息失败', err);
+          console.error('消息发送失败:', err);
         }
       });
+    } else {
+      console.warn('WebSocket 未连接或消息为空');
     }
   },
 
@@ -146,7 +198,14 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    if (this.data.socketOpen) {
+      wx.closeSocket({
+        success: () => {
+          console.log('WebSocket 连接已关闭');
+          this.setData({ socketOpen: false, isSocketMessageBound: false });
+        }
+      });
+    }
   },
 
   /**

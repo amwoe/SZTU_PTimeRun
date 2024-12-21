@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/dongtailiaotian/dongtailiaotian",
     "pages/denglu/denglu",
     "pages/shouye/shouye",
     "pages/xuexizhidao/xuexizhidao",
@@ -24,7 +25,7 @@
     "pages/dingdanxiangqing/xiangqing",
     "pages/fuxixiangqing/fuxixiangqing",
     "pages/kechengxiangqing/kechengxiangqing",
-    "pages/dongtailiaotian/dongtailiaotian",
+
     "pages/tixian/tixian",
     "pages/xianwuchushouxiangqing/xianwuchushouxiangqing",
     "pages/xianwuchushou/xianwuchushou",

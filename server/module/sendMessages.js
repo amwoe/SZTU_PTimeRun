@@ -1,12 +1,6 @@
 const db = require('../db/ssh');
 const { error, success } = require('../utils/response');
-
-let clients = [];
-
-function sendNewMessage(message) {
-  clients.forEach(client => client.json(message));
-  clients = [];
-}
+const wss = require('../server').wss; // 从 server.js 引入 WebSocket 实例
 
 async function sendMessageToDB(req, res) {
   try {
@@ -28,8 +22,8 @@ async function sendMessageToDB(req, res) {
     await connection.query(query, params);
 
     const newMessage = { sender_id, participant_user_id, message_content, conversation_created_at: new Date(conversation_created_at) };
-    sendNewMessage(newMessage);
 
+    //sendNewMessage(newMessage);
     res.status(200).json({ success: true, message: 'Message saved successfully' });
   } catch (error) {
     console.error('Full Database Error:', error); // 打印完整的错误对象
@@ -39,5 +33,4 @@ async function sendMessageToDB(req, res) {
 
 module.exports = {
   sendMessageToDB,
-  sendNewMessage
 };
