@@ -8,8 +8,6 @@ const WebSocket = require('ws'); // 引入 WebSocket 模块
 const jwt = require('jsonwebtoken')
 const expressJWT = require('express-jwt').expressjwt
 
-const cors = require('cors')
-
 const authRouter = require('./router/auth')
 const taskRouter = require('./router/task')
 const db = require('./db/ssh')
