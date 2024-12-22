@@ -13,7 +13,7 @@
     <view wx:if="{{showModal}}" class="modal">
       <view class="modal-content">
         <text class="modal-title text_19">选择服务</text>
-        <view class="option" bindtap="selectOption" data-value="快递代取">快递代取</view>
+        <view class="option" bindtap="selectOption" data-value="快递代取">代取快递</view>
         <view class="option" bindtap="selectOption" data-value="外卖上楼">外卖上楼</view>
         <view class="option" bindtap="selectOption" data-value="食堂带饭">食堂带饭</view>
         <button bindtap="hideOptions">取消</button>
