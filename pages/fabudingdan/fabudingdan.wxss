@@ -302,18 +302,12 @@
 .pos_9 {
   position: absolute;
   left: 50%;
-  top: 1000.92rpx;
+  top: 1050.92rpx;
   transform: translateX(-50%);
 }
 .text_19 {
   color: #ed9b18;
   line-height: 29.9rpx;
-}
-
-.radio-option {
-  display: flex;
-  align-items: center;
-  margin-right: 30px; /* 选项之间的间距 */
 }
 
 .modal {
@@ -349,5 +343,13 @@
 .option:hover {
   background: #f0f0f0; /* 悬停效果 */
 }
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 50rpx; /* 选项之间的间距 */
+}
 
+.radio-group {
+  display: flex; /* 确保所有单选按钮在同一行 */
+}
 
