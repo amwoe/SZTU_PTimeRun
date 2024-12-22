@@ -32,7 +32,7 @@ async function setTask(req, res) {
     ]);
 
     // 返回插入成功的任务ID
-    return res.status(201).json({ message: '任务创建成功', task_id: result.insertId });
+    return res.status(200).json({ message: '任务创建成功', task_id: result.insertId });
   } catch (err) {
     console.error('插入任务出错:', err);
     return res.status(500).json({ message: '服务器错误' });
