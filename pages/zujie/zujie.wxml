@@ -23,7 +23,7 @@
           <text class="font_5" style="position: relative; left: 101rpx; top: -55rpx">35</text>
         </view>
         <view class="flex-row justify-center items-center button-publish" style="position: absolute; left: 434rpx; bottom: 20rpx; width: 211rpx; height: 88rpx; background-color: #ffae00cb; box-sizing: border-box; top: 811rpx; display: flex" bindtap="onImageClick2">
-       <text class="font_6 text-white" style="font-size: 36rpx;">发布闲置</text>
+       <text class="font_6 text-white" style="font-size: 36rpx;">发布租借</text>
       </view>
       </view>
     </view>
