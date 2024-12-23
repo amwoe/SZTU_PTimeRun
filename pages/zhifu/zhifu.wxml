@@ -1,42 +1,14 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
+  <view class="section" style="height: 1175rpx; display: block; box-sizing: border-box"></view>
   <view class="pos_4">
-    <text class="text_3" style="position: relative; left: 0rpx; top: -132rpx">￥</text>
-    <text class="text_2" style="position: relative; left: 0rpx; top: -118rpx">35.00</text>
+    <text class="text_3" style="position: relative; left: 0rpx; top: -118rpx">￥</text>
+    <text class="text_2" style="position: relative; left: 0rpx; top: -99rpx">35.00</text>
   </view>
-  <view class="flex-col section_2 pos_5" style="position: absolute; left: 30rpx; top: 167rpx">
-    <view class="flex-col self-stretch group" style="position: relative; left: 0rpx; top: -104rpx">
-      <view class="flex-row justify-between items-center group_2">
-        <view class="flex-row">
-          <image
-            class="shrink-0 image_3"
-            src="/pages/images/1/zfb.png"
-          />
-          <view class="ml-6 flex-col shrink-0 group_3">
-            <text class="self-start font text_4">支付宝</text>
-            <text class="mt-6 self-stretch font_2 text_5">已绑定 132****9475</text>
-          </view>
-        </view>
-        <image
-          class="image_4"
-          src="/pages/images/1/dui.png"
-        />
-      </view>
-      <view class="flex-row group_4 mt-21">
-        <image
-          class="image_5"
-          src="/pages/images/1/wx.png"
-        />
-        <view class="ml-14 flex-col items-start flex-1 group_5">
-          <text class="font text_6">微信</text>
-          <text class="mt-6 font_2 text_7">请绑定已实名的微信账号</text>
-        </view>
-      </view>
-    </view>
+  <view class="flex-col section_2 pos_5" style="position: absolute; left: 29rpx; top: 139rpx">
+    
     
     <view class="flex-col justify-start items-center self-center text-wrapper" style="position: relative; left: 0rpx; top: -97rpx" bindtap="onImageClick1">
       <text class="text_9">确定支付</text>
     </view>
   </view>
-  <view class="section_4 pos_6"></view>
 </view>

@@ -1,9 +1,4 @@
-.ml-9 {
-  margin-left: 15.7rpx;
-}
-.ml-7 {
-  margin-left: 12.21rpx;
-}
+/* 页面和容器样式 */
 .page {
   background-color: #ffffff;
   background-size: 100% 100%;
@@ -19,14 +14,8 @@
   width: 750rpx;
   height: 1625.58rpx;
 }
-.group {
-  line-height: 17.46rpx;
-}
-.pos_4 {
-  position: absolute;
-  left: 59.01rpx;
-  top: 35.48rpx;
-}
+
+/* 文本和字体样式 */
 .font {
   font-size: 24.42rpx;
   font-family: AlibabaPuHuiTi;
@@ -40,42 +29,6 @@
 .text_2 {
   line-height: 16.95rpx;
 }
-.image {
-  width: 29.65rpx;
-  height: 19.19rpx;
-}
-.pos {
-  position: absolute;
-  right: 112.2rpx;
-  top: 30.82rpx;
-}
-.image_2 {
-  width: 26.16rpx;
-  height: 19.19rpx;
-}
-.pos_2 {
-  position: absolute;
-  right: 77.28rpx;
-  top: 30.23rpx;
-}
-.image_3 {
-  width: 41.86rpx;
-  height: 19.76rpx;
-}
-.pos_3 {
-  position: absolute;
-  right: 26.16rpx;
-  top: 30.23rpx;
-}
-.image_5 {
-  width: 29.65rpx;
-  height: 29.65rpx;
-}
-.pos_6 {
-  position: absolute;
-  left: 61.05rpx;
-  top: 115.12rpx;
-}
 .text_3 {
   color: #383838;
   font-size: 27.91rpx;
@@ -83,60 +36,158 @@
   font-weight: 700;
   line-height: 26.41rpx;
 }
-.pos_7 {
-  position: absolute;
-  left: 308.83rpx;
-  top: 118.43rpx;
+.text_4 {
+  color: #000000;
 }
-.image_4 {
-  width: 150rpx;
-  height: 55.81rpx;
+.text_5 {
+  line-height: 28.81rpx;
+}
+.text_6 {
+  line-height: 29.04rpx;
+}
+.text_7 {
+  margin-left: 26.4rpx;
+}
+.text_8 {
+  width: 167.44rpx;
+  font-size: 28rpx;
+}
+.text_9 {
+  line-height: 13.92rpx;
+  font-size: 23rpx;
+}
+.text_10 {
+  width: 212.79rpx;
+}
+
+/* 定位样式 */
+.pos_4 {
+  position: absolute;
+  left: 59.01rpx;
+  top: 35.48rpx;
 }
 .pos_5 {
   position: absolute;
   right: 27.91rpx;
   top: 101.16rpx;
 }
-.font_2 {
-  font-size: 31.4rpx;
-  font-family: SourceHanSansCN;
-  line-height: 28.88rpx;
-  color: #808080;
+.pos_6 {
+  position: absolute;
+  left: 61.05rpx;
+  top: 115.12rpx;
 }
-.text_4 {
-  color: #000000;
+.pos_7 {
+  position: absolute;
+  left: 308.83rpx;
+  top: 118.43rpx;
 }
 .pos_8 {
   position: absolute;
   left: 50.32rpx;
   top: 203.65rpx;
 }
-.text_5 {
-  line-height: 28.81rpx;
-}
 .pos_9 {
   position: absolute;
   left: 174.44rpx;
   top: 203.65rpx;
-}
-.text_6 {
-  line-height: 29.04rpx;
 }
 .pos_10 {
   position: absolute;
   left: 297.99rpx;
   top: 203.62rpx;
 }
-.section_2 {
-  background-color: #383838;
-  width: 59.3rpx;
-  height: 3.49rpx;
-}
 .pos_11 {
   position: absolute;
   left: 50.58rpx;
   top: 240.7rpx;
 }
+.pos_12 {
+  position: absolute;
+  left: 34.88rpx;
+  right: 33.14rpx;
+  top: 273.84rpx;
+}
+.pos_13 {
+  position: absolute;
+  left: 50%;
+  top: 1418.02rpx;
+  transform: translateX(-50%);
+}
+
+/* 按钮样式 */
+/* 发布闲置按钮样式 */
+.button-publish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 20rpx;
+  width: 100%;
+  height: 88rpx;
+  background-color: #ffa500; /* 橙色背景 */
+  border-radius: 44rpx; /* 圆润的边框 */
+  box-sizing: border-box;
+}
+
+.button-publish text {
+  color: white; /* 文字颜色为白色 */
+  font-size: 36rpx;
+}
+.text-white {
+  color: white;
+  font-size: 36rpx;
+}
+
+/* 边距样式 */
+.ml-7 {
+  margin-left: 12.21rpx;
+}
+.ml-9 {
+  margin-left: 15.7rpx;
+}
+
+/* 图片样式 */
+.image {
+  width: 29.65rpx;
+  height: 19.19rpx;
+}
+.image_2 {
+  width: 26.16rpx;
+  height: 19.19rpx;
+}
+.image_3 {
+  width: 41.86rpx;
+  height: 19.76rpx;
+}
+.image_4 {
+  width: 150rpx;
+  height: 55.81rpx;
+}
+.image_5 {
+  width: 29.65rpx;
+  height: 29.65rpx;
+}
+.image_6 {
+  border-radius: 17.44rpx 17.44rpx 0rpx 0rpx;
+  width: 327.91rpx;
+  height: 446.51rpx;
+}
+.image_7 {
+  border-radius: 50%;
+  width: 40.12rpx;
+  height: 40.12rpx;
+}
+.image_8 {
+  width: 55.81rpx;
+  height: 57.56rpx;
+}
+.image_11 {
+  width: 92rpx;
+  height: 94rpx;
+}
+
+/* 网格样式 */
 .grid {
   height: 1180.81rpx;
   display: grid;
@@ -145,55 +196,13 @@
   row-gap: 31.66rpx;
   column-gap: 24.68rpx;
 }
-.pos_12 {
-  position: absolute;
-  left: 34.88rpx;
-  right: 33.14rpx;
-  top: 273.84rpx;
-}
 .grid-item {
   padding-bottom: 13.95rpx;
   background-color: #ffffff;
   border-radius: 17.44rpx;
 }
-.image_6 {
-  border-radius: 17.44rpx 17.44rpx 0rpx 0rpx;
-  width: 327.91rpx;
-  height: 446.51rpx;
-}
-.font_3 {
-  font-size: 27.91rpx;
-  font-family: SourceHanSansCN;
-  line-height: 33.14rpx;
-  color: #000000;
-}
-.text_7 {
-  margin-left: 31.4rpx;
-}
-.text_8 {
-  width: 167.44rpx;
-}
-.group_2 {
-  padding: 0 24.42rpx;
-}
-.image_7 {
-  border-radius: 50%;
-  width: 40.12rpx;
-  height: 40.12rpx;
-}
-.font_4 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 15.09rpx;
-  color: #000000;
-}
-.text_9 {
-  line-height: 13.92rpx;
-}
-.group_3 {
-  line-height: 21.17rpx;
-  height: 21.17rpx;
-}
+
+/* 价格和货币样式 */
 .font_6 {
   font-size: 20.93rpx;
   font-family: SourceHanSansCN;
@@ -205,23 +214,4 @@
   font-family: SourceHanSansCN;
   line-height: 21.17rpx;
   color: #d43030;
-}
-.text_10 {
-  width: 212.79rpx;
-}
-.image-wrapper {
-  padding: 38.37rpx 0 34.88rpx;
-  background-image: linear-gradient(38.8deg, #e2ffc2 20.6%, #8dc74c 94.9%);
-  border-radius: 50%;
-  width: 130.81rpx;
-}
-.pos_13 {
-  position: absolute;
-  left: 50%;
-  top: 1418.02rpx;
-  transform: translateX(-50%);
-}
-.image_8 {
-  width: 55.81rpx;
-  height: 57.56rpx;
 }

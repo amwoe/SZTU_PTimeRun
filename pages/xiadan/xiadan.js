@@ -79,7 +79,7 @@ Page({
   updatePrice: function(e) {
     // 更新价格
     this.setData({
-      price: e.detail.value ? e.detail.value + '.00' : '0.00'
+      price: e.detail.value ? e.detail.value + ' ' : '0.00'
     });
   },
 
