@@ -1,29 +1,35 @@
-<view class="flex-col page">
-  <view class="flex-row justify-between items-center group">
-    <view class="flex-row">
-    </view>
-  </view>
-  <view class="flex-col group_4">
-    <view class="flex-col justify-start items-center self-center image-wrapper_2">
-      <image
-        class="image_6"
-        src="/pages/images/16/4.png"
+<view class="flex-col justify-start relative page">
+  <view class="section"></view>
+  <text class="text_5 pos_9" style="position: absolute; left: 47rpx; top: 18rpx">Hi，Deindy</text>
+  <text class="text_6 pos_10" style="position: absolute; left: 47rpx; top: 100rpx">欢迎来到闲置广场。</text>
+  <view class="grid pos_12" style="position: absolute; left: 33rpx; top: 275rpx">
+    <view class="flex-col grid-item" style="position: relative; left: 12rpx; top: -108rpx">
+      <image style="position: relative; left: 6rpx; top: 0rpx"
+        class="self-stretch image_6"
+        src="/pages/images/5，6/1.png"
+        bindtap="onImageClick1"
       />
-    </view>
-    <view class="flex-col items-center self-stretch mt-25">
-      <text class="font_2">恭喜你</text>
-      <text class="font_2">下单成功</text>
-    </view>
-  </view>
-  <view class="flex-col section">
-    <view class="flex-row group_5">
-      <view class="flex-row items-start flex-1 self-center relative group_6 ml-7">
-        <view class="section_2 pos_2"></view>
-        <view class="flex-col group_7 pos_3">
-          <text class="self-end text_4">1</text>
+      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="bit1" style="width: 286rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -5rpx">低价闲置衣服‼️‼️‼️</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1" style="width: 326rpx; height: 115rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -33rpx">
+        <view class="flex-row items-center">
+          <image style="width: 92rpx; height: 87rpx; display: block; box-sizing: border-box"
+            class="shrink-0 image_7"
+            src="/pages/images/8/3.png"
+          />
+          <text class="ml-8 font_4 text_9" style="width: 66rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx">尼森</text>
+        </view>
+        <view class="group_3">
+          <text class="font_6" style="position: relative; left: 47rpx; top: -12rpx">￥</text>
+          <text class="font_5" style="position: relative; left: 47rpx; top: -11rpx">98</text>
+        </view>
+        <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick2">
+          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 469rpx; top: 380rpx"
+            class="image_11"
+            src="/pages/images/1/jia.png"
+          />
+          <text style="position: relative; left: 469rpx; top: 380rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布闲置</text>
         </view>
       </view>
     </view>
-    <view class="flex-col justify-start items-center text-wrapper" style="position: relative; left: 0rpx; top: -474rpx" bindtap="goBack"><text class="text_5">继续下单</text></view>
   </view>
 </view>
