@@ -14,13 +14,13 @@
     </view>
     <view class="flex-col group_4">
       <view class="flex-col section_2">
-        <view class="flex-row justify-between items-start group_5">
+        <view class="flex-row justify-between items-start group_5" bindtap="onImageClick9">
           <view class="flex-col items-start">
-            <text class="font_4 text_5" style="position: relative; left: 540rpx; top: -181rpx">余额(元)</text>
-            <text class="mt-10 font_5 text_6" style="position: relative; left: 553rpx; top: -167rpx">5.3</text>
+            <text class="font_4 text_5" style="position: relative; left: 537rpx; top: -115rpx">余额(元)</text>
+            <text class="mt-10 font_5 text_6" style="position: relative; left: 551rpx; top: -111rpx">5.3</text>
           </view>
         </view>
-        <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -160rpx">
+        <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -67rpx">
           <text class="self-start font_2 text_9">我发布的</text>
           <view class="flex-row equal-division">
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
@@ -38,76 +38,53 @@
           </view>
         </view>
       </view>
-      <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -172rpx">
-  <text class="self-start font_2 text_9">我接单的</text>
-  <view class="flex-row equal-division">
-    <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
-      <text class="font_5">2</text>
-      <text class="font_4 text_8 mt-19">正在进行</text>
-    </view>
-    <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
-      <text class="font_5">1</text>
-      <text class="mt-18 font_4 text_8">已完成</text>
-    </view>
-  </view>
-</view>
-      <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -174rpx">
-        <text class="self-start font_2 text_9">其他功能</text>
-        <view class="flex-row justify-between self-stretch equal-division equal-division2 view">
-          <view class="self_item" bindtap="onImageClick1">
-            <image
-              class="image_10"
-              src="/pages/images/13/6.png"
-            />
-            <text class="font_3 text_10">我的地址</text>
+      <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -79rpx">
+        <text class="self-start font_2 text_9">我接单的</text>
+        <view class="flex-row equal-division">
+          <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
+            <text class="font_5">2</text>
+            <text class="font_4 text_8 mt-19">正在进行</text>
           </view>
-          <view class="self_item" bindtap="onImageClick2">
-            <image
-              class="image_10"
-              src="/pages/images/13/7.png"
-            />
-            <text class="font_3 text_10">我的消息</text>
-          </view>
-          <view class="self_item" bindtap="onImageClick9">
-            <image
-              class="image_10 image_102"
-              src="/pages/images/13/8.png"
-            />
-            <text class="font_3 text_10">余额提现</text>
-          </view>
-          <view class="self_item" bindtap="onImageClick7">
-            <image
-              class="image_103"
-              src="/pages/images/13/9.png"
-            />
-            <text class="font_3 text_10">接单设置</text>
+          <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
+            <text class="font_5">1</text>
+            <text class="mt-18 font_4 text_8">已完成</text>
           </view>
         </view>
       </view>
-      <view class="flex-row justify-between items-center section_7 mt-17" bindtap="onImageClick5" style="position: relative; left: 0rpx; top: -174rpx">
-        <view class="flex-row items-center">
+      <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -94rpx; height: 223rpx; display: flex; box-sizing: border-box">
+      <text class="self-start font_2 text_9">其他功能</text>
+      <view class="flex-row justify-between self-stretch equal-division equal-division2 view" style="position: relative; left: 0rpx; top: 17rpx">
+        <view class="self_item" bindtap="onImageClick2">
           <image
-            class="shrink-0 image_12"
+            class="image_10"
+            src="/pages/images/13/7.png"
+          />
+          <text class="font_3 text_10">我的消息</text>
+        </view>
+        <view class="self_item" bindtap="onImageClick7">
+          <image
+            class="image_103"
+            src="/pages/images/13/9.png"
+          />
+          <text class="font_3 text_10">接单设置</text>
+        </view>
+        <view class="self_item" bindtap="onImageClick5">
+          <image
+            class="image_10"
             src="/pages/images/13/10.png"
           />
-          <text class="font_6 text_13 ml-17">联系客服</text>
+          <text class="font_3 text_10">联系客服</text>
         </view>
-        <image
-          class="image_13"
-          src="/assets/imgs/yuan.png"
-        />
+        <view class="self_item" bindtap="ontuichu">
+          <image
+            class="image_10 image_102"
+            src="/pages/images/1/100.jpg"
+          />
+          <text class="font_3 text_10">退出登录</text>
+        </view>
       </view>
     </view>
-<view class="flex-row justify-between items-center section_7 mt-17" bindtap="onImageClick10" style="position: relative; left: 34rpx; top: -176rpx; height: 136rpx; display: flex; box-sizing: border-box; width: 683rpx">
-        <view class="flex-row items-center" bindtap="ontuichu">
-          <text class="font_6 text_13 ml-17" style="width: 129rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 160rpx; top: 17rpx">退出登录</text>
-        </view>
-        <image
-          class="image_13"
-          src="/assets/imgs/yuan.png"
-        />
-      </view>
-
+    </view>
     <view class="flex-row equal-division_2 section_8">
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage1">
         <image
@@ -128,7 +105,7 @@
           class="image_12"
           src="/pages/images/菜单/我的2.png"
         />
-        <text class="font_6 mt-3">我的</text>
+        <text class="font_7 mt-3">我的</text>
       </view>
     </view>
   </view>
