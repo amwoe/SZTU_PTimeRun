@@ -89,7 +89,7 @@
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage1">
         <image
           class="image_12"
-          src="/pages/images/菜单/首页1.png"
+          src="/pages/images/菜单/首页2.png"
         />
         <text class="font_7 mt-3">首页</text>
       </view>
@@ -103,7 +103,7 @@
       <view class="flex-col items-center group_9 equal-division-item_2" bindtap="redirectToPage3">
         <image
           class="image_12"
-          src="/pages/images/菜单/我的2.png"
+          src="/pages/images/菜单/我的1.png"
         />
         <text class="font_7 mt-3">我的</text>
       </view>
