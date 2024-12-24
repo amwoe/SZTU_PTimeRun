@@ -1,11 +1,10 @@
-<view class="flex-col justify-start relative page">
-  <view class="section"></view>
+<view class="flex-col justify-start page">
+  <view class="section" style="height: 1172rpx; display: block; box-sizing: border-box">
   <image style="position: absolute; left: 61rpx; top: 50rpx"
     class="image_6 pos_8"
     src="/pages/images/16/4.png"
   />
   <text class="font_3 text_5 pos_10" style="position: absolute; left: 207rpx; top: 72rpx">Deindy</text>
-  
   <view class="flex-col section_3 pos_11">
     <view class="flex-row justify-between items-start group_2">
       <view class="flex-col items-start" style="position: relative; left: 8rpx; top: -186rpx">
@@ -27,32 +26,11 @@
         <text class="mt-18 font_6 text_12">4.7</text>
       </view>
       <view class="flex-col equal-division-item_2 group_4">
-        <text class="self-start font_5 text_11">今日收益</text>
-        <text class="self-center font_6 mt-15">0</text>
+        <text class="self-start font_5 text_11">累计收益</text>
+        <text class="self-center font_6 mt-15" style="position: relative; left: -24rpx; top: 10rpx">10.0</text>
       </view>
     </view>
   </view>
-  <view class="flex-col section_6 pos_12">
-
-    <view class="flex-col self-stretch mt-17">
-      <view
-        class="flex-row items-center list-item"
-        wx:for="{{items}}"
-        wx:for-item="item"
-        wx:for-index="index"
-        wx:key="index"
-      >
-        <view class="flex-row items-center flex-1">
-          <view class="ml-18 flex-col items-start flex-1">
-            <text class="font_3 text_14">提现-00021582522</text>
-            <text class="font_8 mt-13">余额：10.00</text>
-          </view>
-        </view>
-        <view class="flex-col shrink-0 group_5 ml-23">
-          <text class="self-center font_7">-10.00</text>
-          <text class="mt-16 self-start font_9 text_15">2024-10-29</text>
-        </view>
-      </view>
-    </view>
+  
   </view>
 </view>
