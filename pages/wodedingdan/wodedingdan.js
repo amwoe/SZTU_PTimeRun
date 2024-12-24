@@ -63,18 +63,4 @@ Page({
   onShareAppMessage() {
 
   },
-
-  onUnacceptedTap: function() {
-    // 跳转到未接单页面
-    wx.navigateTo({
-      url: '/pages/unaccepted/unaccepted'
-    });
-  },
-
-  onCompletedTap: function() {
-    // 跳转到已完成页面
-    wx.navigateTo({
-      url: '/pages/completed/completed'
-    });
-  },
 }) 
