@@ -1,9 +1,5 @@
 {
   "description": "",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
   "setting": {
     "urlCheck": false,
     "es6": true,
@@ -24,12 +20,15 @@
     "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.26.0",
-  "appid": "wx34307cfb17b38e1f",
-  "projectname": "校园兼职-即使设计",
   "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
-  }
+  },
+  "libVersion": "2.26.0",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "appid": "wx34307cfb17b38e1f"
 }

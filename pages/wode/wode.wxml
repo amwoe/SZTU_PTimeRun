@@ -17,22 +17,22 @@
         <view class="flex-row justify-between items-start group_5" bindtap="onImageClick9">
           <view class="flex-col items-start">
             <text class="font_4 text_5" style="position: relative; left: 537rpx; top: -115rpx">余额(元)</text>
-            <text class="mt-10 font_5 text_6" style="position: relative; left: 551rpx; top: -111rpx">5.3</text>
+            <text class="mt-10 font_5 text_6" style="position: relative; left: 551rpx; top: -111rpx">{{balance}}</text>
           </view>
         </view>
         <view class="flex-col section_6 mt-17" style="position: relative; left: 0rpx; top: -67rpx">
           <text class="self-start font_2 text_9">我发布的</text>
           <view class="flex-row equal-division">
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
-              <text class="font_5">2</text>
+              <text class="font_5">{{myTaskOngoing}}</text>
               <text class="font_4 text_8 mt-19">正在进行</text>
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
-              <text class="font_5">1</text>
+              <text class="font_5">{{myTaskunlock}}</text>
               <text class="mt-18 font_4 text_8">未被接单</text>
             </view>
             <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick8">
-              <text class="font_5">1</text>
+              <text class="font_5">{{myTaskComplete}}</text>
               <text class="mt-18 font_4 text_8">已完成</text>
             </view>
           </view>
@@ -42,11 +42,11 @@
         <text class="self-start font_2 text_9">我接单的</text>
         <view class="flex-row equal-division">
           <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
-            <text class="font_5">2</text>
+            <text class="font_5">{{myOrderOngoing}}</text>
             <text class="font_4 text_8 mt-19">正在进行</text>
           </view>
           <view class="flex-col items-center group_6 equal-division-item" bindtap="onImageClick6">
-            <text class="font_5">1</text>
+            <text class="font_5">{{myOrderComplete}}</text>
             <text class="mt-18 font_4 text_8">已完成</text>
           </view>
         </view>
