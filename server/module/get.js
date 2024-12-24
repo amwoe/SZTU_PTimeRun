@@ -199,7 +199,7 @@ async function myOrder(req, res) {
       JOIN 
         users u ON t.publisher_id = u.user_id
       WHERE 
-        t.publisher_id = ?
+        t.employee_id = ?
       ORDER BY 
         t.task_id DESC
     `, [user_id]);
