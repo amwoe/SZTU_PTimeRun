@@ -1,11 +1,10 @@
-// pages/xiadan/xiadan.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    images: [], // 存储已上传的图片路径
+    price: '0.00', // 初始价格
   },
 
   /**
@@ -63,12 +62,7 @@ Page({
   onShareAppMessage() {
 
   },
-  data: {
-    categories: ['闲置', '租借', '代课'], // 可供选择的类别
-    selectedCategory: '闲置', // 默认选中的类别
-    selectedIndex: 0, // 默认选中的索引
-    price: '0.00' // 初始价格
-  },
+
   onCategoryChange: function(e) {
     // 更新选中的类别和索引
     this.setData({
@@ -79,19 +73,59 @@ Page({
   updatePrice: function(e) {
     // 更新价格
     this.setData({
-      price: e.detail.value ? e.detail.value + ' ' : '0.00'
+      price: e.detail.value ? e.detail.value : '0.00'
     });
   },
 
-  bit1:function(){
+  bit1: function() {
     wx.showToast({
-      title:'发布成功',
-      icon:'success',
-      duration:2000,
-      complete:()=>{
-        setTimeout(()=>{
+      title: '发布成功',
+      icon: 'success',
+      duration: 2000,
+      complete: () => {
+        setTimeout(() => {
           wx.navigateBack();
-        },1000);
+        }, 1000);
+      }
+    });
+  },
+
+  // 页面中的按钮点击事件
+  uploadImage: function() {
+    var that = this;
+    wx.chooseImage({
+      count: 9, // 可以选择的图片数量
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function(res) {
+        var tempFilePaths = res.tempFilePaths;
+        that.setData({
+          images: that.data.images.concat(tempFilePaths)
+        });
+        // 上传文件
+        tempFilePaths.forEach(function(filePath) {
+          wx.uploadFile({
+            url: 'https://example.com/upload',  // 上传接口地址
+            filePath: filePath, // 要上传文件资源的路径
+            name: 'file', // 服务器定义的文件对应的 key
+            formData: {
+              'user': 'test' // 其他额外的参数
+            },
+            success: function(uploadRes) {
+              var data = uploadRes.data;
+              // 上传成功后的处理逻辑
+              console.log(data);
+            },
+            fail: function(error) {
+              // 上传失败后的处理逻辑
+              console.error(error);
+            }
+          });
+        });
+      },
+      fail: function(error) {
+        // 选择图片失败后的处理逻辑
+        console.error(error);
       }
     });
   },
