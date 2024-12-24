@@ -3,7 +3,7 @@
   <view class="flex-row justify-between items-center section_2 pos_8" style="position: absolute; left: 29rpx; top: 29rpx">
     <view class="flex-col items-start">
       <text class="font_2 text_4">余额(元)</text>
-      <text class="mt-14 text_6">5.3</text>
+      <text class="mt-14 text_6">{{balance}}</text>
     </view>
     
   </view>

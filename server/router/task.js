@@ -1,6 +1,6 @@
 const express = require('express');
 const { setTask, setOrder,completeOrder } = require('../module/set');
-const { getTask, myTask, myOrder, getTask_1, getTask_2 , getTask_3, myTaskCount, myOrderCount } = require('../module/get')
+const { getTask, myTask, myOrder, getTask_1, getTask_2 , getTask_3, myTaskCount, myOrderCount,getBalance,getAnotherMoney } = require('../module/get')
 
 const taskRouter = express.Router();
 
@@ -21,5 +21,8 @@ taskRouter.get('/getTask_3', getTask_3);
 
 taskRouter.post('/myTaskCount', myTaskCount);
 taskRouter.post('/myOrderCount', myOrderCount);
+
+taskRouter.post('/getBalance', getBalance);
+taskRouter.post('/getAnotherMoney',getAnotherMoney);
 
 module.exports = taskRouter;

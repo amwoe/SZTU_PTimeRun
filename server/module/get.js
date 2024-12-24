@@ -233,5 +233,54 @@ async function myOrderCount(req, res) {
   }
 }
 
+async function getBalance(req, res) {
+  try {
+    const { user_id } = req.body;
+    console.log('Received user_id:', user_id);
+    // 等待 db 连接池初始化完成
+    const connection = await db.db;
+    const [rows] = await connection.query(`
+      SELECT 
+        balance
+      FROM 
+        users
+      WHERE 
+        user_id = ?
+    `, [user_id]);
+    
+    if (rows.length > 0) {
+      res.status(200).json({ balance: rows[0].balance });
+    } else {
+      res.status(404).json({ message: '用户不存在' });
+    }
 
-module.exports = { getTask, myTask, myOrder, getTask_1, getTask_2 , getTask_3, myTaskCount, myOrderCount };
+  } catch (err) {
+    console.error('查询余额出错:', err);
+    res.status(500).json({ message: '服务器错误', error: err.message || err });
+  }
+}
+
+async function getAnotherMoney(req, res) {
+  try {
+    const { employee_id } = req.body;
+    console.log('Received employee_id:', employee_id);
+    // 等待 db 连接池初始化完成
+    const connection = await db.db;
+    const [rows] = await connection.query(`
+    SELECT
+        SUM(CASE WHEN status = '正在进行' THEN salary ELSE 0 END) AS ongoing_salary, 
+        SUM(CASE WHEN status = '已完成' THEN salary ELSE 0 END) AS completed_salary
+    FROM 
+        task
+    WHERE 
+        employee_id = ?;
+    `, [employee_id]);
+    // 返回查询结果
+    res.status(200).json(rows); 
+  } catch (err) {
+    console.error('查询未提取出错:', err);
+    res.status(500).json({ message: '服务器错误', error: err.message || err });
+  }
+}
+
+module.exports = { getTask, myTask, myOrder, getTask_1, getTask_2 , getTask_3, myTaskCount, myOrderCount ,getBalance, getAnotherMoney};

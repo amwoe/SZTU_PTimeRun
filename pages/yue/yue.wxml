@@ -10,7 +10,7 @@
     <view class="flex-row justify-between items-start group_2">
       <view class="flex-col items-start" style="position: relative; left: 8rpx; top: -186rpx">
         <text class="font_4 text_6">余额(元)</text>
-        <text class="mt-10 text_7">5.3</text>
+        <text class="mt-10 text_7">{{balance}}</text>
       </view>
       <view class="flex-row items-center section_4" style="position: relative; left: -29rpx; top: -209rpx">
         
@@ -20,15 +20,15 @@
     <view class="flex-row justify-center equal-division section_5" style="position: relative; left: -12rpx; top: -181rpx">
       <view class="flex-col items-center group_3 equal-division-item">
         <text class="font_5 text_10">可提现</text>
-        <text class="font_6 mt-15">5.3</text>
+        <text class="font_6 mt-15">{{balance}}</text>
       </view>
       <view class="flex-col items-center equal-division-item">
         <text class="font_5 text_9">未结算</text>
-        <text class="mt-18 font_6 text_12">4.7</text>
+        <text class="mt-18 font_6 text_12">{{ongoing_salary}}</text>
       </view>
       <view class="flex-col equal-division-item_2 group_4">
         <text class="self-start font_5 text_11">今日收益</text>
-        <text class="self-center font_6 mt-15">0</text>
+        <text class="self-center font_6 mt-15">{{completed_salary}}</text>
       </view>
     </view>
   </view>
@@ -45,12 +45,12 @@
         <view class="flex-row items-center flex-1">
           <view class="ml-18 flex-col items-start flex-1">
             <text class="font_3 text_14">提现-00021582522</text>
-            <text class="font_8 mt-13">余额：10.00</text>
+            <text class="font_8 mt-13">余额：{{item.balance}}</text>
           </view>
         </view>
         <view class="flex-col shrink-0 group_5 ml-23">
-          <text class="self-center font_7">-10.00</text>
-          <text class="mt-16 self-start font_9 text_15">2024-10-29</text>
+          <text class="self-center font_7">{{item.amount}}</text>
+          <text class="mt-16 self-start font_9 text_15">{{item.date}}</text>
         </view>
       </view>
     </view>
