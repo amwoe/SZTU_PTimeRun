@@ -2,34 +2,30 @@
   <view class="section"></view>
   <text class="text_5 pos_9" style="position: absolute; left: 47rpx; top: 18rpx">Hi，Deindy</text>
   <text class="text_6 pos_10" style="position: absolute; left: 47rpx; top: 100rpx">欢迎来到租借广场。</text>
-  <view class="grid pos_12" style="position: absolute; left: 27rpx; top: 261rpx">
+  <view class="grid pos_12" style="position: absolute; left: 24rpx; top: 270rpx; height: 139rpx; display: grid; box-sizing: border-box; width: 190rpx">
     <view class="flex-col grid-item" style="position: relative; left: 17rpx; top: -106rpx; height: -15rpx; display: flex; box-sizing: border-box">
       <image style="position: relative; left: 0rpx; top: 0rpx; height: 275rpx; display: block; box-sizing: border-box; width: 336rpx"
         class="self-stretch image_6"
         src="/pages/images/1/OIP.jpg"
         bindtap="onImageClick1"
       />
-      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail" style="position: relative; left: 71rpx; top: -3rpx; width: 225rpx; display: block; box-sizing: border-box">大疆pocket3出租</text>
+      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="navigateToDetail" style="position: relative; left: -31rpx; top: -19rpx; width: 336rpx; display: block; box-sizing: border-box; height: 45rpx">大疆pocket3出租</text>
       <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1">
         <view class="flex-row items-center">
-          <image style="width: 90rpx; height: 87rpx; display: block; box-sizing: border-box; position: relative; left: -29rpx; top: -54rpx"
+          <image style="width: 90rpx; height: 87rpx; display: block; box-sizing: border-box; position: relative; left: -19rpx; top: -26rpx"
             class="shrink-0 image_7"
             src="/pages/images/8/3.png"
           />
-          <text class="ml-8 font_4 text_9" style="width: 47rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: -32rpx; top: -26rpx">尼森</text>
+          <text class="ml-8 font_4 text_9" style="width: 47rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: -19rpx; top: -43rpx">尼森</text>
         </view>
         <view class="group_3">
-          <text class="font_6" style="position: relative; left: 0rpx; top: -30rpx">￥</text>
-          <text class="font_5" style="position: relative; left: 0rpx; top: -26rpx">35</text>
+          <text class="font_6" style="position: relative; left: 101rpx; top: -57rpx">￥</text>
+          <text class="font_5" style="position: relative; left: 101rpx; top: -55rpx">35</text>
         </view>
+        <view class="flex-row justify-center items-center button-publish" style="position: absolute; left: 434rpx; bottom: 20rpx; width: 211rpx; height: 88rpx; background-color: #ffae00cb; box-sizing: border-box; top: 811rpx; display: flex" bindtap="onImageClick2">
+       <text class="font_6 text-white" style="font-size: 36rpx;">发布租借</text>
+      </view>
       </view>
     </view>
-    <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick2">
-          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 378rpx; top: 762rpx"
-            class="image_11"
-            src="/pages/images/1/jia.png"
-          />
-          <text style="position: relative; left: 378rpx; top: 762rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布租借</text>
-        </view>
   </view>
 </view>

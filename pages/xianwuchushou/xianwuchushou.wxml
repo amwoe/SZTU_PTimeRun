@@ -1,16 +1,16 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
+  <view class="section" style="height: 1182rpx; display: block; box-sizing: border-box"></view>
   <text class="text_5 pos_9" style="position: absolute; left: 47rpx; top: 18rpx">Hi，Deindy</text>
   <text class="text_6 pos_10" style="position: absolute; left: 47rpx; top: 100rpx">欢迎来到闲置广场。</text>
-  <view class="grid pos_12" style="position: absolute; left: 33rpx; top: 275rpx">
+  <view class="grid pos_12" style="position: absolute; left: 33rpx; top: 275rpx; height: 237rpx; display: grid; box-sizing: border-box; width: 108rpx">
     <view class="flex-col grid-item" style="position: relative; left: 12rpx; top: -108rpx">
-      <image style="position: relative; left: 6rpx; top: 0rpx"
+      <image style="position: relative; left: 0rpx; top: 0rpx"
         class="self-stretch image_6"
         src="/pages/images/5，6/1.png"
         bindtap="onImageClick1"
       />
-      <text class="mt-12 self-start font_3 text_7 text_8" bindtap="bit1" style="width: 286rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -5rpx">低价闲置衣服‼️‼️‼️</text>
-      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1" style="width: 326rpx; height: 115rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -33rpx">
+      <text class="mt-12 self-start font_3 text_7 text_8" style="width: 326rpx; display: block; box-sizing: border-box; position: relative; left: -26rpx; top: -5rpx">低价闲置衣服‼️‼️‼️</text>
+      <view class="mt-12 flex-row justify-between items-center self-stretch group_2" bindtap="onImageClick1" style="width: 326rpx; height: 115rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -24rpx">
         <view class="flex-row items-center">
           <image style="width: 92rpx; height: 87rpx; display: block; box-sizing: border-box"
             class="shrink-0 image_7"
@@ -18,16 +18,12 @@
           />
           <text class="ml-8 font_4 text_9" style="width: 66rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx">尼森</text>
         </view>
-        <view class="group_3">
-          <text class="font_6" style="position: relative; left: 47rpx; top: -12rpx">￥</text>
-          <text class="font_5" style="position: relative; left: 47rpx; top: -11rpx">98</text>
+        <view class="group_3" style="position: relative; left: 0rpx; top: -19rpx">
+          <text class="font_6" style="position: relative; left: 0rpx; top: -25rpx">￥</text>
+          <text class="font_5" style="position: relative; left: 0rpx; top: -25rpx">98</text>
         </view>
-        <view style="position: relative; left: -176rpx; top: -153rpx"bindtap="onImageClick2">
-          <image style="width: 92rpx; height: 94rpx; display: block; box-sizing: border-box; position: relative; left: 469rpx; top: 380rpx"
-            class="image_11"
-            src="/pages/images/1/jia.png"
-          />
-          <text style="position: relative; left: 469rpx; top: 380rpx; width: 139rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 24rpx">发布闲置</text>
+        <view class="flex-row justify-center items-center button-publish" style="position: absolute; left: 326rpx; bottom: 20rpx; width: 100%; height: 88rpx; background-color: #ffae00cb; box-sizing: border-box; top: 336rpx" bindtap="onImageClick2">
+        <text class="font_6 text-white" style="font-size: 36rpx;">发布闲置</text>
         </view>
       </view>
     </view>

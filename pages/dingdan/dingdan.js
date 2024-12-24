@@ -24,6 +24,16 @@ Page({
     }
   },
 
+  removeSection: function(index) {
+    if (index >= 0 && index < this.data.sections.length) {
+      const updatedSections = this.data.sections.filter((item, idx) => idx !== index);
+      this.setData({ sections: updatedSections }, () => {
+        console.log('Section removed:', this.data.sections);
+      });
+    } else {
+      console.error('Index out of range:', index);
+    }
+  },
   onImageClick1: function (e) {
     const index = e.currentTarget.dataset.index;
     const item = this.data.sections[index];
@@ -100,6 +110,7 @@ Page({
       success:function(res){
         if(res.statusCode===200){
           const formattedData=res.data.map(item=>({
+            task_id:item.task_id,
             name:item.publisher_username,
             task:item.task_type,
             time:item.deadline,

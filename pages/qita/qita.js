@@ -1,3 +1,4 @@
+// pages/zujie/zujie.js
 Page({
 
   /**
@@ -63,33 +64,13 @@ Page({
 
   },
   onImageClick1:function(){
-    // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/daikexiangqing/daikexiangqing',
+      url: '/pages/daikexiangqing/daikexiangqing', 
     });
   },
   onImageClick2:function(){
-    // console.log("Image clicked!"); 
     wx.navigateTo({
-      url: '/pages/fuxiziliao/fuxiziliao',
-    });
-  },
-  onImageClick3:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/fuxizhidao/fuxizhidao',
-    });
-  },
-  onImageClick4:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/kechengziliao/kechengziliao',
-    });
-  },
-  onImageClick11:function(){
-    // console.log("Image clicked!"); 
-    wx.navigateTo({
-      url: '/pages/xiadan/xiadan',
+      url: '/pages/xiadan/xiadan', 
     });
   },
 })

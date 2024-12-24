@@ -6,7 +6,7 @@ f:\images\tasks 中存放任务附图，暂定
 
 post接口:
 /api/login 
-登录接口，接受参数account(账号)、password
+登录接口，接受参数 account(账号)、password
 
 /api/setTask
 发布任务接口，接受参数如下：
@@ -28,6 +28,24 @@ post接口:
 查询我发布的订单，接收参数user_id
 /api/myOrder
 查询我的接单，接收参数user_id
+
+/api/myTaskCount
+查询我发布的订单处于三种状态的数量，接收参数 user_id
+res返回的数据如下
+{
+  "unclaimed_count": , //未完成
+  "in_progress_count": , //正在进行
+  "completed_count": //已完成
+}
+
+/api/myOrderCount
+查询我的接单处于正在进行和已完成的数量，接收参数 user_id
+res返回的数据如下
+{
+  "in_progress_count": ,//正在进行
+  "completed_count": //已完成
+}
+
 
 get接口:
 /api/profile  发送token

@@ -1,34 +1,28 @@
-/* pages/qita/qita.wxss */
-.ml-5 {
-  margin-left: 8.72rpx;
-}
-.mt-15 {
-  margin-top: 26.16rpx;
-}
-.mt-17 {
-  margin-top: 29.65rpx;
-}
-.ml-11 {
-  margin-left: 19.19rpx;
-}
-.ml-7 {
-  margin-left: 12.21rpx;
-}
+/* 页面和容器样式 */
 .page {
-  padding: 31.4rpx 26.16rpx 467.44rpx 38.37rpx;
   background-color: #ffffff;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 100%;
 }
-.group {
-  padding-left: 20.93rpx;
+
+.section {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 750rpx;
+  height: 1625.58rpx;
 }
-.group_2 {
-  line-height: 17.46rpx;
-  height: 17.46rpx;
+
+.section_2 {
+  background-color: #383838;
+  width: 59.3rpx;
+  height: 3.49rpx;
 }
+
+/* 文本样式 */
 .font {
   font-size: 24.42rpx;
   font-family: AlibabaPuHuiTi;
@@ -36,156 +30,252 @@
   font-weight: 700;
   color: #000000;
 }
+
+.font_2 {
+  font-size: 31.4rpx;
+  font-family: SourceHanSansCN;
+  line-height: 28.88rpx;
+  color: #808080;
+}
+
+.font_3 {
+  font-size: 27.91rpx;
+  font-family: SourceHanSansCN;
+  line-height: 33.14rpx;
+  color: #000000;
+}
+
+.font_4 {
+  font-size: 24.42rpx;
+  font-family: SourceHanSansCN;
+  line-height: 15.09rpx;
+  color: #000000;
+}
+
+.font_5 {
+  font-size: 27.91rpx;
+  font-family: SourceHanSansCN;
+  line-height: 21.17rpx;
+  color: #d43030;
+}
+
+.font_6 {
+  font-size: 20.93rpx;
+  font-family: SourceHanSansCN;
+  line-height: 15.09rpx;
+  color: #d43030;
+}
+
 .text {
   word-break: break-all;
 }
+
 .text_2 {
   line-height: 16.95rpx;
 }
+
+.text_3 {
+  color: #383838;
+  font-size: 27.91rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 700;
+  line-height: 26.41rpx;
+}
+
+.text_4 {
+  color: #000000;
+}
+
+.text_5 {
+  line-height: 28.81rpx;
+}
+
+.text_6 {
+  line-height: 29.04rpx;
+}
+
+.text_7 {
+  margin-left: 31.4rpx;
+}
+
+.text_8 {
+  width: 167.44rpx;
+}
+
+.text_9 {
+  line-height: 13.92rpx;
+}
+
+.text_10 {
+  width: 212.79rpx;
+}
+
+/* 定位样式 */
+.pos {
+  position: absolute;
+  right: 112.2rpx;
+  top: 30.82rpx;
+}
+
+.pos_2 {
+  position: absolute;
+  right: 77.28rpx;
+  top: 30.23rpx;
+}
+
+.pos_3 {
+  position: absolute;
+  right: 26.16rpx;
+  top: 30.23rpx;
+}
+
+.pos_4 {
+  position: absolute;
+  left: 59.01rpx;
+  top: 35.48rpx;
+}
+
+.pos_5 {
+  position: absolute;
+  right: 27.91rpx;
+  top: 101.16rpx;
+}
+
+.pos_6 {
+  position: absolute;
+  left: 61.05rpx;
+  top: 115.12rpx;
+}
+
+.pos_7 {
+  position: absolute;
+  left: 308.83rpx;
+  top: 118.43rpx;
+}
+
+.pos_8 {
+  position: absolute;
+  left: 50.32rpx;
+  top: 203.65rpx;
+}
+
+.pos_9 {
+  position: absolute;
+  left: 174.44rpx;
+  top: 203.65rpx;
+}
+
+.pos_10 {
+  position: absolute;
+  left: 297.99rpx;
+  top: 203.62rpx;
+}
+
+.pos_11 {
+  position: absolute;
+  left: 50.58rpx;
+  top: 240.7rpx;
+}
+
+.pos_12 {
+  position: absolute;
+  left: 34.88rpx;
+  right: 33.14rpx;
+  top: 273.84rpx;
+}
+
+.pos_13 {
+  position: absolute;
+  left: 50%;
+  top: 1418.02rpx;
+  transform: translateX(-50%);
+}
+
+/* 按钮样式 */
+.button-publish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 20rpx;
+  width: 100%;
+  height: 88rpx;
+  background-color: #ffae00;
+  border-radius: 44rpx;
+  box-sizing: border-box;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.button-publish text {
+  color: white;
+  font-size: 36rpx;
+}
+
+/* 边距样式 */
+.ml-7 {
+  margin-left: 12.21rpx;
+}
+
+.ml-9 {
+  margin-left: 15.7rpx;
+}
+
+/* 图片样式 */
 .image {
   width: 29.65rpx;
   height: 19.19rpx;
 }
+
 .image_2 {
   width: 26.16rpx;
   height: 19.19rpx;
 }
+
 .image_3 {
   width: 41.86rpx;
   height: 19.76rpx;
 }
-.group_3 {
-  padding-left: 22.67rpx;
-  padding-bottom: 24.42rpx;
-}
-.image_5 {
-  width: 29.65rpx;
-  height: 29.65rpx;
-}
+
 .image_4 {
   width: 150rpx;
   height: 55.81rpx;
 }
-.section {
-  margin-right: 15.7rpx;
-  padding: 13.95rpx 55.81rpx 20.93rpx 62.79rpx;
-  background-color: #d7f5c8;
-  border-radius: 17.44rpx;
-}
-.text_3 {
-  margin-left: 6.98rpx;
-  color: #000000;
-  font-size: 34.88rpx;
-  font-family: SourceHanSansCN;
-  font-weight: 700;
-  line-height: 33.17rpx;
-}
-.font_2 {
-  font-size: 31.4rpx;
-  font-family: SourceHanSansCN;
-  line-height: 29.23rpx;
-  color: #000000;
-}
-.text_4 {
-  color: #808080;
-  line-height: 29.76rpx;
-}
-.image-wrapper {
-  padding: 52.33rpx 0 55.81rpx;
-  border-radius: 50%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 148.26rpx;
-  height: 153.49rpx;
-}
-.image_6 {
-  width: 45.35rpx;
-  height: 45.35rpx;
-}
-.text_5 {
-  margin-left: 10.47rpx;
-  margin-top: 38.37rpx;
-}
-.group_4 {
-  margin-top: 34.88rpx;
-}
-.equal-division {
-  align-self: stretch;
-  margin-right: 17.44rpx;
-}
-.section_2 {
-  flex: 1 1 324.23rpx;
-}
-.equal-division-item {
-  padding: 55.81rpx 31.4rpx 48.84rpx;
-  background-color: #f3f5f7;
-  border-radius: 17.44rpx;
-  height: 188.37rpx;
-}
-.image_7 {
-  width: 80.2rpx;
-  height: 74.2rpx;
-}
-.font_3 {
-  font-size: 31.4rpx;
-  font-family: SourceHanSansCN;
-  line-height: 29.23rpx;
-  font-weight: 700;
-  color: #000000;
-}
-.text_6 {
-  line-height: 29.58rpx;
-}
-.font_4 {
-  font-size: 24.42rpx;
-  font-family: SourceHanSansCN;
-  line-height: 22.53rpx;
-  color: #808080;
-}
-.font_6 {
-  color: #912c2c;
+
+.image_5 {
+  width: 29.65rpx;
+  height: 29.65rpx;
 }
 
-.font_5 {
-  color: #912c2c;
+.image_6 {
+  border-radius: 17.44rpx 17.44rpx 0rpx 0rpx;
+  width: 327.91rpx;
+  height: 446.51rpx;
 }
-.section_3 {
-  padding: 27.91rpx 8.72rpx 47.09rpx;
-  background-color: #f3f5f7;
-  border-radius: 17.44rpx;
+
+.image_7 {
+  border-radius: 50%;
+  width: 40.12rpx;
+  height: 40.12rpx;
 }
+
 .image_8 {
-  width: 113.37rpx;
-  height: 113.37rpx;
+  width: 55.81rpx;
+  height: 57.56rpx;
 }
-.text_7 {
-  line-height: 29.76rpx;
+
+/* 网格样式 */
+.grid {
+  height: 1180.81rpx;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 31.66rpx;
+  column-gap: 24.68rpx;
 }
-.text_8 {
-  line-height: 22.71rpx;
-}
-.text_9 {
-  margin-top: 27.91rpx;
-  line-height: 28.97rpx;
-}
-.equal-division_2 {
-  align-self: stretch;
-  margin-right: 19.19rpx;
-  margin-top: 38.37rpx;
-}
-.section_4 {
-  flex: 1 1 324.31rpx;
-}
-.equal-division-item_2 {
-  padding: 55.81rpx 31.4rpx;
-  background-color: #f3f5f7;
+
+.grid-item {
+  padding-bottom: 13.95rpx;
+  background-color: #ffffff;
   border-radius: 17.44rpx;
-  height: 188.37rpx;
-}
-.image_9 {
-  width: 83.72rpx;
-  height: 81.99rpx;
-}
-.group_5 {
-  width: 149.81rpx;
 }

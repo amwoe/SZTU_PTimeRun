@@ -1,40 +1,41 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
-  <view class="flex-row justify-center items-center section_2 pos_8">
-    <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange" value="{{selectedIndex}}">
-    </picker>
+  <!-- 上传图片提示 -->
+  <text class="font_2 text_6 pos_11" style="position: absolute; left: 43rpx; top: 38rpx;">上传图片</text>
+  <!-- 上传图片按钮 -->
+  <button class="upload-button" bindtap="uploadImage" style="position: absolute; left: 190rpx; top: 12rpx; width: 225rpx; height: 90rpx; display: flex; justify-content: center; align-items: center; box-sizing: border-box; background-color: #ffae00; border-radius: 10rpx; color: white; font-size: 28rpx">
+    <text style="margin-right: 10rpx;">点击上传图片</text>
+  </button>
+  
+  <!-- 图片展示区域 -->
+  <view class="flex-row" style="position: absolute; left: 43rpx; top: 125rpx; width: 690rpx; height: 275rpx; display: flex; box-sizing: border-box; overflow: hidden">
+    <block wx:for="{{images}}" wx:key="unique">
+      <image class="uploaded-image" src="{{item}}" mode="aspectFill" style="width: 33%; height: 100%;"/>
+    </block>
   </view>
-  <text class="font_2 text_6 pos_11" style="position: absolute; left: 43rpx; top: 38rpx">上传图片</text>
-  <view class="flex-col justify-start section_3 pos_12">
-    <view class="flex-row equal-division">
-      <view class="flex-col justify-start items-center equal-division-item image-wrapper" style="position: relative; left: 0rpx; top: -373rpx">
-      </view>
-      <view class="flex-col justify-start items-end equal-division-item image-wrapper_2 ml-13">
-      </view>
-      <view class="flex-col justify-start items-end equal-division-item image-wrapper_3 ml-13">
-      </view>
-      <view class="flex-col justify-start items-end equal-division-item image-wrapper_4 ml-13">
-      </view>
-    </view>
-  </view>
-  <text class="font_2 text_7 pos_13" style="position: absolute; left: 43rpx; top: 293rpx">描述详情</text>
-  <view class="flex-col justify-start items-start text-wrapper_2 pos_14" style="position: absolute; left: 29rpx; top: 347rpx">
+  
+  <!-- 描述详情输入区域 -->
+  <text class="font_2 text_7 pos_13" style="position: absolute; left: 43rpx; top: 446rpx">描述详情</text>
+  <view class="flex-col justify-start items-start text-wrapper_2 pos_14" style="position: absolute; left: 33rpx; top: 507rpx; width: 685rpx; display: flex; box-sizing: border-box">
     <input class="font_2 text_8" type="text" placeholder="请描述..." />
   </view>
+  
+  <!-- 价格输入区域 -->
   <view class="flex-row justify-between items-center section_5 pos_16" style="position: absolute; left: 24rpx; top: 1074rpx">
     <view class="flex-row items-center">
-      <input style="position: relative; left: 26rpx; top: -420rpx" class="font_4 text_11 ml-7" type="number" placeholder="请输入价格" bindinput="updatePrice" />
-      <text class="font_4 text_15" style="height: 52rpx; display: block; box-sizing: border-box; position: relative; left: -347rpx; top: -406rpx">￥</text>
+      <input style="position: relative; left: 38rpx; top: -303rpx" class="font_4 text_11 ml-7" type="number" placeholder="请输入价格" bindinput="updatePrice" />
+      <text class="font_4 text_15" style="height: 52rpx; display: block; box-sizing: border-box; position: relative; left: -415rpx; top: -286rpx">￥</text>
     </view>
     <view class="flex-row group_2">
     </view>
   </view>
+  
+  <!-- 发布按钮 -->
   <view class="bottom-container fixed-bottom">
-    <view class="flex-col justify-start items-start section_6 pos_17">
-      <view class="group_3">
+    <view class="flex-col justify-start items-start section_6 pos_17" style="width: 345rpx; height: 90rpx; display: flex; box-sizing: border-box; left: 29rpx; top: -26rpx">
+      <view class="group_3" style="height: 85rpx; display: block; box-sizing: border-box; position: relative; left: 26rpx; top: -78rpx">
         <text class="font_4 text_15">￥</text>
-        <text class="text_14">{{ price }}</text>
-        <text class="text_14" style="position: relative; left: 279rpx; font-size: 40rpx; top: -5rpx"bindtap="bit1">确认发布</text>
+        <text class="text_14" style="position: relative; left: 9rpx; top: 11rpx">{{price}}</text>
+        <button class="publish-button" bindtap="onPublish" style="position: relative; left: 418rpx; top: -74rpx; width: 242rpx; display: flex; box-sizing: border-box">确认发布</button>
       </view>
     </view>
   </view>

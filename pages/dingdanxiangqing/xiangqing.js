@@ -1,4 +1,5 @@
 const { woderenwuList } = require('../woderenwu/woderenwu.js');
+
 Page({
   data: {
     index: -1,
@@ -23,10 +24,11 @@ Page({
       const pages = getCurrentPages();
       const prevPage = pages[pages.length - 2]; // 获取上一个页面实例
       if (prevPage && this.data.index !== -1 && this.data.index < prevPage.data.sections.length) {
-        console.log(this.data.index)
-        // 更新上一个页面中相应订单的状态
-        prevPage.updateSectionType(this.data.index, '正在进行');
-        this.saveToWoderenwu(prevPage.data.sections[this.data.index]);
+        console.log(this.data.index);
+        // 调用接口设置订单
+        this.setOrder(prevPage.data.sections[this.data.index]);
+        // 从上一个页面的数据中移除该任务
+        prevPage.removeSection(this.data.index);
       } else {
         console.error('Index out of range:', this.data.index);
       }
@@ -36,20 +38,45 @@ Page({
     }, 500);
   },
   
-  saveToWoderenwu:function(item){
-    if(typeof woderenwuList !== 'undefined'){
+  setOrder: function(task) {
+    const userId = wx.getStorageSync('userId'); // 从缓存中获取userId
+    console.log(userId)
+    console.log(task.task_id)
+    wx.request({
+      url: 'http://127.0.0.1:3000/api/setOrder', // 确保URL正确
+      method: 'POST',
+      data: {
+        user_id: userId, // 使用缓存中的userId
+        task_id: task.task_id// 使用上一个页面传过来的taskId
+      },
+      success: function(res) {
+        if (res.statusCode === 200) {
+          console.log('Order set successfully');
+        } else {
+          console.error('Failed to set order', res);
+        }
+      },
+      fail: function(error) {
+        console.error('Request failed', error);
+      }
+    });
+  },
+
+  saveToWoderenwu: function(item) {
+    if (typeof woderenwuList !== 'undefined') {
       woderenwuList.push({
         ...item,
-        status:'正在进行'
+        status: '正在进行'
       });
-      console.log(woderenwuList)
-    }else{
+      console.log(woderenwuList);
+    } else {
       console.error('woderenwuList is not defined in woderenwu.js');
     }
   },
+
   // 生命周期函数--监听页面加载
   onLoad: function (options) {
-    console.log(options)
+    console.log(options);
     // 从上一个页面接收
     const index = parseInt(options.index, 10);
     const item = JSON.parse(decodeURIComponent(options.item));
@@ -57,8 +84,8 @@ Page({
       item.gender = "不限"; // 默认值或错误处理
     }
     this.setData({
-      index:index,
-      item:item,
+      index: index,
+      item: item,
     });
   },
 

@@ -13,7 +13,7 @@
     <view wx:if="{{showModal}}" class="modal">
       <view class="modal-content">
         <text class="modal-title text_19">选择服务</text>
-        <view class="option" bindtap="selectOption" data-value="快递代取">快递代取</view>
+        <view class="option" bindtap="selectOption" data-value="代取快递">代取快递</view>
         <view class="option" bindtap="selectOption" data-value="外卖上楼">外卖上楼</view>
         <view class="option" bindtap="selectOption" data-value="食堂带饭">食堂带饭</view>
         <button bindtap="hideOptions">取消</button>
@@ -69,14 +69,15 @@
         <text class="ml-6 font_4 text_13">跑腿员要求：</text>
       </view>
       <view class="flex-row items-center group_9">
-        <radio-group>
+        <radio-group bindchange="onOptionChange">
           <label class="radio-option">
-            <radio value="不限" checked="{{selected === '不限'}}" bindchange="onOptionChange"></radio>
-            <text class="font_6 text_14">不限</text>
-            <radio value="男" checked="{{selected === '男'}}" bindchange="onOptionChange"></radio>
-            <text class="font_6 text_15">男</text>
-            <radio value="女" checked="{{selected === '女'}}" bindchange="onOptionChange"></radio>
-            <text class="font_6 text_16">女</text>
+            <radio value="不限" checked="{{selected === '不限'}}" /><text class="font_6 text_14">不限</text>
+          </label>
+          <label class="radio-option">
+            <radio value="男" checked="{{selected === '男'}}" /><text class="font_6 text_15">男</text>
+          </label>
+          <label class="radio-option">
+            <radio value="女" checked="{{selected === '女'}}" /><text class="font_6 text_16">女</text>
           </label>
         </radio-group>
       </view>

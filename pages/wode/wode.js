@@ -10,11 +10,6 @@ Page({
   /**
    * 跳转
    */
-  onImageClick1:function(){
-    wx.navigateTo({
-      url: '/pages/wodedizhi/wodedizhi', 
-    });
-  },
   onImageClick2:function(){
     wx.navigateTo({
       url: '/pages/xiaoxi/xiaoxi', 
@@ -22,32 +17,32 @@ Page({
   },
   onImageClick5:function(){
     wx.navigateTo({
-      url: '/pages/dongtailiaotian/dongtailiaotian', // 跳转到详情页面
+      url: '/pages/dongtailiaotian/dongtailiaotian', 
     });
   },
   onImageClick6:function(){
     wx.navigateTo({
-      url: '/pages/woderenwu/woderenwu', // 跳转到详情页面
+      url: '/pages/woderenwu/woderenwu',
     });
   },
   onImageClick7:function(){
     wx.navigateTo({
-      url: '/pages/jiedanshezhi/jiedanshezhi', // 跳转到详情页面
+      url: '/pages/jiedanshezhi/jiedanshezhi', 
     });
   },
   onImageClick8:function(){
     wx.navigateTo({
-      url: '/pages/wodedingdan/wodedingdan', // 跳转到详情页面
+      url: '/pages/wodedingdan/wodedingdan', 
     });
   },
   onImageClick9:function(){
     wx.navigateTo({
-      url: '/pages/yue/yue', // 跳转到详情页面
+      url: '/pages/yue/yue', 
     });
   },
   onImageClick10:function(){
     wx.navigateTo({
-      url: '/pages/denglu/denglu', // 跳转到详情页面
+      url: '/pages/denglu/denglu', 
     });
   },
   redirectToPage1:function(){
@@ -65,8 +60,6 @@ Page({
       url: '/pages/wode/wode',
     })
   },
-
-
   //退出逻辑
   ontuichu:function(){
     wx.removeStorageSync('userInfo');
