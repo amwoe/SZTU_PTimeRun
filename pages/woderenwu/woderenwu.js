@@ -55,7 +55,7 @@ Page({
     const userId = wx.getStorageSync('userId');
     console.log('Sending user_id:', userId);  // 打印获取到的 user_id
     wx.request({
-      url: 'http://127.0.0.1:3000/api/myTask', // 替换为实际的接口URL
+      url: 'http://127.0.0.1:3000/api/myOrder', // 替换为实际的接口URL
       method: 'POST',
       data: {
         user_id: userId,  // 传递 user_id 或 employee_id

@@ -1,57 +1,60 @@
 <view class="flex-col justify-start relative page">
   <view class="section"></view>
+  
+  <!-- 搜索框 -->
   <view class="flex-row items-center section_2 pos_4" style="position: absolute; left: 30rpx; top: 29rpx">
-    <image
-      class="image_3"
-      src="/pages/images/1/sousuo.png"
-    />
-    <input
-      class="font text_2 ml-7"
-      type="text"
-      placeholder="输入关键词搜索"
-    />
+    <image class="image_3" src="/pages/images/1/sousuo.png"/>
+    <input class="font text_2 ml-7" type="text" placeholder="输入关键词搜索"/>
   </view>
-  <text class="font_2 text_3 pos_5" style="position: absolute; left: 52rpx; top: 148rpx">全部(2)</text>
+
+  <!-- 任务列表标题 -->
+  <text class="font_2 text_3 pos_5" style="position: absolute; left: 52rpx; top: 148rpx">全部({{tasks.length}})</text>
+  
+  <!-- 任务列表渲染 -->
   <view class="section_3 pos_8" style="position: absolute; left: 50rpx; top: 190rpx"></view>
+  
   <view class="flex-col section_4 pos_9" style="position: absolute; left: 26rpx; top: 242rpx">
-    <view class="flex-row justify-between self-stretch group">
-      <view class="flex-row items-center">
-        <text class="font_3 text_5">宁桑娅</text>
-        <view class="ml-14 flex-col justify-start shrink-0 text-wrapper">
-          <text class="font text_6">代取快递</text>
+    <block wx:for="{{tasks}}" wx:key="task_id">
+      <view class="flex-row justify-between self-stretch group">
+        <!-- 执行人和任务类型 -->
+        <view class="flex-row items-center">
+          <image class="image_3" src="{{item.employee_avator}}" style="width: 40rpx; height: 40rpx; border-radius: 20rpx"/>
+          <text class="font_3 text_5">{{item.employee_name}}</text>
+          <view class="ml-14 flex-col justify-start shrink-0 text-wrapper">
+            <text class="font text_6">{{item.task_type}}</text>
+          </view>
+        </view>
+        
+        <!-- 截止时间 -->
+        <view class="flex-row section_5" style="width: 279rpx; display: flex; box-sizing: border-box">
+          <image class="shrink-0 image_5" src="/pages/images/1/time.png"/>
+          <text class="font_4 text_7 ml-3" style="width: 230rpx; display: block; box-sizing: border-box">
+            {{item.deadline}} 截止
+          </text>
         </view>
       </view>
-      <view class="flex-row section_5" style="width: 279rpx; display: flex; box-sizing: border-box">
-        <image
-          class="shrink-0 image_5"
-          src="/pages/images/1/time.png"
-        />
-        <text class="font_4 text_7 ml-3" style="width: 230rpx; display: block; box-sizing: border-box">24-12-13 09:18 截止</text>
-      </view>
-    </view>
-    <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -165rpx; top: 8rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">取消订单</text></view>
-    <image
-      class="image_4 pos_10"
-      src="/pages/images/1/clx.png"
-    />
-  </view>
-<view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -61rpx; top: -1266rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">确认完成</text></view>
-  <view class="flex-col section_6 pos_11" style="position: absolute; left: 40rpx; top: 467rpx">
-    <view class="flex-row justify-between self-stretch group_2">
-      <view class="flex-row items-center">
-        <text class="font_3 text_8">邓御寒</text>
-        <view class="flex-col justify-start shrink-0 text-wrapper_3 ml-15">
-          <text class="font text_9">外卖上楼</text>
+      
+      <!-- 根据任务状态动态显示不同的按钮 -->
+      <block wx:if="{{item.task_status === '正在进行'}}">
+        <view class="flex-row">
+          <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -165rpx; top: 8rpx">
+            <text class="font" style="position: relative; left: 0rpx; top: 1rpx">取消订单</text>
+          </view>
+          <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: 10rpx; top: 8rpx">
+            <text class="font" style="position: relative; left: 0rpx; top: 1rpx">确认完成</text>
+          </view>
         </view>
-      </view>
-      <view class="flex-row section_5 view" style="width: 289rpx; display: flex; box-sizing: border-box">
-        <text class="font_4 text_7 ml-3" style="width: 244rpx; display: block; box-sizing: border-box">24-23-06 09:18 截止</text>
-      </view>
-    </view>
-    <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: 0rpx; top: 0rpx"><text class="font" style="position: relative; left: 0rpx; top: 1rpx">已完成</text></view>
-    <image
-      class="image_4 pos_12"
-      src="/pages/images/1/shu.png"
-    />
+      </block>
+      
+      <!-- 如果任务已完成，则显示已完成 -->
+      <block wx:elif="{{item.task_status === '已完成'}}">
+        <view class="flex-col justify-start items-center self-end text-wrapper_2" style="position: relative; left: -165rpx; top: 8rpx">
+          <text class="font" style="position: relative; left: 0rpx; top: 1rpx">已完成</text>
+        </view>
+      </block>
+      
+      <!-- 任务图标 -->
+      <image class="image_4 pos_10" src="/pages/images/1/clx.png"/>
+    </block>
   </view>
 </view>
