@@ -11,7 +11,7 @@ post接口:
 /api/setTask
 发布任务接口，接受参数如下：
 {
-  "publisher_id": , //必填
+  "publisher_id": , //发布者id必填
   "task_type": "", //规定的任务类型，必填
   "description": "", //必填
   "salary": , //必填
@@ -19,6 +19,15 @@ post接口:
   "hour":, //必填
   "minute":, //必填
   "runner_gender_requirement": "" //必填
+}
+/api/setTask
+发布任务接口，接受参数如下：
+{
+  "publisher_id": ,//必填
+  "task_type": ,//必填
+  "cover": ,//任务图片
+  "description": ,//必填
+  "salary": //金额，必填
 }
 
 /api/setOrder

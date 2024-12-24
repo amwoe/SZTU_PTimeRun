@@ -1,5 +1,5 @@
 const express = require('express');
-const { setTask, setOrder,completeOrder } = require('../module/set');
+const { setTask, setOrder,completeOrder, setTask_2 } = require('../module/set');
 const { getTask, myTask, myOrder, getTask_1, getTask_2 , getTask_3, myTaskCount, myOrderCount,getBalance,getAnotherMoney } = require('../module/get')
 
 const taskRouter = express.Router();
@@ -7,6 +7,7 @@ const taskRouter = express.Router();
 taskRouter.get('/getTask', getTask);
 
 taskRouter.post('/setTask', setTask);
+taskRouter.post('/setTask_2', setTask_2);
 
 taskRouter.post('/setOrder', setOrder);
 

@@ -40,6 +40,7 @@ async function setTask(req, res) {
 }
 
 
+
 //更新任务状态（接取任务）
 async function setOrder(req, res) {
   const { task_id, user_id } = req.body;
@@ -121,4 +122,36 @@ async function completeOrder(req, res) {
   }
 }
 
-module.exports = { setTask, setOrder, completeOrder };
+async function setTask_2(req, res) {
+  const { publisher_id, task_type, cover, description, salary } = req.body;
+
+  // 校验必填字段是否存在
+  if (!publisher_id || !task_type || !description || !salary ) {
+    return res.status(400).json({ message: '缺少必填字段' });
+  }
+
+  try {
+    const connection = await db.db; // 等待数据库连接初始化
+
+    // 插入任务信息
+    const insertTaskQuery = `
+      INSERT INTO task (publisher_id,task_type, cover, description, salary)
+      VALUES (?, ?, ?, ?, ?)
+    `;
+    const [result] = await connection.query(insertTaskQuery, [
+      publisher_id,
+      task_type,
+      cover,
+      description,
+      salary
+    ]);
+
+    // 返回插入成功的任务ID
+    return res.status(200).json({ message: '任务创建成功', task_id: result.insertId });
+  } catch (err) {
+    console.error('插入任务出错:', err);
+    return res.status(500).json({ message: '服务器错误' });
+  }
+}
+
+module.exports = { setTask, setOrder, completeOrder, setTask_2 };

@@ -1,55 +1,25 @@
 <view class="flex-col justify-start relative page">
-  <view class="section"></view>
+  <view class="section" style="height: 1179rpx; display: block; box-sizing: border-box"></view>
   <view class="flex-row justify-between items-center section_2 pos_8" style="position: absolute; left: 29rpx; top: 29rpx">
     <view class="flex-col items-start">
       <text class="font_2 text_4">余额(元)</text>
       <text class="mt-14 text_6">{{balance}}</text>
     </view>
-    
   </view>
   <view class="flex-col section_4 pos_9">
-    <text class="self-start font_3" style="position: relative; left: 0rpx; top: -172rpx">请输入提现金额</text>
+    <text class="self-start font_3" style="position: relative; left: 0rpx; top: -172rpx">提现</text>
     <view class="flex-row justify-between items-end self-stretch group_2 mt-25">
       <view class="flex-row items-baseline">
-        <text class="shrink-0 font_2 text_8" style="position: relative; left: 0rpx; top: -188rpx">￥</text>
-        <input style="position: relative; left: 29rpx; top: -189rpx"
-      class="font text_2 ml-7"
-      type="text"
-      placeholder="请输入提现金额"
-       />
+        <text class="shrink-0 text_8" style="position: relative; left: 0rpx; top: -188rpx; font-size: 40rpx;">￥</text>
+        <input style="position: relative; left: 33rpx; top: -190rpx; width: 326rpx; height: 99rpx; display: block; box-sizing: border-box; font-size: 36rpx;" 
+               class="font text_2 ml-7" 
+               type="number" 
+               placeholder="请输入提现金额" 
+               bindinput="onWithdrawalInput"/>
       </view>
-      
     </view>
   </view>
-  <view class="flex-col section_5 pos_10">
-    <text class="self-start font_3 text_10" style="position: relative; left: 0rpx; top: -268rpx">请选择到账方式</text>
-    <view class="flex-col self-stretch group_3">
-      <view class="flex-row justify-between items-center">
-        <view class="flex-row">
-          <image
-            class="shrink-0 image_7"
-          />
-          <view class="ml-6 flex-col shrink-0 group_4">
-            <text class="self-start font_2 text_11" style="position: relative; left: 0rpx; top: -277rpx">提现至支付宝</text>
-            <text class="mt-6 self-stretch font_4 text_12" style="position: relative; left: 0rpx; top: -261rpx">已绑定 132****9475</text>
-          </view>
-        </view>
-        <image
-          class="image_8"
-        />
-      </view>
-      <view class="flex-row group_5 mt-21">
-        <image
-          class="image_9"
-        />
-        <view class="ml-14 flex-col items-start flex-1 group_6">
-          <text class="font_2 text_13" style="position: relative; left: 0rpx; top: -279rpx">提现至微信</text>
-          <text class="mt-6 font_4 text_14" style="position: relative; left: 0rpx; top: -263rpx">请绑定已实名的支付宝账号</text>
-        </view>
-      </view>
-    </view>
-    <view class="flex-row equal-division group_8">
-    </view>
+  <view class="flex-col justify-start items-center text-wrapper pos_12" style="position: absolute; left: 371rpx; top: 922rpx" bindtap="handleWithdraw">
+    <text class="text_17">立即提现</text>
   </view>
-  <view class="flex-col justify-start items-center text-wrapper pos_12" style="position: absolute; left: 371rpx; top: 922rpx"><text class="text_17">立即提现</text></view>
 </view>
